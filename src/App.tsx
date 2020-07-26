@@ -3,7 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import Home from './components/Home';
-import ExamplePage from './components/ExamplePage';
+import Apply from './components/Apply';
+import Partner from './components/Partner';
+import Projects from './components/Projects';
+import Jumpstart from './components/Jumpstart';
+import Events from './components/Events';
+import Board from './components/Board';
+
 import NotFound from './components/NotFound';
 import NavBar from './components/NavBar';
 
@@ -26,7 +32,12 @@ const App: React.FC = () => {
           <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/example" exact component={ExamplePage} />
+            <Route path="/apply" exact component={Apply} />
+            <Route path="/partner" exact component={Partner} />
+            <Route path="/projects" exact component={Projects} />
+            <Route path="/jumpstart" exact component={Jumpstart} />
+            <Route path="/events" exact component={Events} />
+            <Route path="/board" exact component={Board} />
             <Route path="*" exact component={NotFound} />
           </Switch>
         </Router>
