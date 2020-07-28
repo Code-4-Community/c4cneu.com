@@ -32,7 +32,7 @@ const App: React.FC = () => {
           <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/apply" exact component={Apply} />
+            <Route path="/apply" component={Apply} />
             <Route path="/partner" exact component={Partner} />
             <Route path="/projects" exact component={Projects} />
             <Route path="/jumpstart" exact component={Jumpstart} />
