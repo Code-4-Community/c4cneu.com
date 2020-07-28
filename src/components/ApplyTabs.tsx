@@ -1,7 +1,9 @@
 import React from 'react'
 import { makeStyles, withStyles, createStyles } from '@material-ui/core/styles'
 import { Box, Tabs, Tab, Typography, Button } from '@material-ui/core'
-import { red } from '@material-ui/core/colors'
+
+import CodeIcon from '@material-ui/icons/Code'
+import BrushIcon from '@material-ui/icons/Brush'
 
 const StyledTabs = withStyles({
   root: {
@@ -19,9 +21,8 @@ const StyledTab = withStyles(theme =>
     root: {
       textTransform: 'none',
       fontWeight: theme.typography.fontWeightRegular,
-      fontSize: theme.typography.pxToRem(18),
-      textAlign: 'left',
-      alignItems: 'left',
+      fontSize: theme.typography.pxToRem(12),
+
       marginRight: theme.spacing(1),
       '&:focus': {
         opacity: 1
@@ -29,9 +30,9 @@ const StyledTab = withStyles(theme =>
       padding: 0
     },
     wrapper: {
-      display: 'inline',
-      paddingLeft: '1rem',
-      paddingRight: '1rem'
+      // display: 'inline',
+      // paddingLeft: '1rem',
+      // paddingRight: '1rem'
     }
   })
 )(Tab)
@@ -56,7 +57,7 @@ function TabPanel (props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Box pl={3}>
+        <Box pl={2}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -81,11 +82,9 @@ const useStyles = makeStyles(() => ({
   },
   tabs: {
     minWidth: 'fit-content',
-    alignItems: 'left'
   },
   tab: {
-    textAlign: 'left',
-    alignItems: 'left'
+
   },
   list: {
     marginTop: 5
@@ -114,8 +113,8 @@ const VerticalTabs: React.FC = () => {
         className={classes.tabs}
         indicatorColor='primary'
       >
-        <StyledTab label='Developer' {...a11yProps(0)} />
-        <StyledTab label='Designer' {...a11yProps(1)} />
+        <StyledTab label="Developer" icon={<CodeIcon />} {...a11yProps(0)} />
+        <StyledTab label="Designer" icon={<BrushIcon />} {...a11yProps(1)} />
         <StyledTab label='Role 3' {...a11yProps(2)} />
         <StyledTab label='Role 4' {...a11yProps(3)} />
         <StyledTab className={classes.tab} label='Role 5' {...a11yProps(4)} />
