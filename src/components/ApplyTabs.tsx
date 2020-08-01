@@ -1,22 +1,22 @@
-import React from 'react'
-import { makeStyles, withStyles, createStyles } from '@material-ui/core/styles'
-import { Box, Tabs, Tab, Typography, Button } from '@material-ui/core'
+import React from 'react';
+import { makeStyles, withStyles, createStyles } from '@material-ui/core/styles';
+import { Box, Tabs, Tab, Typography, Button } from '@material-ui/core';
 
-import CodeIcon from '@material-ui/icons/Code'
-import BrushIcon from '@material-ui/icons/Brush'
+import CodeIcon from '@material-ui/icons/Code';
+import BrushIcon from '@material-ui/icons/Brush';
 
 const StyledTabs = withStyles({
   root: {
-    alignItems: 'left'
+    alignItems: 'left',
   },
   indicator: {
     backgroundColor: '#828282',
     right: 165,
-    width: 10
-  }
-})(Tabs)
+    width: 10,
+  },
+})(Tabs);
 
-const StyledTab = withStyles(theme =>
+const StyledTab = withStyles((theme) =>
   createStyles({
     root: {
       textTransform: 'none',
@@ -25,32 +25,32 @@ const StyledTab = withStyles(theme =>
 
       marginRight: theme.spacing(1),
       '&:focus': {
-        opacity: 1
+        opacity: 1,
       },
-      padding: 0
+      padding: 0,
     },
     wrapper: {
       // display: 'inline',
       // paddingLeft: '1rem',
       // paddingRight: '1rem'
-    }
+    },
   })
-)(Tab)
+)(Tab);
 
 // From MUI docs on vertical tabs
 
 interface TabPanelProps {
-  children?: React.ReactNode
-  index: number
-  value: number
+  children?: React.ReactNode;
+  index: number;
+  value: number;
 }
 
-function TabPanel (props: TabPanelProps) {
-  const { children, value, index, ...other } = props
+function TabPanel(props: TabPanelProps) {
+  const { children, value, index, ...other } = props;
 
   return (
     <div
-      role='tabpanel'
+      role="tabpanel"
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
@@ -62,14 +62,14 @@ function TabPanel (props: TabPanelProps) {
         </Box>
       )}
     </div>
-  )
+  );
 }
 
-function a11yProps (index: number) {
+function a11yProps(index: number) {
   return {
     id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`
-  }
+    'aria-controls': `vertical-tabpanel-${index}`,
+  };
 }
 
 const useStyles = makeStyles(() => ({
@@ -78,68 +78,66 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     height: '100%',
     minHeight: '80vh',
-    paddingTop: 0
+    paddingTop: 0,
   },
   tabs: {
     minWidth: 'fit-content',
   },
-  tab: {
-
-  },
+  tab: {},
   list: {
-    marginTop: 5
-  }
-}))
+    marginTop: 5,
+  },
+}));
 
 const VerticalTabs: React.FC = () => {
-  const classes = useStyles()
-  const [value, setValue] = React.useState(0)
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
 
   const handleChange = (
     event: React.ChangeEvent<unknown>,
     newValue: number
   ) => {
-    setValue(newValue)
-  }
+    setValue(newValue);
+  };
 
   return (
     <div className={classes.root}>
       <StyledTabs
-        orientation='vertical'
-        variant='scrollable'
+        orientation="vertical"
+        variant="scrollable"
         value={value}
         onChange={handleChange}
-        aria-label='Vertical tabs example'
+        aria-label="Vertical tabs example"
         className={classes.tabs}
-        indicatorColor='primary'
+        indicatorColor="primary"
       >
         <StyledTab label="Developer" icon={<CodeIcon />} {...a11yProps(0)} />
         <StyledTab label="Designer" icon={<BrushIcon />} {...a11yProps(1)} />
-        <StyledTab label='Role 3' {...a11yProps(2)} />
-        <StyledTab label='Role 4' {...a11yProps(3)} />
-        <StyledTab className={classes.tab} label='Role 5' {...a11yProps(4)} />
-        <StyledTab label='Role 6' {...a11yProps(5)} />
-        <StyledTab label='Role 7' {...a11yProps(6)} />
+        <StyledTab label="Role 3" {...a11yProps(2)} />
+        <StyledTab label="Role 4" {...a11yProps(3)} />
+        <StyledTab className={classes.tab} label="Role 5" {...a11yProps(4)} />
+        <StyledTab label="Role 6" {...a11yProps(5)} />
+        <StyledTab label="Role 7" {...a11yProps(6)} />
       </StyledTabs>
       <TabPanel value={value} index={0}>
-        <Typography variant='h4'>Developer</Typography>
-        <Typography gutterBottom variant='h6' color='textSecondary'>
+        <Typography variant="h4">Developer</Typography>
+        <Typography gutterBottom variant="h6" color="textSecondary">
           Software Engineer / Full Stack Web Developer
         </Typography>
-        <Typography gutterBottom variant='body1'>
+        <Typography gutterBottom variant="body1">
           Talk about being a software dev at C4C. We need good developers. Here
           is text that describes what being a developer is like. Short
           sentences, big picture stuff, very persuasive. A little bit more text
           because we need it to look nice and fit on this page.
         </Typography>
-        <Typography gutterBottom variant='body1'>
+        <Typography gutterBottom variant="body1">
           Talk about being a software dev at C4C. We need good developers. Here
           is text that describes what being a developer is like. Short
           sentences, big picture stuff, very persuasive. A little bit more text
           because we need it to look nice and fit on this page.
         </Typography>
         <br />
-        <Typography variant='h6'>What we're looking for</Typography>
+        <Typography variant="h6">What we're looking for</Typography>
         <ul className={classes.list}>
           <li>This thing that you should be able to do</li>
           <li>And this other thing thats fun and cool</li>
@@ -149,15 +147,15 @@ const VerticalTabs: React.FC = () => {
         </ul>
 
         <Box mb={5} mt={3}>
-          <Button variant='contained' size='large'>
+          <Button variant="contained" size="large">
             Apply to be a developer
           </Button>
         </Box>
 
-        <Typography gutterBottom variant='h6'>
+        <Typography gutterBottom variant="h6">
           More Information
         </Typography>
-        <Typography gutterBottom variant='body1'>
+        <Typography gutterBottom variant="body1">
           Talk about being a software dev at C4C. This is where you write more
           about extra information, this could be about our development teams,
           our tech stack, our design process, etc. Just a place to dump
@@ -185,7 +183,7 @@ const VerticalTabs: React.FC = () => {
         Item Seven
       </TabPanel>
     </div>
-  )
-}
+  );
+};
 
-export default VerticalTabs
+export default VerticalTabs;

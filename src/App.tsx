@@ -4,6 +4,9 @@ import { Helmet } from 'react-helmet';
 
 import Home from './components/Home';
 import Apply from './components/Apply';
+
+import Developer from './components/Developer';
+
 import Partner from './components/Partner';
 import Projects from './components/Projects';
 import Jumpstart from './components/Jumpstart';
@@ -32,7 +35,10 @@ const App: React.FC = () => {
           <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/apply" component={Apply} />
+            <Route path="/apply" exact component={Apply} />
+            <Route path="/apply/developer" exact component={Developer} />
+            <Route path="/apply/designer" exact component={Apply} />
+
             <Route path="/partner" exact component={Partner} />
             <Route path="/projects" exact component={Projects} />
             <Route path="/jumpstart" exact component={Jumpstart} />
