@@ -32,8 +32,26 @@ const useStyles = makeStyles({
   },
   application: {},
   text: {
-    fontFamily:
-      '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+    //fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+  },
+  picture: {
+    borderRadius: '10em',
+    maxWidth: '10em',
+  },
+  pictureWrapper: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    marginBottom: '1em',
+  },
+  blockQuote: {
+    borderLeft: '4px solid gray',
+    paddingLeft: '0.5em',
+    marginBottom: '1em',
+  },
+  leftQuote: {
+    position: 'relative',
+    fontSize: '8em',
   },
 });
 
@@ -130,10 +148,49 @@ const Developer: React.FC = () => {
               <StepLabel>Wait for us to contact you!</StepLabel>
             </Step>
           </Stepper>
-          <Box paddingLeft={'24px'}>
-            <Button variant="contained" color="primary">
+          <Box paddingLeft={'24px'} marginBottom={'2em'}>
+            <Button
+              variant="contained"
+              color="primary"
+              href="http://c4cneu.com"
+              target="_blank"
+            >
               Apply to be a Developer
             </Button>
+          </Box>
+        </Grid>
+        <Grid item sm={3} className={classes.pictureWrapper}>
+          <img
+            src={
+              'http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg'
+            },
+            alt="Picture of a developer at Code4Community",
+            className={classes.picture}
+          />
+        </Grid>
+
+        <Grid item sm>
+          <Box
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="100%"
+          >
+            <Typography
+              variant="body1"
+              align="left"
+              className={classes.blockQuote}
+            >
+              This is a decently long quote about how impactful and cool it is
+              to be a part of Code4Community. Something about how you learned a
+              lot and grew as a developer.
+            </Typography>
+            <Typography variant="subtitle1" align="left">
+              Ryan Jung
+            </Typography>
+            <Typography variant="subtitle2" align="left">
+              Web Developer - c4cneu.com
+            </Typography>
           </Box>
         </Grid>
       </Grid>

@@ -33,8 +33,7 @@ const useStyles = makeStyles({
   text: {
     //For paragraph text im using "system" font, which matches the default font on the local system
     //This is to improve legibility+style while not having to import any fonts
-    fontFamily:
-      '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+    // fontFamily:'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
   },
 });
 // CSS for underline animation

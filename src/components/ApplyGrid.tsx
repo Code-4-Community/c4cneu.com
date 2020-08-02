@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 
 /*
@@ -7,8 +6,6 @@ This component is the card design of the apply page, keeping it here just in cas
 */
 
 import ApplyCard from './ApplyCard';
-
-
 
 const Template: React.FC = () => {
   return (
