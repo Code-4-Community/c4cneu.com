@@ -19,8 +19,8 @@ const Apply: React.FC = () => {
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>Write Title Here</title>
-        <meta name="description" content="Write a description for SEO here" />
+        <title>Apply</title>
+        <meta name="description" content="Apply to join Code4Community and help create software for non-profits in Boston." />
       </Helmet>
 
       <Box my={4}>
