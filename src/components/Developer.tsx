@@ -161,10 +161,8 @@ const Developer: React.FC = () => {
         </Grid>
         <Grid item sm={3} className={classes.pictureWrapper}>
           <img
-            src={
-              'http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg'
-            },
-            alt="Picture of a developer at Code4Community",
+            src="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
+            alt="Picture of a developer at Code4Community"
             className={classes.picture}
           />
         </Grid>
