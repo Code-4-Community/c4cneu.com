@@ -4,9 +4,7 @@ import { Helmet } from 'react-helmet';
 
 import Home from './components/Home';
 import Apply from './components/Apply';
-
 import Developer from './components/Developer';
-
 import Partner from './components/Partner';
 import Projects from './components/Projects';
 import Jumpstart from './components/Jumpstart';

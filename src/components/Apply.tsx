@@ -20,7 +20,10 @@ const Apply: React.FC = () => {
     <Container maxWidth="md">
       <Helmet>
         <title>Apply</title>
-        <meta name="description" content="Apply to join Code4Community and help create software for non-profits in Boston." />
+        <meta
+          name="description"
+          content="Apply to join Code4Community and help create software for non-profits in Boston."
+        />
       </Helmet>
 
       <Box my={4}>

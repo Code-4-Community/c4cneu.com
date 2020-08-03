@@ -30,10 +30,9 @@ const useStyles = makeStyles({
   heading: {
     fontWeight: 'bold',
   },
-  text: {
-    //For paragraph text im using "system" font, which matches the default font on the local system
-    //This is to improve legibility+style while not having to import any fonts
-    // fontFamily:'-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+  disableLinkColor: {
+    color: 'inherit',
+    textDecoration: 'inherit',
   },
 });
 // CSS for underline animation
@@ -97,16 +96,11 @@ const ApplyCard: React.FC<RoleProps> = (props) => {
               {props.title}
             </Typography>
 
-            <Typography variant="body1" className={classes.text}>
-              {props.children}
-            </Typography>
+            <Typography variant="body1">{props.children}</Typography>
           </CardContent>
           <CardActions className={classes.content}>
-            <Link
-              style={{ color: 'inherit', textDecoration: 'inherit' }}
-              to={props.to}
-            >
-              <StyledButton size="large" disableRipple className={classes.text}>
+            <Link className={classes.disableLinkColor} to={props.to}>
+              <StyledButton size="large" disableRipple>
                 <span aria-hidden="true" data-content="Learn More"></span>Learn
                 More
               </StyledButton>
