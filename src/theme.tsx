@@ -20,5 +20,13 @@ export default createMuiTheme({
   },
   typography: {
     fontFamily: ['IBM Plex Sans', 'sans-serif'].join(','),
+
+    //
+    h2: {
+      fontWeight: 500,
+    },
+    h6: {
+      fontWeight: 500,
+    },
   },
 });

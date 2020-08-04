@@ -11,7 +11,6 @@ import {
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-
 const useStyles = makeStyles({
   card: {
     padding: 0,
@@ -86,8 +85,7 @@ interface RoleProps {
   enterTime: number;
 }
 
-
-const ApplyCard: React.FC<RoleProps> = ({title, children, to, enterTime}) => {
+const ApplyCard: React.FC<RoleProps> = ({ title, children, to, enterTime }) => {
   const classes = useStyles();
   return (
     <Grid item sm={4}>
