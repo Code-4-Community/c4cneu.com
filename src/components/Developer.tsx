@@ -94,26 +94,24 @@ const Developer: React.FC = () => {
           </Box>
           <Box mb={3}>
             <Typography variant="body1" gutterBottom className={classes.text}>
-              <b>
-                We don't believe coding challenges belong in our interview
-                process.
-              </b>{' '}
-              If you are an experienced developer, we are much more concerned
-              with personal projects and past experiences than your algorithmic
-              prowess.
+              We don't believe coding challenges belong in our interview
+              process. If you are an experienced developer, we are much more
+              concerned with personal projects and past experiences than your
+              algorithmic prowess.
             </Typography>
           </Box>
 
           <Box mb={3}>
+            <Typography variant="h6">
+              Our ideal canditiate is someone who...
+            </Typography>
             <Typography variant="body1" className={classes.text}>
-              <b>An amazing canditate is someone who:</b>
-
               <ul className={classes.list}>
                 <li>This thing that you should be able to do</li>
                 <li>And this other thing thats fun and cool</li>
                 <li>Another not too intimidating requirement</li>
-                <li>A good team player</li>
-                <li>Someone who cares about doing good for the community</li>
+                <li>Is a good team player</li>
+                <li>Cares about doing good for the community</li>
               </ul>
             </Typography>
           </Box>

@@ -4,8 +4,8 @@ import { Grid, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
   illustration: {
-    maxWidth: '100%',
-    maxHeight: '40vh',
+    width: '100%',
+    height: '100%',
   },
   root: {
     paddingTop: '2em',
