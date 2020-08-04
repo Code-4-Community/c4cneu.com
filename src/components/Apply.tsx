@@ -8,9 +8,6 @@ import ApplyGrid from './ApplyGrid';
 const useStyles = makeStyles({
   heading: {
     fontWeight: 'bold',
-    // background: '-webkit-linear-gradient(#3607F3 , #C3007A)',
-    // WebkitBackgroundClip: 'text',
-    // WebkitTextFillColor: 'transparent'
   },
 });
 
