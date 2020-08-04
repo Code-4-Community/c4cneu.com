@@ -1,34 +1,40 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Container, Box, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Box, Paper } from '@material-ui/core';
 
-/*
-Template for future page components.
-Use MUI's CSS-in-JS makeStyles() as shown below for more complex CSS/
-Otherwise, use <Box> components where possible for inline styling.
-Every page must have a Helmet tag for SEO purposes.
-*/
+import ApplyGrid from './ApplyGrid';
 
 const useStyles = makeStyles({
-  example: {
-    color: 'red',
+  heading: {
+    fontWeight: 'bold',
   },
 });
 
-const Template: React.FC = () => {
+const Apply: React.FC = () => {
   const classes = useStyles();
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>Write Title Here</title>
-        <meta name="description" content="Write a description for SEO here" />
+        <title>Apply</title>
+        <meta
+          name="description"
+          content="Apply to join Code4Community and help create software for non-profits in Boston."
+        />
       </Helmet>
+
       <Box my={4}>
-        <Paper className={classes.example} />
+        <Typography className={classes.heading} variant="h2">
+          Open Roles
+        </Typography>
+        <Typography variant="h5" color="textSecondary" gutterBottom>
+          We want <b>your</b> talent. Help us provide software solutions to
+          non-profits in need.
+        </Typography>
+        <ApplyGrid />
       </Box>
     </Container>
   );
 };
 
-export default Template;
+export default Apply;

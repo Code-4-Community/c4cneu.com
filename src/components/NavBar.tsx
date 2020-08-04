@@ -19,7 +19,11 @@ const NavBar: React.FC = () => {
       <Tabs value={false} centered>
         <Box p="5px">
           <Link to="/">
-            <img className={classes.navBarLogo} src={c4clogo} />
+            <img
+              className={classes.navBarLogo}
+              src={c4clogo}
+              alt="Code4Community Logo"
+            />
           </Link>
         </Box>
         <Tab label="Apply" component={Link} to="/apply" />
