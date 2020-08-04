@@ -11,12 +11,6 @@ import {
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-interface RoleProps {
-  title: string;
-  children: React.ReactNode;
-  to: string;
-  enterTime: number;
-}
 
 const useStyles = makeStyles({
   card: {
@@ -85,21 +79,29 @@ const StyledButton = withStyles(() =>
   })
 )(Button);
 
-const ApplyCard: React.FC<RoleProps> = (props) => {
+interface RoleProps {
+  title: string;
+  children: React.ReactNode;
+  to: string;
+  enterTime: number;
+}
+
+
+const ApplyCard: React.FC<RoleProps> = ({title, children, to, enterTime}) => {
   const classes = useStyles();
   return (
     <Grid item sm={4}>
-      <Fade in timeout={props.enterTime}>
+      <Fade in timeout={enterTime}>
         <Card className={classes.card} elevation={0}>
           <CardContent className={classes.content}>
             <Typography className={classes.heading} variant="h5" gutterBottom>
-              {props.title}
+              {title}
             </Typography>
 
-            <Typography variant="body1">{props.children}</Typography>
+            <Typography variant="body1">{children}</Typography>
           </CardContent>
           <CardActions className={classes.content}>
-            <Link className={classes.disableLinkColor} to={props.to}>
+            <Link className={classes.disableLinkColor} to={to}>
               <StyledButton size="large" disableRipple>
                 <span aria-hidden="true" data-content="Learn More"></span>Learn
                 More
