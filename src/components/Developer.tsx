@@ -11,14 +11,10 @@ import {
   Step,
   StepLabel,
 } from '@material-ui/core';
+import Hero from './Hero';
+import { ReactComponent as SVG } from '../svg/developer.svg';
 
 const useStyles = makeStyles({
-  heading: {
-    fontWeight: 'bold',
-    // background: '-webkit-linear-gradient(#3607F3 , #C3007A)',
-    // WebkitBackgroundClip: 'text',
-    // WebkitTextFillColor: 'transparent'
-  },
   image: {
     width: '100%',
     borderRadius: 10,
@@ -66,22 +62,17 @@ const Developer: React.FC = () => {
           content="Apply to be a Web Developer at Code4Community."
         />
       </Helmet>
-      <Box my={4}>
-        <Typography className={classes.heading} variant="h2">
-          Web Developer
-        </Typography>
-        <Typography variant="h5" color="textSecondary" gutterBottom>
-          Write code to make an impact. Learn the web development process with
-          us.
-        </Typography>
-      </Box>
+
+      <Hero
+        title="Web Developer"
+        subtitle="Write code to make an impact. Learn the web development process with us."
+        SvgNode={SVG}
+      />
 
       <Grid container spacing={3}>
         <Grid item sm={8}>
           <Box mb={3}>
-            <Typography className={classes.heading} variant="h6">
-              What you'll be doing
-            </Typography>
+            <Typography variant="h6">What you'll be doing</Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
               Web Developers at C4C are responsible for creating and maintaing
               software products for our partner organizations. We will walk you
@@ -94,9 +85,7 @@ const Developer: React.FC = () => {
           </Box>
 
           <Box mb={1}>
-            <Typography className={classes.heading} variant="h6">
-              What we’re looking for
-            </Typography>
+            <Typography variant="h6">What we’re looking for</Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
               What we want most out of our developers is dedication. We welcome
               developers of all skill levels and especially encourage freshman
@@ -105,26 +94,24 @@ const Developer: React.FC = () => {
           </Box>
           <Box mb={3}>
             <Typography variant="body1" gutterBottom className={classes.text}>
-              <b>
-                We don't believe coding challenges belong in our interview
-                process.
-              </b>{' '}
-              If you are an experienced developer, we are much more concerned
-              with personal projects and past experiences than your algorithmic
-              prowess.
+              We don't believe coding challenges belong in our interview
+              process. If you are an experienced developer, we are much more
+              concerned with personal projects and past experiences than your
+              algorithmic prowess.
             </Typography>
           </Box>
 
           <Box mb={3}>
+            <Typography variant="h6">
+              Our ideal canditiate is someone who...
+            </Typography>
             <Typography variant="body1" className={classes.text}>
-              <b>An amazing canditate is someone who:</b>
-
               <ul className={classes.list}>
                 <li>This thing that you should be able to do</li>
                 <li>And this other thing thats fun and cool</li>
                 <li>Another not too intimidating requirement</li>
-                <li>A good team player</li>
-                <li>Someone who cares about doing good for the community</li>
+                <li>Is a good team player</li>
+                <li>Cares about doing good for the community</li>
               </ul>
             </Typography>
           </Box>

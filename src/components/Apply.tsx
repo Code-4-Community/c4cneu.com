@@ -1,18 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Container, Box, Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-
+import { Container } from '@material-ui/core';
 import ApplyGrid from './ApplyGrid';
-
-const useStyles = makeStyles({
-  heading: {
-    fontWeight: 'bold',
-  },
-});
+import Hero from './Hero';
+import { ReactComponent as SVG } from '../svg/apply.svg';
 
 const Apply: React.FC = () => {
-  const classes = useStyles();
   return (
     <Container maxWidth="md">
       <Helmet>
@@ -23,16 +16,12 @@ const Apply: React.FC = () => {
         />
       </Helmet>
 
-      <Box my={4}>
-        <Typography className={classes.heading} variant="h2">
-          Open Roles
-        </Typography>
-        <Typography variant="h5" color="textSecondary" gutterBottom>
-          We want <b>your</b> talent. Help us provide software solutions to
-          non-profits in need.
-        </Typography>
-        <ApplyGrid />
-      </Box>
+      <Hero
+        title="Open Positions"
+        subtitle="Join us and make a difference helping non-profits in need."
+        SvgNode={SVG}
+      />
+      <ApplyGrid />
     </Container>
   );
 };
