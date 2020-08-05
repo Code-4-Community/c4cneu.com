@@ -12,7 +12,7 @@ const ApplyGrid: React.FC = () => {
     <>
       <Grid
         container
-        spacing={0}
+        spacing={3}
         direction="row"
         justify="flex-start"
         alignItems="flex-start"

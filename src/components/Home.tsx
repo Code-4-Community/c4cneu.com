@@ -41,7 +41,12 @@ const useStyles = makeStyles({
   },
   partnerLogos: {
     maxWidth: '100%',
+    margin: 'auto'
+  },
+  partnerLogoGrid: {
     padding: '2em',
+    display: 'flex',
+    justifytContent: 'center'
   },
   bigImage: {
     maxWidth: '100%',
@@ -62,7 +67,9 @@ const useStyles = makeStyles({
   endAction: {
     textTransform: 'none',
   },
-  partners: {},
+  partners: {
+    paddingTop: '1em'
+  },
   typical: {
     margin: 0,
     color: '#5B54DA',
@@ -213,14 +220,14 @@ const Home: React.FC = () => {
             spacing={3}
             className={classes.partners}
           >
-            <Grid item>
+            <Grid item md className={classes.partnerLogoGrid}>
               <img
-                src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LLB_Logo.png"
+                src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LLB_2019_rgb.png"
                 alt="Lucy's Love Bus Logo"
                 className={classes.partnerLogos}
               />
             </Grid>
-            <Grid item>
+            <Grid item md className={classes.partnerLogoGrid}>
               <img
                 src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/SFTT_Logo.png"
                 alt="Speak for the Trees"
