@@ -49,6 +49,10 @@ const useStyles = makeStyles({
     position: 'relative',
     fontSize: '8em',
   },
+  applyButton: {
+    textTransform: 'none',
+    fontWeight: 500,
+  },
 });
 
 const Developer: React.FC = () => {
@@ -145,7 +149,9 @@ const Developer: React.FC = () => {
               href="http://c4cneu.com"
               target="_blank"
             >
-              Apply to be a Developer
+              <Typography variant="body1" className={classes.applyButton}>
+                Apply to be a Developer
+              </Typography>
             </Button>
           </Box>
         </Grid>

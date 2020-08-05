@@ -15,7 +15,6 @@ import {
 } from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
-import DoneIcon from '@material-ui/icons/Done';
 import { Link } from 'react-router-dom';
 import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
 
