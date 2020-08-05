@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   root: {
     paddingTop: '1em',
-    paddingBottom: '1em'
+    paddingBottom: '1em',
   },
   picture: {
     borderRadius: '10em',
