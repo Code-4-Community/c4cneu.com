@@ -26,8 +26,8 @@ const useStyles = makeStyles({
   },
 
   landing: {
-    height: '65vh',
-    marginBottom: '20vh',
+    height: '70vh',
+    marginBottom: '15vh',
   },
 
   body: {
@@ -41,6 +41,7 @@ const useStyles = makeStyles({
   },
   partnerLogos: {
     maxWidth: '100%',
+    padding: '2em',
   },
   bigImage: {
     maxWidth: '100%',
@@ -61,13 +62,15 @@ const useStyles = makeStyles({
   endAction: {
     textTransform: 'none',
   },
-  partners: {
-    paddingTop: '3em',
-  },
+  partners: {},
   typical: {
     margin: 0,
     color: '#5B54DA',
     fontWeight: 600,
+  },
+  endSection: {
+    paddingTop: '15vh',
+    paddingBottom: '15vh',
   },
 });
 
@@ -146,7 +149,7 @@ const Home: React.FC = () => {
           className={classes.section}
           spacing={3}
         >
-          <Grid item md={6}>
+          <Grid item sm={7}>
             <Typography variant="h4" gutterBottom>
               Impactful, deliberate and compassionate software at no cost.
             </Typography>
@@ -156,7 +159,7 @@ const Home: React.FC = () => {
               intuitive, performant, and deliver the best user experience.
             </Typography>
           </Grid>
-          <Grid item md={6}>
+          <Grid item sm={5}>
             <img
               className={classes.bigImage}
               src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/laptop.png"
@@ -173,15 +176,16 @@ const Home: React.FC = () => {
           justify="center"
           alignItems="center"
           className={classes.section}
+          spacing={3}
         >
-          <Grid item md={6} justify="center">
+          <Grid item md={5} justify="center">
             <img
               className={classes.bigImage}
               src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/NortheasternNotchedNLatin.png"
               alt="Content Block"
             />
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={7}>
             <Typography variant="h4" gutterBottom>
               Northeastern University’s only student led collective for
               charitable software development.
@@ -271,41 +275,42 @@ const Home: React.FC = () => {
           />
         </Fade>
       </Grid>
+      <Fade>
+        <div className={classes.endSection}>
+          <Typography variant="h3" align="center">
+            Want to work together?
+          </Typography>
+          <Typography variant="h3" align="center" className={classes.typical}>
+            Let's Talk.
+          </Typography>
 
-      <div className={classes.section}>
-        <Typography variant="h3" align="center">
-          Want to work together?
-        </Typography>
-        <Typography variant="h3" align="center" className={classes.typical}>
-          Let's Talk.
-        </Typography>
+          <Grid
+            container
+            justify="space-around"
+            alignItems="center"
+            className={classes.endActions}
+          >
+            <Button size="large" variant="text" component={Link} to={'/apply'}>
+              <Typography variant="h4" className={classes.endAction}>
+                Join our awesome team
+              </Typography>
+            </Button>
 
-        <Grid
-          container
-          justify="space-around"
-          alignItems="center"
-          className={classes.endActions}
-        >
-          <Button size="large" variant="text" component={Link} to={'/apply'}>
-            <Typography variant="h4" className={classes.endAction}>
-              Join our awesome team
-            </Typography>
-          </Button>
+            <Button size="large" variant="text" component={Link} to={'/apply'}>
+              <Typography variant="h4" className={classes.endAction}>
+                Become one of our partners
+              </Typography>
+            </Button>
 
-          <Button size="large" variant="text" component={Link} to={'/apply'}>
-            <Typography variant="h4" className={classes.endAction}>
-              Become our partner
-            </Typography>
-          </Button>
-
-          {/* 
+            {/* 
         <Button size='large' variant='contained' color='primary'>
           <Typography variant='h5' className={classes.endAction}>
             See our work
           </Typography>{' '}
         </Button> */}
-        </Grid>
-      </div>
+          </Grid>
+        </div>
+      </Fade>
     </Container>
   );
 };
