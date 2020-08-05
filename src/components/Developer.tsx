@@ -13,6 +13,7 @@ import {
 } from '@material-ui/core';
 import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/developer.svg';
+import { QuoteBlock } from './QuoteBlock';
 
 const useStyles = makeStyles({
   image: {
@@ -149,38 +150,14 @@ const Developer: React.FC = () => {
             </Button>
           </Box>
         </Grid>
-        <Grid item sm={3} className={classes.pictureWrapper}>
-          <img
-            src="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
-            alt="A developer at Code4Community"
-            className={classes.picture}
-          />
-        </Grid>
-
-        <Grid item sm>
-          <Box
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-            height="100%"
-          >
-            <Typography
-              variant="body1"
-              align="left"
-              className={classes.blockQuote}
-            >
-              This is a decently long quote about how impactful and cool it is
-              to be a part of Code4Community. Something about how you learned a
-              lot and grew as a developer.
-            </Typography>
-            <Typography variant="subtitle1" align="left">
-              Ryan Jung
-            </Typography>
-            <Typography variant="subtitle2" align="left">
-              Web Developer - c4cneu.com
-            </Typography>
-          </Box>
-        </Grid>
+        <QuoteBlock
+          imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
+          quote="This is a decently long quote about how impactful and cool it is
+            to be a part of Code4Community. Something about how you learned a
+            lot and grew as a developer."
+          name="Ryan Jung"
+          title="Web Developer - c4cneu.com"
+        />
       </Grid>
     </Container>
   );

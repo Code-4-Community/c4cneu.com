@@ -1,18 +1,41 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Container, Box, Typography, Grid } from '@material-ui/core';
-import c4clogo from '../C4C-Banner_Landing.jpeg';
-import { Link } from 'react-router-dom';
+import { Container, Typography, Grid } from '@material-ui/core';
+import { QuoteBlock } from './QuoteBlock';
+import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
 
 const useStyles = makeStyles({
   homeLogo: {
-    width: 'min(95vw, 800px)',
-    margin: 0,
+    width: '16rem',
+    margin: '0.5em',
   },
 
   landing: {
     height: '75vh',
+  },
+
+  body: {
+    fontSize: '24x',
+    lineHeight: '31px',
+  },
+
+  section: {
+    marginTop: '30vh',
+  },
+  partnerLogos: {
+    padding: '30px',
+  },
+  landingTitle: {
+    fontWeight: 400,
+    fontSize: '5em'
+  },
+  landingSubtitle: {
+    fontWeight: 200,
+
+  },
+  logoWrapper: {
+    marginBottom: '1em',
   },
 });
 
@@ -27,6 +50,7 @@ const Home: React.FC = () => {
           content="The Code4Community homepage. Code4Community. Designing software solutions for non-profit organizations in Boston."
         />
       </Helmet>
+
       <Grid
         className={classes.landing}
         container
@@ -34,101 +58,173 @@ const Home: React.FC = () => {
         justify="center"
         alignItems="center"
       >
-        <img
-          className={classes.homeLogo}
-          src={c4clogo}
-          alt="Code4Community Logo"
-        />
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          className={classes.logoWrapper}
+        >
+          <Typography variant="h2" className={classes.landingTitle}>
+            Code
+          </Typography>
+          <C4CSvg className={classes.homeLogo} />
+          <Typography variant="h2" className={classes.landingTitle}>
+            Community
+          </Typography>
+        </Grid>
 
-        <Typography variant="h5" align="center" gutterBottom>
+        <Typography variant="h4" align="center" className={classes.landingSubtitle} gutterBottom >
           Designing software solutions for non-profit organizations in Boston
         </Typography>
 
-        <Box marginY={5} width="100%">
-          <Grid
-            container
-            direction="row"
-            justify="space-around"
-            alignItems="center"
-            spacing={0}
-          >
-            <Button
-              variant="outlined"
-              color="default"
-              size="large"
-              component={Link}
-              to="/apply"
-            >
-              Get Involved
-            </Button>
+        {/*<Box marginY={5} width="100%">*/}
+        {/*  <Grid*/}
+        {/*    container*/}
+        {/*    direction="row"*/}
+        {/*    justify="space-around"*/}
+        {/*    alignItems="center"*/}
+        {/*    spacing={0}*/}
+        {/*  >*/}
+        {/*    <Button*/}
+        {/*      variant="outlined"*/}
+        {/*      color="default"*/}
+        {/*      size="large"*/}
+        {/*      component={Link}*/}
+        {/*      to="/apply"*/}
+        {/*    >*/}
+        {/*      Get Involved*/}
+        {/*    </Button>*/}
 
-            <Button
-              variant="outlined"
-              color="default"
-              size="large"
-              component={Link}
-              to="/apply"
-            >
-              Become A Partner
-            </Button>
-            <Button
-              variant="outlined"
-              color="default"
-              size="large"
-              component={Link}
-              to="/apply"
-            >
-              See Our Work
-            </Button>
-          </Grid>
-        </Box>
+        {/*    <Button*/}
+        {/*      variant="outlined"*/}
+        {/*      color="default"*/}
+        {/*      size="large"*/}
+        {/*      component={Link}*/}
+        {/*      to="/apply"*/}
+        {/*    >*/}
+        {/*      Become A Partner*/}
+        {/*    </Button>*/}
+        {/*    <Button*/}
+        {/*      variant="outlined"*/}
+        {/*      color="default"*/}
+        {/*      size="large"*/}
+        {/*      component={Link}*/}
+        {/*      to="/apply"*/}
+        {/*    >*/}
+        {/*      See Our Work*/}
+        {/*    </Button>*/}
+        {/*  </Grid>*/}
+        {/*</Box>*/}
       </Grid>
+
       <Grid
         container
         direction="row"
         justify="center"
-        alignItems="flex-start"
-        spacing={2}
+        alignItems="center"
+        className={classes.section}
       >
-        <Grid item sm>
-          <Typography variant="h6">Subheading1</Typography>
-          <Typography variant="body1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat
-            nisl pretium fusce id velit ut tortor pretium. Nulla aliquet enim
-            tortor at. Sit amet est placerat in. Semper feugiat nibh sed
-            pulvinar proin gravida hendrerit lectus. Morbi enim nunc faucibus a
-            pellentesque. Turpis massa sed elementum tempus. Nulla at volutpat
-            diam ut venenatis tellus. Dignissim cras tincidunt lobortis feugiat
-            vivamus at augue eget.{' '}
+        <Grid item md={6}>
+          <Typography variant="h4">
+            Impactful, deliberate and compassionate software at no cost
+          </Typography>
+          <Typography className={classes.body}>
+            C4C strives to deliver work engineered with excellence and led by
+            inclusive inclusive design principles to ensure our solutions are
+            intuitive, performant, and deliver the best user experience.
           </Typography>
         </Grid>
-        <Grid item sm>
-          <Typography variant="h6">Subheading2</Typography>
-          <Typography variant="body1">
-            Interdum consectetur libero id faucibus nisl tincidunt eget nullam
-            non. Eu non diam phasellus vestibulum lorem sed risus ultricies
-            tristique. Enim praesent elementum facilisis leo. Quisque egestas
-            diam in arcu cursus euismod. Vestibulum mattis ullamcorper velit sed
-            ullamcorper morbi tincidunt ornare. Sem integer vitae justo eget
-            magna fermentum. Feugiat pretium nibh ipsum consequat nisl vel.
-            Lorem sed risus ultricies tristique nulla aliquet enim tortor. Vel
-            pretium lectus quam id leo in vitae turpis.
-          </Typography>{' '}
+        <Grid item md={6}>
+          <img
+            src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/laptop.png"
+            alt="Content Block"
+          />
         </Grid>
-        <Grid item sm>
-          <Typography variant="h6">Subheading3</Typography>
-          <Typography variant="body1">
-            Non pulvinar neque laoreet suspendisse interdum consectetur. Proin
-            nibh nisl condimentum id venenatis a condimentum. Neque gravida in
-            fermentum et sollicitudin ac orci. Condimentum lacinia quis vel
-            eros. Ullamcorper velit sed ullamcorper morbi tincidunt ornare
-            massa. Tellus pellentesque eu tincidunt tortor aliquam nulla
-            facilisi cras fermentum. Ultrices in iaculis nunc sed augue. Metus
-            aliquam eleifend mi in. Quam adipiscing vitae proin sagittis. Purus
-            gravida quis blandit turpis cursus.
+      </Grid>
+
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        className={classes.section}
+      >
+        <Grid item md={6} justify="center">
+          <img
+            src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/NortheasternNotchedNLatin.png"
+            alt="Content Block"
+          />
+        </Grid>
+        <Grid item md={6}>
+          <Typography variant="h4">
+            Northeastern University’s only student led collective for charitable
+            software development.
+          </Typography>
+          <Typography variant="h6">
+            C4C strives to deliver work engineered with excellence and led by
+            inclusive design principles to ensure our solutions are intuitive,
+            performant, and deliver the best user experience.
           </Typography>
         </Grid>
+      </Grid>
+
+      <Grid
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+        className={classes.section}
+      >
+        <Grid item xs={6}>
+          <Typography variant="h4">See who we work with</Typography>
+        </Grid>
+        <Grid item xs={6}>
+          <img
+            src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LLB_Logo.png"
+            alt="Lucy's Love Bus Logo"
+            className={classes.partnerLogos}
+          />
+          <img
+            src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/SFTT_Logo.png"
+            alt="Speak for the Trees"
+            className={classes.partnerLogos}
+          />
+        </Grid>
+      </Grid>
+
+      <Grid container className={classes.section}>
+        <QuoteBlock
+          imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
+          quote="This is a decently long quote about how impactful and cool it is
+              to be a part of Code4Community. Something about how you learned a
+              lot and grew as a developer."
+          name="Ryan Jung"
+          title="Web Developer - c4cneu.com"
+        />
+        <QuoteBlock
+          imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
+          quote="This is a decently long quote about how impactful and cool it is
+              to be a part of Code4Community. Something about how you learned a
+              lot and grew as a developer."
+          name="Ryan Jung"
+          title="Web Developer - c4cneu.com"
+        />
+        <QuoteBlock
+          imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
+          quote="This is a decently long quote about how impactful and cool it is
+              to be a part of Code4Community. Something about how you learned a
+              lot and grew as a developer."
+          name="Ryan Jung"
+          title="Web Developer - c4cneu.com"
+        />
+        <QuoteBlock
+          imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
+          quote="This is a decently long quote about how impactful and cool it is
+              to be a part of Code4Community. Something about how you learned a
+              lot and grew as a developer."
+          name="Ryan Jung"
+          title="Web Developer - c4cneu.com"
+        />
       </Grid>
     </Container>
   );
