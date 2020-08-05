@@ -25,6 +25,7 @@ const useStyles = makeStyles({
   },
   stepper: {
     paddingTop: '1rem',
+    background: 'inherit',
   },
   application: {},
   text: {
@@ -75,8 +76,15 @@ const Developer: React.FC = () => {
       <Grid container spacing={3}>
         <Grid item sm={8}>
           <Box mb={3}>
-            <Typography variant="h6">What you'll be doing</Typography>
-            <Typography variant="body1" gutterBottom className={classes.text}>
+            <Typography variant="h6" color="textPrimary">
+              What you'll be doing
+            </Typography>
+            <Typography
+              variant="body1"
+              color="textPrimary"
+              gutterBottom
+              className={classes.text}
+            >
               Web Developers at C4C are responsible for creating and maintaing
               software products for our partner organizations. We will walk you
               through the software development process through Jumpstart, a
@@ -88,15 +96,27 @@ const Developer: React.FC = () => {
           </Box>
 
           <Box mb={1}>
-            <Typography variant="h6">What we’re looking for</Typography>
-            <Typography variant="body1" gutterBottom className={classes.text}>
+            <Typography variant="h6" color="textPrimary">
+              What we’re looking for
+            </Typography>
+            <Typography
+              variant="body1"
+              color="textPrimary"
+              gutterBottom
+              className={classes.text}
+            >
               What we want most out of our developers is dedication. We welcome
               developers of all skill levels and especially encourage freshman
               to apply.
             </Typography>
           </Box>
           <Box mb={3}>
-            <Typography variant="body1" gutterBottom className={classes.text}>
+            <Typography
+              variant="body1"
+              color="textPrimary"
+              gutterBottom
+              className={classes.text}
+            >
               We don't believe coding challenges belong in our interview
               process. If you are an experienced developer, we are much more
               concerned with personal projects and past experiences than your
@@ -105,10 +125,14 @@ const Developer: React.FC = () => {
           </Box>
 
           <Box mb={3}>
-            <Typography variant="h6">
+            <Typography variant="h6" color="textPrimary">
               Our ideal canditiate is someone who...
             </Typography>
-            <Typography variant="body1" className={classes.text}>
+            <Typography
+              variant="body1"
+              color="textPrimary"
+              className={classes.text}
+            >
               <ul className={classes.list}>
                 <li>This thing that you should be able to do</li>
                 <li>And this other thing thats fun and cool</li>
@@ -144,6 +168,7 @@ const Developer: React.FC = () => {
               color="primary"
               href="http://c4cneu.com"
               target="_blank"
+              size="large"
             >
               Apply to be a Developer
             </Button>
@@ -168,15 +193,16 @@ const Developer: React.FC = () => {
               variant="body1"
               align="left"
               className={classes.blockQuote}
+              color="textPrimary"
             >
               This is a decently long quote about how impactful and cool it is
               to be a part of Code4Community. Something about how you learned a
               lot and grew as a developer.
             </Typography>
-            <Typography variant="subtitle1" align="left">
+            <Typography variant="subtitle1" align="left" color="textPrimary">
               Ryan Jung
             </Typography>
-            <Typography variant="subtitle2" align="left">
+            <Typography variant="subtitle2" align="left" color="textPrimary">
               Web Developer - c4cneu.com
             </Typography>
           </Box>

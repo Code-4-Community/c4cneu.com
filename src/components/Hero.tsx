@@ -29,7 +29,9 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, SvgNode }) => {
   return (
     <Grid container className={classes.root}>
       <Grid md={6} className={classes.verticallyCenter}>
-        <Typography variant="h2">{title}</Typography>
+        <Typography variant="h2" color="textPrimary">
+          {title}
+        </Typography>
         <Typography variant="h5" color="textSecondary">
           {subtitle}
         </Typography>

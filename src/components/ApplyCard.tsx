@@ -15,6 +15,7 @@ const useStyles = makeStyles({
   card: {
     padding: 0,
     margin: 'auto',
+    background: 'inherit',
   },
   content: {
     paddingLeft: 0,
