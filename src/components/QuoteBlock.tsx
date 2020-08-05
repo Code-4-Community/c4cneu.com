@@ -3,6 +3,10 @@ import { Box, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
+  root: {
+    paddingTop: '1em',
+    paddingBottom: '1em'
+  },
   picture: {
     borderRadius: '10em',
     maxWidth: '10em',
@@ -39,7 +43,7 @@ export const QuoteBlock: React.FC<QuoteBlockProps> = ({
 }) => {
   const classes = useStyles();
   return (
-    <Grid container>
+    <Grid container className={classes.root}>
       <Grid item sm={3} className={classes.pictureWrapper}>
         <img
           src={imageURL}
