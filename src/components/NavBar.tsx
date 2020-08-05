@@ -26,7 +26,9 @@ const useStyles = makeStyles({
   root: {
     flexGrow: 1,
   },
-  menuButton: {},
+  menuButton: {
+    
+  },
   title: {
     flexGrow: 1,
   },
@@ -68,7 +70,6 @@ const NavBar: React.FC = () => {
           <IconButton
             edge="start"
             className={classes.menuButton}
-            color="inherit"
             aria-label="menu"
             component={Link}
             to="/"
@@ -108,7 +109,7 @@ const NavBar: React.FC = () => {
               <IconButton
                 edge="end"
                 className={classes.menuButton}
-                color="inherit"
+                color="default"
                 aria-label="menu"
                 aria-controls="simple-menu"
                 aria-haspopup="true"
