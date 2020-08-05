@@ -53,8 +53,8 @@ const useStyles = makeStyles({
 
 const Developer: React.FC = () => {
   React.useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   const classes = useStyles();
   return (
     <Container maxWidth="md">
