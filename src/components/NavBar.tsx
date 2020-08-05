@@ -2,9 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 
 import {
-  Box,
   AppBar,
-  Tabs,
   Container,
   Toolbar,
   Typography,
@@ -12,7 +10,6 @@ import {
   IconButton,
   Menu,
   MenuItem,
-  ListItemIcon,
   Hidden,
   ButtonGroup
 } from '@material-ui/core'
@@ -20,11 +17,11 @@ import {
 import MenuIcon from '@material-ui/icons/Menu'
 import DoneIcon from '@material-ui/icons/Done'
 import { Link } from 'react-router-dom'
-import c4clogo from '../temp.jpg'
+import { ReactComponent as C4CSvg } from '../svg/C4C.svg'
 
 const useStyles = makeStyles({
   navBarLogo: {
-    height: 40,
+    height: 50,
     margin: 0
   },
   root: {
@@ -77,7 +74,7 @@ const NavBar: React.FC = () => {
             component={Link}
             to='/'
           >
-            <img className={classes.navBarLogo} src={c4clogo} />
+            <C4CSvg className={classes.navBarLogo} />
           </IconButton>
 
           <div className={classes.navlinks}>
