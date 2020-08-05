@@ -19,6 +19,7 @@ import Typical from 'react-typical';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
+import { ReactComponent as ImpactfulSvg } from '../svg/impactful.svg';
 const useStyles = makeStyles({
   homeLogo: {
     width: '16rem',
@@ -41,15 +42,16 @@ const useStyles = makeStyles({
   },
   partnerLogos: {
     maxWidth: '100%',
-    margin: 'auto'
+    margin: 'auto',
   },
   partnerLogoGrid: {
     padding: '2em',
     display: 'flex',
-    justifytContent: 'center'
+    justifytContent: 'center',
   },
   bigImage: {
     maxWidth: '100%',
+    maxHeight: '50vh',
   },
   landingTitle: {
     fontWeight: 400,
@@ -68,7 +70,7 @@ const useStyles = makeStyles({
     textTransform: 'none',
   },
   partners: {
-    paddingTop: '1em'
+    paddingTop: '1em',
   },
   typical: {
     margin: 0,
@@ -84,6 +86,10 @@ const useStyles = makeStyles({
 const Home: React.FC = () => {
   const classes = useStyles();
   const typePause = 3000;
+  React.useEffect(() => {
+    clearInterval();
+    clearTimeout();
+  }, []);
   return (
     <Container maxWidth="md">
       <Helmet>
@@ -167,11 +173,7 @@ const Home: React.FC = () => {
             </Typography>
           </Grid>
           <Grid item sm={5}>
-            <img
-              className={classes.bigImage}
-              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/laptop.png"
-              alt="Content Block"
-            />
+            <ImpactfulSvg className={classes.bigImage} />
           </Grid>
         </Grid>
       </Fade>
