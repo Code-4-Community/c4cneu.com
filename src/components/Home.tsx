@@ -2,22 +2,17 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Typography, Grid } from '@material-ui/core';
-import c4clogo from '../C4C-Banner_Landing.jpeg';
 import { QuoteBlock } from './QuoteBlock';
+import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
 
 const useStyles = makeStyles({
   homeLogo: {
-    width: 'min(95vw, 800px)',
-    margin: 0,
+    width: '16rem',
+    margin: '0.5em',
   },
 
   landing: {
     height: '75vh',
-  },
-
-  subtitle: {
-    fontSize: '48px',
-    lineHeight: '62px',
   },
 
   body: {
@@ -31,12 +26,19 @@ const useStyles = makeStyles({
   partnerLogos: {
     padding: '30px',
   },
+  landingTitle: {
+    fontWeight: 400,
+    fontSize: '5em'
+  },
+  logoWrapper: {
+    marginBottom: '1em',
+  },
 });
 
 const Home: React.FC = () => {
   const classes = useStyles();
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="md">
       <Helmet>
         <title>Code4Community</title>
         <meta
@@ -44,6 +46,7 @@ const Home: React.FC = () => {
           content="The Code4Community homepage. Code4Community. Designing software solutions for non-profit organizations in Boston."
         />
       </Helmet>
+
       <Grid
         className={classes.landing}
         container
@@ -51,13 +54,23 @@ const Home: React.FC = () => {
         justify="center"
         alignItems="center"
       >
-        <img
-          className={classes.homeLogo}
-          src={c4clogo}
-          alt="Code4Community Logo"
-        />
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          className={classes.logoWrapper}
+        >
+          <Typography variant="h2" className={classes.landingTitle}>
+            Code
+          </Typography>
+          <C4CSvg className={classes.homeLogo} />
+          <Typography variant="h2" className={classes.landingTitle}>
+            Community
+          </Typography>
+        </Grid>
 
-        <Typography variant="h5" align="center" gutterBottom>
+        <Typography variant="h4" align="center" gutterBottom>
           Designing software solutions for non-profit organizations in Boston
         </Typography>
 
@@ -109,7 +122,7 @@ const Home: React.FC = () => {
         className={classes.section}
       >
         <Grid item md={6}>
-          <Typography className={classes.subtitle}>
+          <Typography variant="h4">
             Impactful, deliberate and compassionate software at no cost
           </Typography>
           <Typography className={classes.body}>
@@ -139,11 +152,11 @@ const Home: React.FC = () => {
           />
         </Grid>
         <Grid item md={6}>
-          <Typography className={classes.subtitle}>
+          <Typography variant="h4">
             Northeastern University’s only student led collective for charitable
             software development.
           </Typography>
-          <Typography className={classes.body}>
+          <Typography variant="h6">
             C4C strives to deliver work engineered with excellence and led by
             inclusive design principles to ensure our solutions are intuitive,
             performant, and deliver the best user experience.
@@ -158,12 +171,10 @@ const Home: React.FC = () => {
         alignItems="center"
         className={classes.section}
       >
-        <Grid item>
-          <Typography className={classes.subtitle}>
-            See who we work with
-          </Typography>
+        <Grid item xs={6}>
+          <Typography variant="h4">See who we work with</Typography>
         </Grid>
-        <Grid item>
+        <Grid item xs={6}>
           <img
             src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LLB_Logo.png"
             alt="Lucy's Love Bus Logo"
