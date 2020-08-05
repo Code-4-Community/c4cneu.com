@@ -78,12 +78,6 @@ const NavBar: React.FC = () => {
           </IconButton>
 
           <div className={classes.navlinks}>
-            {/* <Box paddingX={5}>
-              <Typography variant='h6'>Apply</Typography>
-            </Box>
-            <Box paddingRight={'2em'}>
-              <Typography variant='h6'>Projects</Typography>
-            </Box> */}
             <Hidden xsDown>
               <ButtonGroup
                 variant="text"
@@ -151,23 +145,6 @@ const NavBar: React.FC = () => {
             </Hidden>
           </div>
         </Toolbar>
-        {/* <Tabs value={false} centered>
-        <Box p="5px">
-          <Link to="/">
-            <img
-              className={classes.navBarLogo}
-              src={c4clogo}
-              alt="Code4Community Logo"
-            />
-          </Link>
-        </Box>
-        <Tab label="Apply" component={Link} to="/apply" />
-        <Tab label="Partner" component={Link} to="/partner" />
-        <Tab label="Projects" component={Link} to="/projects" />
-        <Tab label="Jumpstart" component={Link} to="/jumpstart" />
-        <Tab label="Events" component={Link} to="/events" />
-        <Tab label="Board" component={Link} to="/board" />
-      </Tabs> */}
       </Container>
     </AppBar>
   );
