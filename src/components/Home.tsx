@@ -30,6 +30,10 @@ const useStyles = makeStyles({
     fontWeight: 400,
     fontSize: '5em'
   },
+  landingSubtitle: {
+    fontWeight: 200,
+
+  },
   logoWrapper: {
     marginBottom: '1em',
   },
@@ -70,7 +74,7 @@ const Home: React.FC = () => {
           </Typography>
         </Grid>
 
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h4" align="center" className={classes.landingSubtitle} gutterBottom >
           Designing software solutions for non-profit organizations in Boston
         </Typography>
 
