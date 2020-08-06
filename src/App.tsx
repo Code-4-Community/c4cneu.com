@@ -1,24 +1,24 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
-import Home from "./components/Home";
-import Apply from "./components/Apply";
-import ApplyDeveloper from "./components/ApplyDeveloper";
-import Partner from "./components/Partner";
-import Projects from "./components/Projects";
-import Jumpstart from "./components/Jumpstart";
-import Events from "./components/Events";
-import Board from "./components/Board";
-import ApplyProductDesigner from "./components/ApplyProductDesigner";
+import Home from './components/Home';
+import Apply from './components/Apply';
+import ApplyDeveloper from './components/ApplyDeveloper';
+import Partner from './components/Partner';
+import Projects from './components/Projects';
+import Jumpstart from './components/Jumpstart';
+import Events from './components/Events';
+import Board from './components/Board';
+import ApplyProductDesigner from './components/ApplyProductDesigner';
 
-import NotFound from "./components/NotFound";
-import NavBar from "./components/NavBar";
+import NotFound from './components/NotFound';
+import NavBar from './components/NavBar';
 
-import { ThemeProvider } from "@material-ui/core";
+import { ThemeProvider } from '@material-ui/core';
 
-import theme from "./theme";
-import ApplyBrandDesigner from "./components/ApplyBrandDesigner";
+import theme from './theme';
+import ApplyBrandDesigner from './components/ApplyBrandDesigner';
 
 const App: React.FC = () => {
   return (

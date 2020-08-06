@@ -1,20 +1,11 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { makeStyles } from '@material-ui/core/styles'
-import {
-  Container,
-  Box,
-  Typography,
-  Grid,
-  Button,
-  Stepper,
-  Step,
-  StepLabel
-} from '@material-ui/core'
-import Hero from './Hero'
-import { ReactComponent as SVG } from '../svg/branddesigner.svg'
-import { TextQuoteBlock } from './TextQuoteBlock'
-import CTA from './CTA'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { makeStyles } from '@material-ui/core/styles';
+import { Container, Box, Typography, Grid } from '@material-ui/core';
+import Hero from './Hero';
+import { ReactComponent as SVG } from '../svg/branddesigner.svg';
+import { TextQuoteBlock } from './TextQuoteBlock';
+import CTA from './CTA';
 
 const useStyles = makeStyles({
   image: {
@@ -65,36 +56,36 @@ const useStyles = makeStyles({
     fontWeight: 500,
     maxWidth: '15em',
   },
-})
+});
 
 const ApplyBrandDesigner: React.FC = () => {
   React.useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  const classes = useStyles()
+    window.scrollTo(0, 0);
+  }, []);
+  const classes = useStyles();
   return (
-    <Container maxWidth='md'>
+    <Container maxWidth="md">
       <Helmet>
         <title>Developer</title>
         <meta
-          name='description'
-          content='Apply to be a Web Developer at Code4Community.'
+          name="description"
+          content="Apply to be a Web Developer at Code4Community."
         />
       </Helmet>
 
       <Hero
-        title='Brand Designer'
-        subtitle='Experiment with innovative designs. Build a powerful brand.'
+        title="Brand Designer"
+        subtitle="Experiment with innovative designs. Build a powerful brand."
         SvgNode={SVG}
       />
 
       <Grid container spacing={3}>
         <Grid item sm={7}>
           <Box mb={5}>
-            <Typography variant='h5' gutterBottom>
+            <Typography variant="h5" gutterBottom>
               What you'll be doing
             </Typography>
-            <Typography variant='body1' gutterBottom className={classes.text}>
+            <Typography variant="body1" gutterBottom className={classes.text}>
               As a Brand Designer, you will support the growth of C4C's brand
               identity by refining our guidelines, voice, and design system. You
               will work closley with the Directors of Design and Marketing to
@@ -107,10 +98,10 @@ const ApplyBrandDesigner: React.FC = () => {
           </Box>
 
           <Box mb={5}>
-            <Typography variant='h5' gutterBottom>
+            <Typography variant="h5" gutterBottom>
               What we’re looking for
             </Typography>
-            <Typography variant='body1' gutterBottom className={classes.text}>
+            <Typography variant="body1" gutterBottom className={classes.text}>
               Our ideal candidate is someone who enjoys experimenting with
               graphic design, typography, and imagery. They are forward thinking
               and and enjoy evaluating how one design contributes to the larger
@@ -123,10 +114,10 @@ const ApplyBrandDesigner: React.FC = () => {
           </Box>
 
           <Box mb={5}>
-            <Typography variant='h5' gutterBottom>
+            <Typography variant="h5" gutterBottom>
               Our ideal canditiate is someone who...
             </Typography>
-            <Typography variant='body1' className={classes.text}>
+            <Typography variant="body1" className={classes.text}>
               <ul className={classes.list}>
                 <li>
                   Comfortable with Adobe Creative Cloud, particularly
@@ -152,15 +143,15 @@ const ApplyBrandDesigner: React.FC = () => {
           <CTA />
         </Grid>
         <TextQuoteBlock
-          quote='This is a decently long quote about how impactful and cool it is
+          quote="This is a decently long quote about how impactful and cool it is
             to be a part of Code4Community. Something about how you learned a
-            lot and grew as a developer.'
-          name='Ryan Jung'
-          title='Web Developer - c4cneu.com'
+            lot and grew as a developer."
+          name="Ryan Jung"
+          title="Web Developer - c4cneu.com"
         />
       </Grid>
     </Container>
-  )
-}
+  );
+};
 
-export default ApplyBrandDesigner
+export default ApplyBrandDesigner;

@@ -1,20 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Container,
-  Box,
-  Typography,
-  Grid,
-  Button,
-  Stepper,
-  Step,
-  StepLabel,
-} from '@material-ui/core';
+import { Container, Box, Typography, Grid } from '@material-ui/core';
 import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/productdesigner.svg';
 import { TextQuoteBlock } from './TextQuoteBlock';
-import CTA from './CTA'
+import CTA from './CTA';
 
 const useStyles = makeStyles({
   image: {

@@ -1,11 +1,8 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { makeStyles } from '@material-ui/core/styles'
 import {
-  Container,
-  Box,
-  Paper,
   Grid,
+  Box,
   Stepper,
   Step,
   StepLabel,
@@ -61,7 +58,7 @@ const CTA: React.FC = () => {
             className={classes.applyButtonBase}
           >
             <Typography variant='body1' className={classes.applyButton}>
-              Apply
+              Apply!
             </Typography>
           </Button>
         </Box>
