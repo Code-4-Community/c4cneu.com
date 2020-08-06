@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Box, Paper, Typography, Link } from '@material-ui/core';
+import { Container, Box, Link } from '@material-ui/core';
 import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/faq_Ryan.svg';
 import JumpstartAccordion from './JumpstartAccordion';
@@ -11,8 +11,6 @@ Use MUI's CSS-in-JS makeStyles() as shown below for more complex CSS/
 Otherwise, use <Box> components where possible for inline styling.
 Every page must have a Helmet tag for SEO purposes.
 */
-
-const useStyles = makeStyles({});
 
 const faq = [
   {
@@ -81,8 +79,10 @@ const faq = [
   },
 ];
 
-const Template: React.FC = () => {
-  const classes = useStyles();
+const FAQ: React.FC = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Container maxWidth="md">
       <Helmet>
@@ -107,4 +107,4 @@ const Template: React.FC = () => {
   );
 };
 
-export default Template;
+export default FAQ;

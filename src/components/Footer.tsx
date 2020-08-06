@@ -1,14 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Container,
-  Box,
-  Paper,
-  Typography,
-  Divider,
-  Grid,
-} from '@material-ui/core';
-import { ReactComponent as SVG } from '../svg/C4C.svg';
+import { Container, Box, Typography, Divider, Grid } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+
 /*
 Template for future page components.
 Use MUI's CSS-in-JS makeStyles() as shown below for more complex CSS/
@@ -24,6 +18,9 @@ const useStyles = makeStyles({
     height: '2em',
     margin: 'auto',
   },
+  footerLink: {
+    color: 'inherit',
+  },
 });
 
 const Footer: React.FC = () => {
@@ -36,7 +33,17 @@ const Footer: React.FC = () => {
         <Grid container spacing={3}>
           <Grid item xs={6}>
             <Typography color="textSecondary" variant="subtitle2">
-              Home | Apply | Jumpstart | FAQ
+              <Link to="/apply" className={classes.footerLink}>
+                Apply
+              </Link>
+              {' | '}
+              <Link to="/jumpstart" className={classes.footerLink}>
+                Jumpstart
+              </Link>
+              {' | '}
+              <Link to="/faq" className={classes.footerLink}>
+                FAQ
+              </Link>
             </Typography>
 
             <Typography color="textSecondary" variant="subtitle2">
@@ -45,13 +52,50 @@ const Footer: React.FC = () => {
           </Grid>
           <Grid item xs={6}>
             <Typography color="textSecondary" variant="subtitle2">
-              Github | Instragram | Slack | LinkedIn | Facebook
+              <a
+                href="https://github.com/Code-4-Community"
+                className={classes.footerLink}
+              >
+                Github
+              </a>
+              {' | '}
+              <a href="https://c4cneu.slack.com" className={classes.footerLink}>
+                Slack
+              </a>
+              {' | '}
+              <a
+                href="https://www.facebook.com/c4cneu/"
+                className={classes.footerLink}
+              >
+                Facebook
+              </a>
+              {' | '}
+              <a
+                href="http://instagram.com/c4cneu"
+                className={classes.footerLink}
+              >
+                Instagram
+              </a>
+              {' | '}
+              <a
+                href="https://www.linkedin.com/company/code-4-community/"
+                className={classes.footerLink}
+              >
+                LinkedIn
+              </a>
             </Typography>
             <Typography color="textSecondary" variant="subtitle2">
-              Join our mailing list to get the lastest news on C4C.
+              Join our{' '}
+              <a
+                href="https://c4cneu.us4.list-manage.com/subscribe?u=4b534cd2e8fe8be8150d03977&id=b1915b8b8b"
+                className={classes.footerLink}
+              >
+                mailing list
+              </a>{' '}
+              to get the lastest news on C4C.
             </Typography>
             <Typography color="textSecondary" variant="subtitle2">
-              Contact us at c4cneu@email.com
+              Contact us at c4cneu@gmail.com
             </Typography>
           </Grid>
 

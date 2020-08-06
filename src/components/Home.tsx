@@ -44,7 +44,7 @@ const useStyles = makeStyles({
     maxWidth: '100%',
     margin: 'auto',
     transition: 'transform .2s',
-    "&:hover" : {
+    '&:hover': {
       transform: 'scale(1.1)',
     },
   },
@@ -244,7 +244,7 @@ const Home: React.FC = () => {
                 className={classes.partnerLogoGrid}
               >
                 <img
-                  src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/SFTT_Logo.png"
+                  src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/speakforthetrees_logo_original_RGB.jpg"
                   alt="Speak for the Trees"
                   className={classes.partnerLogos}
                 />
