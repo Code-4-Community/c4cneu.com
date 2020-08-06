@@ -140,7 +140,7 @@ const ApplyDeveloper: React.FC = () => {
         </Grid>
 
         <Grid item sm={5} className={classes.application}>
-          <CTA />
+          <CTA onClick="https://forms.gle/n2b1Dkn1qMduR5qh7" />
         </Grid>
         <TextQuoteBlock
           quote="This is a decently long quote about how impactful and cool it is

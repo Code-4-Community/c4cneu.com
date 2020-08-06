@@ -28,7 +28,11 @@ const useStyles = makeStyles({
   },
 });
 
-const CTA: React.FC = () => {
+interface CTAProps {
+  readonly onClick: string;
+}
+
+const CTA: React.FC<CTAProps> = ({ onClick }) => {
   const classes = useStyles();
   return (
     <Grid container justify="center" className={classes.root}>
@@ -53,7 +57,7 @@ const CTA: React.FC = () => {
           <Button
             variant="contained"
             color="primary"
-            href="http://c4cneu.com"
+            href={onClick}
             target="_blank"
             className={classes.applyButtonBase}
           >
