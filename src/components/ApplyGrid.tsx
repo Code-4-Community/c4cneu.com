@@ -1,26 +1,30 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
+import React from "react";
+import { Grid } from "@material-ui/core";
 
 /*
 This component is the card design of the apply page, keeping it here just in case we want to use aspects of this design later
 */
 
-import ApplyCard from './ApplyCard';
+import ApplyCard from "./ApplyCard";
 
 const ApplyGrid: React.FC = () => {
   return (
     <>
       <Grid
         container
-        spacing={0}
+        spacing={3}
         direction="row"
         justify="flex-start"
         alignItems="flex-start"
       >
-        <ApplyCard title="Web Developer" to="/apply/developer" enterTime={1000}>
-          We need good developers. Here is text that describes what being a
-          developer is like. Short sentences, big picture stuff, very
-          persuasive.
+        <ApplyCard
+          title="Software Developer"
+          to="/apply/developer"
+          enterTime={1000}
+        >
+          Developers write the code that make C4C projects a reality. Help us
+          tackle tough technical problems while architecting the code that
+          powers C4C!
         </ApplyCard>
 
         <ApplyCard
@@ -28,26 +32,19 @@ const ApplyGrid: React.FC = () => {
           to="/apply/designer"
           enterTime={1500}
         >
-          This is where we write a bunch of stuff about how we need good
-          designers. Design is super important! Lets show people how much we
-          value design - and therefore their skillsket.
+          Designers create the look and feel of our products. Take an idea from
+          conception to delivery while defining our user's experience.
         </ApplyCard>
 
         <ApplyCard title="Brand Designer" to="/apply/unknown" enterTime={1750}>
-          The description of the role. It has to be decently long, but should
-          really just be a short summary. Three to five sentences should be
-          okay.
+          Brand Designers will innovate and refine C4C's identity. Guide our
+          branding and content to align to C4C's mission and goals.
         </ApplyCard>
-        <ApplyCard title="Role Four" to="/apply/unknown" enterTime={2000}>
-          The description of the role. It has to be decently long, but should
-          really just be a short summary. Three to five sentences should be
-          okay.
-        </ApplyCard>
-        <ApplyCard title="Role Five" to="/apply/unknown" enterTime={2250}>
-          The description of the role. It has to be decently long, but should
-          really just be a short summary. Three to five sentences should be
-          okay.
-        </ApplyCard>
+
+        {/*<ApplyCard title="Marketing Director" to="TODO" enterTime={1750}>*/}
+        {/*  Join C4C's E-Board and lead the organization's social presence and*/}
+        {/*  network growth*/}
+        {/*</ApplyCard>*/}
       </Grid>
     </>
   );

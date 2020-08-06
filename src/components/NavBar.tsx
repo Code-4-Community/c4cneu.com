@@ -47,6 +47,11 @@ const useStyles = makeStyles({
     textTransform: 'none',
     fontWeight: 300,
   },
+  logo: {
+    '&:hover': {
+      background: 'transparent',
+    },
+  },
 });
 
 const NavBar: React.FC = () => {
@@ -67,7 +72,7 @@ const NavBar: React.FC = () => {
         <Toolbar disableGutters>
           <IconButton
             edge="start"
-            className={classes.menuButton}
+            className={classes.logo}
             color="inherit"
             aria-label="menu"
             component={Link}
