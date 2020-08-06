@@ -87,7 +87,7 @@ const ApplyDeveloper: React.FC = () => {
             </Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
               Software Developers at C4C are responsible for creating and
-              maintaing software products for our partner organizations.
+              maintaining software products for our partner organizations.
               Developers work in AGILE, collaborative teams and are exposed to
               every aspect of the product development cycle. Developers can
               expect to spend roughly 5 hours a week working on tickets, and
