@@ -93,9 +93,9 @@ const ApplyProductDesigner: React.FC = () => {
               have the creative freedom to own, iterate, and improve the product
               using the feedback from our product teams and partners to achieve
               a high quality user experience. While your journey will start with
-              mock-ups of the product, you will be continuously reiterating at
-              different fidelity levels to ensure that the designs are
-              translatable to working, codable products.
+              mock-ups, you will be continuously reiterating at different
+              fidelity levels to ensure the designs translate to working codable
+              products.
             </Typography>
           </Box>
 
