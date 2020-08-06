@@ -17,6 +17,7 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
+import { useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles({
   navBarLogo: {
@@ -58,21 +59,22 @@ const NavBar: React.FC = () => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
-  const [onHomePage, setOnHomePage] = React.useState(
-    window.location.pathname === '/'
-  );
+  const [onHomePage, setOnHomePage] = React.useState(false);
+  const location = useLocation();
+
+  React.useEffect(() => {
+    const currentPath = location.pathname;
+    setOnHomePage(currentPath === '/');
+  }, [location]);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleCloseMenu = () => {
+  const handleClose = () => {
     setAnchorEl(null);
   };
-  const handleClose = () => {
-    setOnHomePage(false);
-    handleCloseMenu();
-  };
+
   const Logo: React.FC = () => {
     if (onHomePage) {
       return (
@@ -97,9 +99,6 @@ const NavBar: React.FC = () => {
           aria-label="menu"
           component={Link}
           to="/"
-          onClick={() => {
-            setOnHomePage(true);
-          }}
         >
           <C4CSvg className={classes.navBarLogo} />
         </IconButton>
@@ -119,46 +118,22 @@ const NavBar: React.FC = () => {
                 variant="text"
                 aria-label="text primary button group"
               >
-                <Button
-                  component={Link}
-                  to="/apply"
-                  onClick={() => {
-                    setOnHomePage(false);
-                  }}
-                >
+                <Button component={Link} to="/apply">
                   <Typography variant="h6" className={classes.navlink}>
                     Apply
                   </Typography>
                 </Button>
-                <Button
-                  component={Link}
-                  to="/projects"
-                  onClick={() => {
-                    setOnHomePage(false);
-                  }}
-                >
+                <Button component={Link} to="/projects">
                   <Typography variant="h6" className={classes.navlink}>
                     Projects
                   </Typography>
                 </Button>
-                <Button
-                  component={Link}
-                  to="/jumpstart"
-                  onClick={() => {
-                    setOnHomePage(false);
-                  }}
-                >
+                <Button component={Link} to="/jumpstart">
                   <Typography variant="h6" className={classes.navlink}>
                     Jumpstart
                   </Typography>
                 </Button>
-                <Button
-                  component={Link}
-                  to="/board"
-                  onClick={() => {
-                    setOnHomePage(false);
-                  }}
-                >
+                <Button component={Link} to="/board">
                   <Typography variant="h6" className={classes.navlink}>
                     Board
                   </Typography>
@@ -183,7 +158,7 @@ const NavBar: React.FC = () => {
                 anchorEl={anchorEl}
                 keepMounted
                 open={Boolean(anchorEl)}
-                onClose={handleCloseMenu}
+                onClose={handleClose}
               >
                 <MenuItem onClick={handleClose} component={Link} to="/apply">
                   <Typography variant="body1">Apply</Typography>
