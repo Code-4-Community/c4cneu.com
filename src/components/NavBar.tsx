@@ -75,42 +75,23 @@ const NavBar: React.FC = () => {
     setAnchorEl(null);
   };
 
-  const Logo: React.FC = () => {
-    if (onHomePage) {
-      return (
-        <IconButton
-          edge="start"
-          className={classes.logo}
-          color="inherit"
-          aria-label="menu"
-          onClick={() => {
-            setOnHomePage(true);
-          }}
-        >
-          <C4CSvg className={classes.navBarLogo} />
-        </IconButton>
-      );
-    } else {
-      return (
-        <IconButton
-          edge="start"
-          className={classes.logo}
-          color="inherit"
-          aria-label="menu"
-          component={Link}
-          to="/"
-        >
-          <C4CSvg className={classes.navBarLogo} />
-        </IconButton>
-      );
-    }
-  };
-
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Container maxWidth="md">
         <Toolbar disableGutters>
-          <Logo />
+          <IconButton
+            edge="start"
+            className={classes.logo}
+            color="inherit"
+            aria-label="menu"
+            disabled={onHomePage}
+            disableRipple
+            disableTouchRipple
+            component={Link}
+            to="/"
+          >
+            <C4CSvg className={classes.navBarLogo} />
+          </IconButton>
 
           <div className={classes.navlinks}>
             <Hidden xsDown>

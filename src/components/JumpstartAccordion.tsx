@@ -6,14 +6,24 @@ import {
   Typography,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 
 interface JumpstartAccordionProps {
   readonly sections: Array<{
-    readonly body: string;
     readonly title: string;
+
+    readonly body: string | JSX.Element;
   }>;
 }
+
+const useStyles = makeStyles({
+  title: {
+    fontWeight: 500,
+  },
+});
+
 const JumpstartAccordion: React.FC<JumpstartAccordionProps> = (props) => {
+  const classes = useStyles();
   return (
     <>
       {props.sections.map((section, index) => (
@@ -23,10 +33,16 @@ const JumpstartAccordion: React.FC<JumpstartAccordionProps> = (props) => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography>{section.title}</Typography>
+            <Typography
+              variant="body1"
+              className={classes.title}
+              color="primary"
+            >
+              {section.title}
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{section.body}</Typography>
+            <Typography variant="body2">{section.body}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}
