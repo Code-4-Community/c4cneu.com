@@ -30,8 +30,13 @@ const useStyles = makeStyles({
   },
 });
 
-const Template: React.FC = () => {
+const Jumpstart: React.FC = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const classes = useStyles();
+
   return (
     <Container maxWidth="md">
       <Helmet>
@@ -160,4 +165,4 @@ const Template: React.FC = () => {
   );
 };
 
-export default Template;
+export default Jumpstart;
