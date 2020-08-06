@@ -1,20 +1,19 @@
 import * as React from 'react';
 import { Box, Grid, Typography, Divider } from '@material-ui/core';
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      padding: '2em',
-    },
-    quote: {
-      fontWeight: 300,
-    },
-    name: {},
-    title: {},
-    divider: {},
-  })
-);
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  root: {
+    padding: '2em',
+  },
+  quote: {
+    fontWeight: 300,
+  },
+  name: {},
+  title: {},
+  divider: {},
+});
 
 interface QuoteBlockProps {
   readonly quote: string;

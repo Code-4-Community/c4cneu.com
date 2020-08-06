@@ -29,14 +29,18 @@ const ApplyGrid: React.FC = () => {
 
         <ApplyCard
           title="Product Designer"
-          to="/apply/designer"
+          to="/apply/product-designer"
           enterTime={1500}
         >
           Designers create the look and feel of our products. Take an idea from
           conception to delivery while defining our user's experience.
         </ApplyCard>
 
-        <ApplyCard title="Brand Designer" to="/apply/unknown" enterTime={1750}>
+        <ApplyCard
+          title="Brand Designer"
+          to="/apply/brand-designer"
+          enterTime={1750}
+        >
           Brand Designers will innovate and refine C4C's identity. Guide our
           branding and content to align to C4C's mission and goals.
         </ApplyCard>
