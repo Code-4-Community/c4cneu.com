@@ -8,8 +8,8 @@ import {
   Button,
   Divider,
 } from '@material-ui/core';
-import { QuoteBlock } from './QuoteBlock';
-import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
+import { TextQuoteBlock } from './TextQuoteBlock';
+
 import { Link } from 'react-router-dom';
 
 // @ts-ignore
@@ -242,29 +242,16 @@ const Home: React.FC = () => {
       <Divider />
 
       <Grid container className={classes.section}>
+
         <Fade>
-          <QuoteBlock
-            imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
-            quote="This is a decently long quote about how impactful and cool it is
-                  to be a part of Code4Community. Something about how you learned a
-                  lot and grew as a developer."
+          <TextQuoteBlock
+            quote="This is a quote thats only made out of text. No images. Looks nice I think, very elegant and minimal. A little boring - admittedly."
             name="Ryan Jung"
             title="Web Developer - c4cneu.com"
           />
         </Fade>
         <Fade>
-          <QuoteBlock
-            imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
-            quote="This is a decently long quote about how impactful and cool it is
-              to be a part of Code4Community. Something about how you learned a
-              lot and grew as a developer."
-            name="Ryan Jung"
-            title="Web Developer - c4cneu.com"
-          />
-        </Fade>
-        <Fade>
-          <QuoteBlock
-            imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
+          <TextQuoteBlock
             quote="This is a decently long quote about how impactful and cool it is
               to be a part of Code4Community. Something about how you learned a
               lot and grew as a developer."
@@ -274,8 +261,7 @@ const Home: React.FC = () => {
         </Fade>
 
         <Fade>
-          <QuoteBlock
-            imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
+          <TextQuoteBlock
             quote="This is a decently long quote about how impactful and cool it is
               to be a part of Code4Community. Something about how you learned a
               lot and grew as a developer."
