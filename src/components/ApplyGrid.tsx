@@ -42,7 +42,7 @@ const ApplyGrid: React.FC = () => {
           enterTime={1750}
         >
           Brand Designers will innovate and refine C4C's identity. Guide our
-          branding and content to align to C4C's mission and goals.
+          branding and content to align with C4C's mission and goals.
         </ApplyCard>
 
         {/*<ApplyCard title="Marketing Director" to="TODO" enterTime={1750}>*/}

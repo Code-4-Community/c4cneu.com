@@ -88,12 +88,12 @@ const ApplyBrandDesigner: React.FC = () => {
             <Typography variant="body1" gutterBottom className={classes.text}>
               As a Brand Designer, you will support the growth of C4C's brand
               identity by refining our guidelines, voice, and design system. You
-              will work closley with the Directors of Design and Marketing to
-              build rapport with our members and followers, research trending
-              styles, and competitively position C4C as an organization through
-              our shared content. The main collateral you will be working on is
-              content that can be used on our social media accounts with
-              eye-catching assets that innovatively express the C4C brand.
+              will work closely with the E-Board to build rapport with our
+              members and followers, research trending styles, and competitively
+              position C4C as an organization through our shared content. The
+              main collateral you will be working on is content that can be used
+              on our social media accounts with eye-catching assets that
+              innovatively express the C4C brand.
             </Typography>
           </Box>
 
@@ -104,7 +104,7 @@ const ApplyBrandDesigner: React.FC = () => {
             <Typography variant="body1" gutterBottom className={classes.text}>
               Our ideal candidate is someone who enjoys experimenting with
               graphic design, typography, and imagery. They are forward thinking
-              and and enjoy evaluating how one design contributes to the larger
+              and enjoy evaluating how one design contributes to the larger
               scheme of a platform, series, or campaign. Although proficiency
               with Adobe Illustrator and Indesign are bonuses, we value
               candidates who showcase a learning spirit and are enthusiastic
@@ -115,7 +115,7 @@ const ApplyBrandDesigner: React.FC = () => {
 
           <Box mb={5}>
             <Typography variant="h5" gutterBottom>
-              Our ideal canditiate is someone who...
+              Our ideal candidate is someone who is...
             </Typography>
             <Typography variant="body1" className={classes.text}>
               <ul className={classes.list}>
@@ -125,7 +125,7 @@ const ApplyBrandDesigner: React.FC = () => {
                 </li>
                 <li>
                   Thoughtful and can approach a design from many different
-                  viewer's perspectives
+                  perspectives
                 </li>
                 <li>
                   Motivated and loves taking ideas from conception to completion
@@ -143,11 +143,9 @@ const ApplyBrandDesigner: React.FC = () => {
           <CTA onClick="https://forms.gle/v6HVUjQSPjVP4mkV9" />
         </Grid>
         <TextQuoteBlock
-          quote="This is a decently long quote about how impactful and cool it is
-            to be a part of Code4Community. Something about how you learned a
-            lot and grew as a developer."
-          name="Ryan Jung"
-          title="Web Developer - c4cneu.com"
+          quote="Applying fundamental design knowledge to a real functioning product has been one of the most rewarding learning experiences I've had the opportunity to partake in. It's a whole other world when there are actual stakeholders for your project, and a development team to iterate with."
+          name="Reine Nisheiwat"
+          title="Director of Design"
         />
       </Grid>
     </Container>

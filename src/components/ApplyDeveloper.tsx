@@ -66,16 +66,16 @@ const ApplyDeveloper: React.FC = () => {
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>Developer</title>
+        <title>Software Developer</title>
         <meta
           name="description"
-          content="Apply to be a Web Developer at Code4Community."
+          content="Apply to be a Software Developer at Code4Community."
         />
       </Helmet>
 
       <Hero
         title="Software Developer"
-        subtitle="Write code to make an impact. Learn the web development process with us."
+        subtitle="Write code to make an impact. Learn the software development process with us."
         SvgNode={SVG}
       />
 
@@ -87,12 +87,12 @@ const ApplyDeveloper: React.FC = () => {
             </Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
               Software Developers at C4C are responsible for creating and
-              maintaing software products for our partner organizations.
-              Developers work in AGILE, collaboartive teams and are exposed to
+              maintaining software products for our partner organizations.
+              Developers work in AGILE, collaborative teams and are exposed to
               every aspect of the product development cycle. Developers can
-              expect to spend roughly 5 hours a week working collaborating on
-              tickets and have ths ability to specialize in QA, DevOps, or
-              project management.
+              expect to spend roughly 5-10 hours a week working on tickets with
+              their team, with work ranging from Java API development to React
+              UI development and cloud deployment.
             </Typography>
           </Box>
 
@@ -103,18 +103,19 @@ const ApplyDeveloper: React.FC = () => {
             <Typography variant="body1" gutterBottom className={classes.text}>
               A great developer is someone who is highly motivated and willing
               to learn. Although exposure to software development practices
-              through co-ops, internships, or personal projects, is a big plus,
-              we ultimately value the passion to improve as a software
+              through co-ops, internships, or personal projects is a big plus,
+              we ultimately highly value your passion to improve as a software
               developer. We don't believe coding challenges belong in our
               interview process, and we never factor school year into our
-              decisions. The ideal candidate is passionate about developing and
-              learns from their team and empowers the developers around them.
+              decisions. The ideal candidate is passionate about developing, and
+              learns from their team while empowering the developers around
+              them.
             </Typography>
           </Box>
 
           <Box mb={5}>
             <Typography variant="h5" gutterBottom>
-              Our ideal canditiate is someone who...
+              Our ideal candidate is someone who is...
             </Typography>
             <Typography variant="body1" className={classes.text}>
               <ul className={classes.list}>
@@ -125,7 +126,7 @@ const ApplyDeveloper: React.FC = () => {
                 <li>Passionate about helping the Boston community</li>
                 <li>
                   A strong communicator who facilitates collaboration amongst
-                  the production team
+                  the product team
                 </li>
                 <li>
                   Interested in being a part of the entire product life cycle:
@@ -142,12 +143,11 @@ const ApplyDeveloper: React.FC = () => {
         <Grid item sm={5} className={classes.application}>
           <CTA onClick="https://forms.gle/n2b1Dkn1qMduR5qh7" />
         </Grid>
+
         <TextQuoteBlock
-          quote="This is a decently long quote about how impactful and cool it is
-            to be a part of Code4Community. Something about how you learned a
-            lot and grew as a developer."
-          name="Ryan Jung"
-          title="Web Developer - c4cneu.com"
+          quote="C4C gave me a glimpse of how software development really works in industry. I am grateful for the mentorship I’ve received, and I feel well-prepared for my next co-op. Also, it feels good seeing your code directly benefit the community."
+          name="Brandon Liang"
+          title="Software Developer"
         />
       </Grid>
     </Container>

@@ -60,7 +60,7 @@ const Jumpstart: React.FC = () => {
         className={classes.section}
         spacing={3}
       >
-        <Grid item md={6}>
+        <Grid item sm={6}>
           <Typography variant="h4">What is Jumpstart?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Jumpstart is our new program for teaching the basics of web
@@ -73,7 +73,7 @@ const Jumpstart: React.FC = () => {
             and you'll learn everything else you need from our weekly workshops.
           </Typography>
         </Grid>
-        <Grid item md={6}>
+        <Grid item sm={6}>
           <Typography variant="h4">What will I learn?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Throughout the Jumpstart course, we'll be helping you build a
@@ -85,7 +85,7 @@ const Jumpstart: React.FC = () => {
             each of those topics.
           </Typography>
         </Grid>
-        <Grid item md={6}>
+        <Grid item sm={6}>
           <Typography variant="h4">What's the project?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Throughout the duration of the program we'll be making a blog-like
@@ -98,7 +98,7 @@ const Jumpstart: React.FC = () => {
             as much as you'd like!
           </Typography>
         </Grid>
-        <Grid item md={6}>
+        <Grid item sm={6}>
           <Typography variant="h4">Wait, what's catch-up code?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Every week we'll be providing catch-up code to everyone before the

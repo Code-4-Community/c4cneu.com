@@ -93,9 +93,9 @@ const ApplyProductDesigner: React.FC = () => {
               have the creative freedom to own, iterate, and improve the product
               using the feedback from our product teams and partners to achieve
               a high quality user experience. While your journey will start with
-              mock-ups of the product, you will be continuously reiterating at
-              different fidelity levels to ensure that the designs are
-              translatable to working, codable products.
+              mock-ups, you will be continuously reiterating at different
+              fidelity levels to ensure the designs translate to working codable
+              products.
             </Typography>
           </Box>
 
@@ -107,27 +107,26 @@ const ApplyProductDesigner: React.FC = () => {
               A great designer is someone who places the user at the forefront
               of the ideation and creation process. We want candidates
               interested in problem solving and are skilled at communicating
-              ideas to team members. Although having web design experience is a
-              bonus, we value candidates that showcase a learning spirit,
-              dedication to the iterative process, and a receptive nature to
-              understand product needs and developer capabilities.
+              ideas. Although having web design experience is a bonus, we value
+              candidates that showcase a learning spirit, dedication to the
+              iterative process, and a receptive nature to understand product
+              needs and developer capabilities.
             </Typography>
           </Box>
 
           <Box mb={5}>
             <Typography variant="h5" gutterBottom>
-              Our ideal canditiate is someone who...
+              Our ideal candidate is someone who is...
             </Typography>
             <Typography variant="body1" className={classes.text}>
               <ul className={classes.list}>
                 <li>
-                  Motivated to learn new technologies and grow as a product
-                  designer
+                  Motivated to learn new technologies and grow as a designer
                 </li>
                 <li>Passionate about helping the Boston community</li>
                 <li>
                   A strong communicator who facilitates collaboration amongst
-                  the production team
+                  the product team
                 </li>
                 <li>
                   Interested in being a part of the entire product life cycle:
@@ -145,11 +144,9 @@ const ApplyProductDesigner: React.FC = () => {
           <CTA onClick="https://forms.gle/jRMLRVpozaPMMW1H9" />
         </Grid>
         <TextQuoteBlock
-          quote="This is a decently long quote about how impactful and cool it is
-            to be a part of Code4Community. Something about how you learned a
-            lot and grew as a developer."
-          name="Ryan Jung"
-          title="Web Developer - c4cneu.com"
+          quote="C4C is a purposeful club that maintains a unique dynamic from idea to launch. Having the opportunity to work in the design team not only gave me a taste of working in a start-up environment, but also a sense of accomplishment that encourages excitement for projects to come."
+          name="Jennifer Adisoetjahya"
+          title="UI/UX and Branding Lead"
         />
       </Grid>
     </Container>
