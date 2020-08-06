@@ -30,7 +30,7 @@ const useStyles = makeStyles({
   stepper: {
     paddingTop: '2.5em',
     paddingRight: '0',
-    maxWidth: '13em',
+    maxWidth: '16em',
   },
   application: {
     display: 'flex',
@@ -62,7 +62,7 @@ const useStyles = makeStyles({
   applyButton: {
     textTransform: 'none',
     fontWeight: 500,
-    maxWidth: '13em',
+    maxWidth: '15em',
   },
 });
 
