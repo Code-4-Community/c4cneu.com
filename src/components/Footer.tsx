@@ -21,6 +21,9 @@ const useStyles = makeStyles({
   },
   footerLink: {
     color: 'inherit'
+  },
+  location: {
+    fontWeight: 300
   }
 })
 
@@ -108,7 +111,7 @@ const Footer: React.FC = () => {
               >
                 mailing list
               </a>{' '}
-              to get the lastest news on C4C!
+              to get our lastest news!
             </Typography>
           </Grid>
           <Grid item xs>
@@ -125,6 +128,7 @@ const Footer: React.FC = () => {
                 color='textSecondary'
                 align='center'
                 variant='subtitle2'
+                className={classes.location}
               >
                 Northeastern University, Boston MA
               </Typography>
