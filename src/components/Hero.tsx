@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, SvgNode }) => {
   const classes = useStyles();
   return (
     <Grid container className={classes.root}>
-      <Grid sm={7} className={classes.verticallyCenter}>
+      <Grid sm={6} className={classes.verticallyCenter}>
         <Typography className={classes.roleTitle} variant="h3">
           {title}
         </Typography>
@@ -39,7 +39,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, SvgNode }) => {
           {subtitle}
         </Typography>
       </Grid>
-      <Grid sm={5}>
+      <Grid sm={6}>
         <SvgNode className={classes.illustration} />
       </Grid>
     </Grid>
