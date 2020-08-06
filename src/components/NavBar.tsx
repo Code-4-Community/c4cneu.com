@@ -17,6 +17,7 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
+import { useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles({
   navBarLogo: {
@@ -58,6 +59,14 @@ const NavBar: React.FC = () => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
+  const [onHomePage, setOnHomePage] = React.useState(false);
+  const location = useLocation();
+
+  React.useEffect(() => {
+    const currentPath = location.pathname;
+    setOnHomePage(currentPath === '/');
+  }, [location]);
+
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -66,20 +75,42 @@ const NavBar: React.FC = () => {
     setAnchorEl(null);
   };
 
+  const Logo: React.FC = () => {
+    if (onHomePage) {
+      return (
+        <IconButton
+          edge="start"
+          className={classes.logo}
+          color="inherit"
+          aria-label="menu"
+          onClick={() => {
+            setOnHomePage(true);
+          }}
+        >
+          <C4CSvg className={classes.navBarLogo} />
+        </IconButton>
+      );
+    } else {
+      return (
+        <IconButton
+          edge="start"
+          className={classes.logo}
+          color="inherit"
+          aria-label="menu"
+          component={Link}
+          to="/"
+        >
+          <C4CSvg className={classes.navBarLogo} />
+        </IconButton>
+      );
+    }
+  };
+
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Container maxWidth="md">
         <Toolbar disableGutters>
-          <IconButton
-            edge="start"
-            className={classes.logo}
-            color="inherit"
-            aria-label="menu"
-            component={Link}
-            to="/"
-          >
-            <C4CSvg className={classes.navBarLogo} />
-          </IconButton>
+          <Logo />
 
           <div className={classes.navlinks}>
             <Hidden xsDown>
