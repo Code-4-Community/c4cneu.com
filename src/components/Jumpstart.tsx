@@ -1,18 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Container,
-  Box,
-  Paper,
-  Grid,
-  Typography,
-  Button,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Container, Box, Grid, Typography, Button } from '@material-ui/core';
 import Hero from './Hero';
 import { ReactComponent as JumpstartSvg } from '../svg/jumpstart.svg';
 import JumpstartAccordion from './JumpstartAccordion';
@@ -33,8 +22,8 @@ const useStyles = makeStyles({
     justifyContent: 'center',
   },
   button: {
-    width: '40vh',
-    height: '10vh',
+    width: '30vh',
+    height: '8vh',
     fontSize: '48px',
   },
   accordionContainer: {
@@ -63,7 +52,7 @@ const Template: React.FC = () => {
         alignItems="flex-start"
         direction="row"
         className={classes.section}
-        spacing={6}
+        spacing={3}
       >
         <Grid item md={5}>
           <Typography variant="h4">What is Jumpstart?</Typography>
@@ -109,7 +98,7 @@ const Template: React.FC = () => {
 
       <Box className={classes.flexSection}>
         <Button variant="contained" color="primary" className={classes.button}>
-          Sign Me Up!
+          <Typography variant="h5">Sign Me Up!</Typography>
         </Button>
       </Box>
 
