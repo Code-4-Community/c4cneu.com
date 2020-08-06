@@ -226,7 +226,7 @@ const Home: React.FC = () => {
             spacing={3}
             className={classes.partners}
           >
-            <Grid item md>
+            <Grid item sm={6}>
               <a
                 href="https://lucyslovebus.org/"
                 className={classes.partnerLogoGrid}
@@ -238,7 +238,7 @@ const Home: React.FC = () => {
                 />
               </a>
             </Grid>
-            <Grid item md>
+            <Grid item sm={6}>
               <a
                 href="https://bostontrees.org/"
                 className={classes.partnerLogoGrid}
