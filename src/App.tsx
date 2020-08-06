@@ -11,10 +11,10 @@ import Jumpstart from './components/Jumpstart';
 import Events from './components/Events';
 import Board from './components/Board';
 import ApplyProductDesigner from './components/ApplyProductDesigner';
-
+import FAQ from './components/FAQ';
 import NotFound from './components/NotFound';
 import NavBar from './components/NavBar';
-
+import Footer from './components/Footer';
 import { ThemeProvider } from '@material-ui/core';
 
 import theme from './theme';
@@ -53,8 +53,11 @@ const App: React.FC = () => {
             <Route path="/jumpstart" exact component={Jumpstart} />
             <Route path="/events" exact component={Events} />
             <Route path="/board" exact component={Board} />
+            <Route path="/faq" exact component={FAQ} />
+
             <Route path="*" exact component={NotFound} />
           </Switch>
+          <Footer />
         </Router>
       </ThemeProvider>
     </>

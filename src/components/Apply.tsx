@@ -24,7 +24,7 @@ const Apply: React.FC = () => {
         subtitle="Join us and make a difference helping non-profits in need."
         SvgNode={SVG}
       />
-      <Box paddingBottom={'25vh'}>
+      <Box paddingBottom={'10em'}>
         <ApplyGrid />
       </Box>
     </Container>

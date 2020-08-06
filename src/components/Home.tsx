@@ -43,6 +43,10 @@ const useStyles = makeStyles({
   partnerLogos: {
     maxWidth: '100%',
     margin: 'auto',
+    transition: 'transform .2s',
+    '&:hover': {
+      transform: 'scale(1.1)',
+    },
   },
   partnerLogoGrid: {
     padding: '2em',
@@ -217,24 +221,34 @@ const Home: React.FC = () => {
 
           <Grid
             container
-            justify="center"
+            justify="space-around"
             alignItems="center"
             spacing={3}
             className={classes.partners}
           >
-            <Grid item md className={classes.partnerLogoGrid}>
-              <img
-                src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LLB_2019_rgb.png"
-                alt="Lucy's Love Bus Logo"
-                className={classes.partnerLogos}
-              />
+            <Grid item md>
+              <a
+                href="https://lucyslovebus.org/"
+                className={classes.partnerLogoGrid}
+              >
+                <img
+                  src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LLB_2019_rgb.png"
+                  alt="Lucy's Love Bus Logo"
+                  className={classes.partnerLogos}
+                />
+              </a>
             </Grid>
-            <Grid item md className={classes.partnerLogoGrid}>
-              <img
-                src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/SFTT_Logo.png"
-                alt="Speak for the Trees"
-                className={classes.partnerLogos}
-              />
+            <Grid item md>
+              <a
+                href="https://bostontrees.org/"
+                className={classes.partnerLogoGrid}
+              >
+                <img
+                  src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/speakforthetrees_logo_original_RGB.jpg"
+                  alt="Speak for the Trees"
+                  className={classes.partnerLogos}
+                />
+              </a>
             </Grid>
           </Grid>
         </div>
