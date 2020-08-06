@@ -242,7 +242,6 @@ const Home: React.FC = () => {
       <Divider />
 
       <Grid container className={classes.section}>
-
         <Fade>
           <TextQuoteBlock
             quote="This is a quote thats only made out of text. No images. Looks nice I think, very elegant and minimal. A little boring - admittedly."
