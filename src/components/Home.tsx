@@ -45,7 +45,7 @@ const useStyles = makeStyles({
     margin: 'auto',
     transition: 'transform .2s',
     '&:hover': {
-      transform: 'scale(1.1)',
+      transform: 'scale(1.05)',
     },
   },
   partnerLogoGrid: {
@@ -168,12 +168,12 @@ const Home: React.FC = () => {
         >
           <Grid item sm={7}>
             <Typography variant="h4" gutterBottom>
-              Impactful, deliberate and compassionate software at no cost.
+              Impactful, deliberate and inclusive software at no cost.
             </Typography>
             <Typography variant="body1">
               C4C strives to deliver work engineered with excellence and led by
-              inclusive inclusive design principles to ensure our solutions are
-              intuitive, performant, and deliver the best user experience.
+              inclusive design principles to ensure our solutions are intuitive,
+              performant, and deliver the best user experience.
             </Typography>
           </Grid>
           <Grid item sm={5}>
@@ -206,8 +206,8 @@ const Home: React.FC = () => {
             <Typography variant="body1">
               C4C is led by Northeastern students who are passionate about
               developing meaningful and exciting products. Students have the
-              opportunity to learn the basics of product and software
-              development while also contributing to the Boston community.
+              opportunity to learn the fundamentals of product and software
+              development, while also contributing to the Boston community.
             </Typography>
           </Grid>
         </Grid>
@@ -266,21 +266,17 @@ const Home: React.FC = () => {
         </Fade>
         <Fade>
           <TextQuoteBlock
-            quote="This is a decently long quote about how impactful and cool it is
-              to be a part of Code4Community. Something about how you learned a
-              lot and grew as a developer."
-            name="Ryan Jung"
-            title="Web Developer - c4cneu.com"
+            quote="I’ve learned to build, lead, and collaborate with teams of developers and designers, all of which has prepared me very much for working in the industry. To be able to learn so much, and see the impact we have for on our partner organizations, makes me very grateful to be a part of this organization."
+            name="Jack Blanc"
+            title="Director of Engineering"
           />
         </Fade>
 
         <Fade>
           <TextQuoteBlock
-            quote="This is a decently long quote about how impactful and cool it is
-              to be a part of Code4Community. Something about how you learned a
-              lot and grew as a developer."
-            name="Ryan Jung"
-            title="Web Developer - c4cneu.com"
+            quote="C4C is a club of passionate students that empower each other while building products that make a difference in our community. Members at any stage in their academic journey have opportunities to grow and learn within a community of students committed to empowering themselves and the people around them."
+            name="Liam Moynihan"
+            title="President of Code4Community"
           />
         </Fade>
       </Grid>

@@ -11,8 +11,8 @@ Every page must have a Helmet tag for SEO purposes.
 */
 
 const useStyles = makeStyles({
-  example: {
-    color: 'red',
+  root: {
+    marginTop: '6em',
   },
   logo: {
     height: '2.75em',
@@ -30,9 +30,8 @@ const useStyles = makeStyles({
 const Footer: React.FC = () => {
   const classes = useStyles();
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" className={classes.root}>
       <Divider />
-
       <Box minHeight="10em" paddingY={5}>
         <Grid container spacing={1}>
           <Grid item xs={6}>
