@@ -88,11 +88,11 @@ const ApplyDeveloper: React.FC = () => {
             <Typography variant="body1" gutterBottom className={classes.text}>
               Software Developers at C4C are responsible for creating and
               maintaing software products for our partner organizations.
-              Developers work in AGILE, collaboartive teams and are exposed to
+              Developers work in AGILE, collaborative teams and are exposed to
               every aspect of the product development cycle. Developers can
-              expect to spend roughly 5 hours a week working collaborating on
-              tickets and have ths ability to specialize in QA, DevOps, or
-              project management.
+              expect to spend roughly 5 hours a week working on tickets, and
+              have the ability to specialize in QA, DevOps, or project
+              management.
             </Typography>
           </Box>
 
@@ -103,18 +103,19 @@ const ApplyDeveloper: React.FC = () => {
             <Typography variant="body1" gutterBottom className={classes.text}>
               A great developer is someone who is highly motivated and willing
               to learn. Although exposure to software development practices
-              through co-ops, internships, or personal projects, is a big plus,
-              we ultimately value the passion to improve as a software
-              developer. We don't believe coding challenges belong in our
+              through co-ops, internships, or personal projects is a big plus,
+              we ultimately value the passion to improve as a software developer
+              the most. We don't believe coding challenges belong in our
               interview process, and we never factor school year into our
               decisions. The ideal candidate is passionate about developing and
-              learns from their team and empowers the developers around them.
+              learns from their team while empowering the developers around
+              them.
             </Typography>
           </Box>
 
           <Box mb={5}>
             <Typography variant="h5" gutterBottom>
-              Our ideal canditiate is someone who...
+              Our ideal canditiate is someone who is...
             </Typography>
             <Typography variant="body1" className={classes.text}>
               <ul className={classes.list}>

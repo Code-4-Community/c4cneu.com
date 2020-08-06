@@ -89,7 +89,7 @@ const useStyles = makeStyles({
 
 const Home: React.FC = () => {
   const classes = useStyles();
-  const typePause = 3000;
+  const typePause = 2500;
   React.useEffect(() => {
     clearInterval();
     clearTimeout();
@@ -204,9 +204,10 @@ const Home: React.FC = () => {
               charitable software development.
             </Typography>
             <Typography variant="body1">
-              C4C strives to deliver work engineered with excellence and led by
-              inclusive design principles to ensure our solutions are intuitive,
-              performant, and deliver the best user experience.
+              C4C is led by Northeastern students who are passionate about
+              developing meaningful and exciting products. Students have the
+              opportunity to learn the basics of product and software
+              development while also contributing to the Boston community.
             </Typography>
           </Grid>
         </Grid>

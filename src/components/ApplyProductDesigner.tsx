@@ -116,7 +116,7 @@ const ApplyProductDesigner: React.FC = () => {
 
           <Box mb={5}>
             <Typography variant="h5" gutterBottom>
-              Our ideal canditiate is someone who...
+              Our ideal canditiate is someone who is...
             </Typography>
             <Typography variant="body1" className={classes.text}>
               <ul className={classes.list}>
