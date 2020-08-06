@@ -1,11 +1,11 @@
-import React from "react";
-import { Grid } from "@material-ui/core";
+import React from 'react';
+import { Grid } from '@material-ui/core';
 
 /*
 This component is the card design of the apply page, keeping it here just in case we want to use aspects of this design later
 */
 
-import ApplyCard from "./ApplyCard";
+import ApplyCard from './ApplyCard';
 
 const ApplyGrid: React.FC = () => {
   return (

@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
   Typography,
-} from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+} from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 interface JumpstartAccordionProps {
   readonly sections: Array<{

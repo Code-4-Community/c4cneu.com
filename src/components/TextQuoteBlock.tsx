@@ -1,53 +1,53 @@
-import * as React from 'react'
-import { Box, Grid, Typography, Divider } from '@material-ui/core'
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
+import * as React from 'react';
+import { Box, Grid, Typography, Divider } from '@material-ui/core';
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      padding: '2em'
+      padding: '2em',
     },
     quote: {
-      fontWeight: 300
+      fontWeight: 300,
     },
     name: {},
     title: {},
-    divider: {}
+    divider: {},
   })
-)
+);
 
 interface QuoteBlockProps {
-  readonly quote: string
-  readonly name: string
-  readonly title: string
+  readonly quote: string;
+  readonly name: string;
+  readonly title: string;
 }
 
 export const TextQuoteBlock: React.FC<QuoteBlockProps> = ({
   quote,
   name,
-  title
+  title,
 }) => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <Grid
       container
-      direction='column'
-      alignItems='center'
+      direction="column"
+      alignItems="center"
       className={classes.root}
     >
-      <Typography variant='h5' align='center' className={classes.quote}>
+      <Typography variant="h5" align="center" className={classes.quote}>
         &ldquo;{quote}&rdquo;
       </Typography>
 
       <Box width={200} py={2}>
         <Divider className={classes.divider} />
       </Box>
-      <Typography variant='body1' align='center' className={classes.name}>
+      <Typography variant="body1" align="center" className={classes.name}>
         {name}
       </Typography>
-      <Typography variant='body2' align='center' className={classes.title}>
+      <Typography variant="body2" align="center" className={classes.title}>
         {title}
       </Typography>
     </Grid>
-  )
-}
+  );
+};

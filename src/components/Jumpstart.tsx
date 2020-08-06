@@ -1,6 +1,6 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Container,
   Box,
@@ -11,35 +11,35 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-} from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Hero from "./Hero";
-import { ReactComponent as JumpstartSvg } from "../svg/jumpstart.svg";
-import JumpstartAccordion from "./JumpstartAccordion";
+} from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Hero from './Hero';
+import { ReactComponent as JumpstartSvg } from '../svg/jumpstart.svg';
+import JumpstartAccordion from './JumpstartAccordion';
 
 const useStyles = makeStyles({
   section: {
-    marginTop: "10vh",
-    marginBottom: "10vh",
+    marginTop: '10vh',
+    marginBottom: '10vh',
   },
   subtext: {
-    marginTop: "1.5vh",
+    marginTop: '1.5vh',
   },
   flexSection: {
-    marginTop: "10vh",
-    marginBottom: "10vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+    marginTop: '10vh',
+    marginBottom: '10vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   button: {
-    width: "40vh",
-    height: "10vh",
-    fontSize: "48px",
+    width: '40vh',
+    height: '10vh',
+    fontSize: '48px',
   },
   accordionContainer: {
-    display: "flex",
-    flexDirection: "column",
+    display: 'flex',
+    flexDirection: 'column',
   },
 });
 
@@ -117,54 +117,54 @@ const Template: React.FC = () => {
         <JumpstartAccordion
           sections={[
             {
-              title: "Week 1",
+              title: 'Week 1',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
             {
-              title: "Week 2",
+              title: 'Week 2',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
             {
-              title: "Week 3",
+              title: 'Week 3',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
             {
-              title: "Week 4",
+              title: 'Week 4',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
             {
-              title: "Week 5",
+              title: 'Week 5',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
             {
-              title: "Week 6",
+              title: 'Week 6',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
             {
-              title: "Week 7",
+              title: 'Week 7',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
             {
-              title: "Week 8",
+              title: 'Week 8',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
             {
-              title: "Week 9",
+              title: 'Week 9',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
             {
-              title: "Week 10",
+              title: 'Week 10',
               body:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
             },
           ]}
         />
