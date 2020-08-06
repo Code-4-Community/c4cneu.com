@@ -13,7 +13,7 @@ import {
 } from '@material-ui/core';
 import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/developer.svg';
-import { QuoteBlock } from './QuoteBlock';
+import { TextQuoteBlock } from './TextQuoteBlock';
 
 const useStyles = makeStyles({
   image: {
@@ -165,8 +165,7 @@ const Developer: React.FC = () => {
             </Button>
           </Box>
         </Grid>
-        <QuoteBlock
-          imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
+        <TextQuoteBlock
           quote="This is a decently long quote about how impactful and cool it is
             to be a part of Code4Community. Something about how you learned a
             lot and grew as a developer."
