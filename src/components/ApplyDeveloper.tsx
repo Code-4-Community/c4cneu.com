@@ -1,6 +1,6 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { makeStyles } from "@material-ui/core/styles";
 import {
   Container,
   Box,
@@ -10,53 +10,53 @@ import {
   Stepper,
   Step,
   StepLabel,
-} from '@material-ui/core';
-import Hero from './Hero';
-import { ReactComponent as SVG } from '../svg/developer.svg';
-import { QuoteBlock } from './QuoteBlock';
+} from "@material-ui/core";
+import Hero from "./Hero";
+import { ReactComponent as SVG } from "../svg/developer.svg";
+import { QuoteBlock } from "./QuoteBlock";
 
 const useStyles = makeStyles({
   image: {
-    width: '100%',
+    width: "100%",
     borderRadius: 10,
-    margin: 'auto',
+    margin: "auto",
   },
   list: {
     marginTop: 0,
   },
   stepper: {
-    paddingTop: '1rem',
+    paddingTop: "1rem",
   },
   application: {},
   text: {
     //fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
   },
   picture: {
-    borderRadius: '10em',
-    maxWidth: '10em',
+    borderRadius: "10em",
+    maxWidth: "10em",
   },
   pictureWrapper: {
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    marginBottom: '1em',
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "1em",
   },
   blockQuote: {
-    borderLeft: '4px solid gray',
-    paddingLeft: '0.5em',
-    marginBottom: '1em',
+    borderLeft: "4px solid gray",
+    paddingLeft: "0.5em",
+    marginBottom: "1em",
   },
   leftQuote: {
-    position: 'relative',
-    fontSize: '8em',
+    position: "relative",
+    fontSize: "8em",
   },
   applyButton: {
-    textTransform: 'none',
+    textTransform: "none",
     fontWeight: 500,
   },
 });
 
-const Developer: React.FC = () => {
+const ApplyDeveloper: React.FC = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -143,7 +143,7 @@ const Developer: React.FC = () => {
               <StepLabel>Wait for us to contact you!</StepLabel>
             </Step>
           </Stepper>
-          <Box paddingLeft={'24px'} marginBottom={'2em'}>
+          <Box paddingLeft={"24px"} marginBottom={"2em"}>
             <Button
               variant="contained"
               color="primary"
@@ -169,4 +169,4 @@ const Developer: React.FC = () => {
   );
 };
 
-export default Developer;
+export default ApplyDeveloper;
