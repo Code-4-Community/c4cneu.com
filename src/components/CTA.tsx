@@ -1,5 +1,5 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Grid,
   Box,
@@ -7,35 +7,35 @@ import {
   Step,
   StepLabel,
   Button,
-  Typography
-} from '@material-ui/core'
+  Typography,
+} from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
-    width: '14em'
+    width: '14em',
   },
   applyButton: {
     textTransform: 'none',
-    fontWeight: 500
+    fontWeight: 500,
   },
   applyButtonBase: {
-    width: '100%'
+    width: '100%',
   },
   stepper: {
     paddingTop: '2.5em',
     paddingRight: '0',
-    maxWidth: '15em'
-  }
-})
+    maxWidth: '15em',
+  },
+});
 
 const CTA: React.FC = () => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
-    <Grid container justify='center' className={classes.root}>
+    <Grid container justify="center" className={classes.root}>
       <Stepper
         className={classes.stepper}
         activeStep={-1}
-        orientation='vertical'
+        orientation="vertical"
       >
         <Step key={1} active>
           <StepLabel>
@@ -51,20 +51,20 @@ const CTA: React.FC = () => {
 
         <Box paddingLeft={'24px'} paddingTop={'1.5em'} marginBottom={'2em'}>
           <Button
-            variant='contained'
-            color='primary'
-            href='http://c4cneu.com'
-            target='_blank'
+            variant="contained"
+            color="primary"
+            href="http://c4cneu.com"
+            target="_blank"
             className={classes.applyButtonBase}
           >
-            <Typography variant='body1' className={classes.applyButton}>
+            <Typography variant="body1" className={classes.applyButton}>
               Apply!
             </Typography>
           </Button>
         </Box>
       </Stepper>
     </Grid>
-  )
-}
+  );
+};
 
-export default CTA
+export default CTA;

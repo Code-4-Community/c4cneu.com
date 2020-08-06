@@ -22,9 +22,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
   },
   button: {
-    width: '30vh',
-    height: '8vh',
-    fontSize: '48px',
+    textTransform: 'none',
   },
   accordionContainer: {
     display: 'flex',
@@ -54,7 +52,7 @@ const Template: React.FC = () => {
         className={classes.section}
         spacing={3}
       >
-        <Grid item md={5}>
+        <Grid item md={6}>
           <Typography variant="h4">What is Jumpstart?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -64,7 +62,7 @@ const Template: React.FC = () => {
             nec porttitor turpis ornare in.
           </Typography>
         </Grid>
-        <Grid item md={5}>
+        <Grid item md={6}>
           <Typography variant="h4">What will I learn?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -74,7 +72,7 @@ const Template: React.FC = () => {
             nec porttitor turpis ornare in.
           </Typography>
         </Grid>
-        <Grid item md={5}>
+        <Grid item md={6}>
           <Typography variant="h4">Can I participate?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -84,7 +82,7 @@ const Template: React.FC = () => {
             nec porttitor turpis ornare in.
           </Typography>
         </Grid>
-        <Grid item md={5}>
+        <Grid item md={6}>
           <Typography variant="h4">Something something</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
@@ -97,11 +95,11 @@ const Template: React.FC = () => {
       </Grid>
 
       <Box className={classes.flexSection}>
-        <Button variant="contained" color="primary" className={classes.button}>
-          <Typography variant="h5">Sign Me Up!</Typography>
+        <Button variant="outlined" color="primary" className={classes.button}>
+          <Typography variant="h4">Sign Me Up!</Typography>
         </Button>
       </Box>
-
+      {/* 
       <Box className={classes.section}>
         <JumpstartAccordion
           sections={[
@@ -157,7 +155,7 @@ const Template: React.FC = () => {
             },
           ]}
         />
-      </Box>
+      </Box> */}
     </Container>
   );
 };
