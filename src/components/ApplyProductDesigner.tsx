@@ -14,6 +14,7 @@ import {
 import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/productdesigner.svg';
 import { TextQuoteBlock } from './TextQuoteBlock';
+import CTA from './CTA'
 
 const useStyles = makeStyles({
   image: {
@@ -149,36 +150,8 @@ const ApplyProductDesigner: React.FC = () => {
           </Box>
         </Grid>
 
-        <Grid item sm={4} className={classes.application}>
-          <Stepper
-            className={classes.stepper}
-            activeStep={-1}
-            orientation="vertical"
-          >
-            <Step key={1} active>
-              <StepLabel>
-                Prepare your resume, and read through our website!
-              </StepLabel>
-            </Step>
-            <Step key={2} active>
-              <StepLabel>Send in your application</StepLabel>
-            </Step>
-            <Step key={3} active>
-              <StepLabel>Wait for us to contact you!</StepLabel>
-            </Step>
-          </Stepper>
-          <Box paddingLeft={'24px'} marginBottom={'2em'}>
-            <Button
-              variant="contained"
-              color="primary"
-              href="http://c4cneu.com"
-              target="_blank"
-            >
-              <Typography variant="body1" className={classes.applyButton}>
-                Apply to be a Product Designer
-              </Typography>
-            </Button>
-          </Box>
+        <Grid item sm={5} className={classes.application}>
+          <CTA />
         </Grid>
         <TextQuoteBlock
           quote="This is a decently long quote about how impactful and cool it is
