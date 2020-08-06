@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     color: 'red',
   },
   logo: {
-    height: '3em',
+    height: '2.75em',
     padding: '1em',
     margin: 'auto',
   },
@@ -110,8 +110,7 @@ const Footer: React.FC = () => {
                 className={classes.footerLink}
               >
                 mailing list
-              </a>{' '}
-              to get our lastest news!
+              </a>
             </Typography>
           </Grid>
           <Grid item xs>
