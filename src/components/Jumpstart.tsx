@@ -40,8 +40,11 @@ const Jumpstart: React.FC = () => {
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>Write Title Here</title>
-        <meta name="description" content="Write a description for SEO here" />
+        <title>Jumpstart</title>
+        <meta
+          name="description"
+          content="Code4Community's Jumpstart is a brand new full-stack development program for first time developers."
+        />
       </Helmet>
       <Hero
         subtitle="Our brand new full-stack development program for first time developers."
