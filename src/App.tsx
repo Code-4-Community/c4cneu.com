@@ -18,6 +18,7 @@ import NavBar from "./components/NavBar";
 import { ThemeProvider } from "@material-ui/core";
 
 import theme from "./theme";
+import ApplyBrandDesigner from "./components/ApplyBrandDesigner";
 
 const App: React.FC = () => {
   return (
@@ -37,9 +38,14 @@ const App: React.FC = () => {
             <Route path="/apply" exact component={Apply} />
             <Route path="/apply/developer" exact component={ApplyDeveloper} />
             <Route
-              path="/apply/designer"
+              path="/apply/product_designer"
               exact
               component={ApplyProductDesigner}
+            />
+            <Route
+              path="/apply/brand_designer"
+              exact
+              component={ApplyBrandDesigner}
             />
 
             <Route path="/partner" exact component={Partner} />

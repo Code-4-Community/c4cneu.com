@@ -1,6 +1,6 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Container,
   Box,
@@ -10,59 +10,59 @@ import {
   Stepper,
   Step,
   StepLabel,
-} from "@material-ui/core";
-import Hero from "./Hero";
-import { ReactComponent as SVG } from "../svg/developer.svg";
-import { TextQuoteBlock } from "./TextQuoteBlock";
+} from '@material-ui/core';
+import Hero from './Hero';
+import { ReactComponent as SVG } from '../svg/developer.svg';
+import { TextQuoteBlock } from './TextQuoteBlock';
 
 const useStyles = makeStyles({
   image: {
-    width: "100%",
+    width: '100%',
     borderRadius: 10,
-    margin: "auto",
+    margin: 'auto',
   },
   list: {
     marginTop: 0,
-    "& > li": {
-      marginBottom: "0.25em",
+    '& > li': {
+      marginBottom: '0.25em',
     },
   },
   stepper: {
-    paddingTop: "2.5em",
-    paddingRight: "0",
-    maxWidth: "13em",
+    paddingTop: '2.5em',
+    paddingRight: '0',
+    maxWidth: '13em',
   },
   application: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-end",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
   },
   text: {
     //fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
   },
   picture: {
-    borderRadius: "10em",
-    maxWidth: "10em",
+    borderRadius: '10em',
+    maxWidth: '10em',
   },
   pictureWrapper: {
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    marginBottom: "1em",
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    marginBottom: '1em',
   },
   blockQuote: {
-    borderLeft: "4px solid gray",
-    paddingLeft: "0.5em",
-    marginBottom: "1em",
+    borderLeft: '4px solid gray',
+    paddingLeft: '0.5em',
+    marginBottom: '1em',
   },
   leftQuote: {
-    position: "relative",
-    fontSize: "8em",
+    position: 'relative',
+    fontSize: '8em',
   },
   applyButton: {
-    textTransform: "none",
+    textTransform: 'none',
     fontWeight: 500,
-    maxWidth: "13em",
+    maxWidth: '13em',
   },
 });
 
@@ -94,13 +94,13 @@ const ApplyDeveloper: React.FC = () => {
               What you'll be doing
             </Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
-              Web Developers at C4C are responsible for creating and maintaing
-              software products for our partner organizations. We will walk you
-              through the software development process through Jumpstart, a
-              full-stack web development program meant for first-time
-              developers. After training, you can expect to be joining one of
-              our tightly-knit teams working on real projects that our partners
-              will depend on.
+              Software Developers at C4C are responsible for creating and
+              maintaing software products for our partner organizations.
+              Developers work in AGILE, collaboartive teams and are exposed to
+              every aspect of the product development cycle. Developers can
+              expect to spend roughly 5 hours a week working collaborating on
+              tickets and have ths ability to specialize in QA, DevOps, or
+              project management.
             </Typography>
           </Box>
 
@@ -109,12 +109,14 @@ const ApplyDeveloper: React.FC = () => {
               What we’re looking for
             </Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
-              What we want most out of our developers is dedication. We welcome
-              developers of all skill levels and especially encourage freshman
-              to apply. We don't believe coding challenges belong in our
-              interview process. If you are an experienced developer, we are
-              much more concerned with personal projects and past experiences
-              than your algorithmic prowess.
+              A great developer is someone who is highly motivated and willing
+              to learn. Although exposure to software development practices
+              through co-ops, internships, or personal projects, is a big plus,
+              we ultimately value the passion to improve as a software
+              developer. We don't believe coding challenges belong in our
+              interview process, and we never factor school year into our
+              decisions. The ideal candidate is passionate about developing and
+              learns from their team and empowers the developers around them.
             </Typography>
           </Box>
 
@@ -124,11 +126,22 @@ const ApplyDeveloper: React.FC = () => {
             </Typography>
             <Typography variant="body1" className={classes.text}>
               <ul className={classes.list}>
-                <li>This thing that you should be able to do</li>
-                <li>And this other thing thats fun and cool</li>
-                <li>Another not too intimidating requirement</li>
-                <li>Is a good team player</li>
-                <li>Cares about doing good for the community</li>
+                <li>
+                  Motivated to learn new technologies and grow as a software
+                  engineer
+                </li>
+                <li>Passionate about helping the Boston community</li>
+                <li>
+                  A strong communicator who facilitates collaboration amongst
+                  the production team
+                </li>
+                <li>
+                  Interested in being a part of the entire product life cycle:
+                  software inception to completion
+                </li>
+                <li>
+                  Dedicated to the C4C mission and has excellent follow through
+                </li>
               </ul>
             </Typography>
           </Box>
@@ -142,17 +155,17 @@ const ApplyDeveloper: React.FC = () => {
           >
             <Step key={1} active>
               <StepLabel>
-                Prepare your resume, read through our website!
+                Prepare your resume and read through our website
               </StepLabel>
             </Step>
             <Step key={2} active>
-              <StepLabel>Send in your application.</StepLabel>
+              <StepLabel>Send in your application</StepLabel>
             </Step>
             <Step key={3} active>
               <StepLabel>Wait for us to contact you!</StepLabel>
             </Step>
           </Stepper>
-          <Box paddingLeft={"24px"} marginBottom={"2em"}>
+          <Box paddingLeft={'24px'} marginBottom={'2em'}>
             <Button
               variant="contained"
               color="primary"

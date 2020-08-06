@@ -1,6 +1,6 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Container,
   Box,
@@ -10,48 +10,48 @@ import {
   Stepper,
   Step,
   StepLabel,
-} from "@material-ui/core";
-import Hero from "./Hero";
-import { ReactComponent as SVG } from "../svg/developer.svg";
-import { QuoteBlock } from "./QuoteBlock";
+} from '@material-ui/core';
+import Hero from './Hero';
+import { ReactComponent as SVG } from '../svg/developer.svg';
+import { QuoteBlock } from './QuoteBlock';
 
 const useStyles = makeStyles({
   image: {
-    width: "100%",
+    width: '100%',
     borderRadius: 10,
-    margin: "auto",
+    margin: 'auto',
   },
   list: {
     marginTop: 0,
   },
   stepper: {
-    paddingTop: "1rem",
+    paddingTop: '1rem',
   },
   application: {},
   text: {
     //fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
   },
   picture: {
-    borderRadius: "10em",
-    maxWidth: "10em",
+    borderRadius: '10em',
+    maxWidth: '10em',
   },
   pictureWrapper: {
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    marginBottom: "1em",
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    marginBottom: '1em',
   },
   blockQuote: {
-    borderLeft: "4px solid gray",
-    paddingLeft: "0.5em",
-    marginBottom: "1em",
+    borderLeft: '4px solid gray',
+    paddingLeft: '0.5em',
+    marginBottom: '1em',
   },
   leftQuote: {
-    position: "relative",
-    fontSize: "8em",
+    position: 'relative',
+    fontSize: '8em',
   },
   applyButton: {
-    textTransform: "none",
+    textTransform: 'none',
     fontWeight: 500,
   },
 });
@@ -72,8 +72,8 @@ const ApplyBrandDesigner: React.FC = () => {
       </Helmet>
 
       <Hero
-        title="Web Developer"
-        subtitle="Write code to make an impact. Learn the web development process with us."
+        title="Brand Designer"
+        subtitle="Experiment with innovative designs. Build a powerful brand."
         SvgNode={SVG}
       />
 
@@ -82,30 +82,28 @@ const ApplyBrandDesigner: React.FC = () => {
           <Box mb={3}>
             <Typography variant="h6">What you'll be doing</Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
-              Web Developers at C4C are responsible for creating and maintaing
-              software products for our partner organizations. We will walk you
-              through the software development process through Jumpstart, a
-              full-stack web development program meant for first-time
-              developers. After training, you can expect to be joining one of
-              our tightly-knit teams working on real projects that our partners
-              will depend on.
+              As a Brand Designer, you will support the growth of C4C's brand
+              identity by refining our guidelines, voice, and design system. You
+              will work closley with the Directors of Design and Marketing to
+              build rapport with our members and followers, research trending
+              styles, and competitively position C4C as an organization through
+              our shared content. The main collateral you will be working on is
+              content that can be used on our social media accounts with
+              eye-catching assets that innovatively express the C4C brand.
             </Typography>
           </Box>
 
           <Box mb={1}>
             <Typography variant="h6">What we’re looking for</Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
-              What we want most out of our developers is dedication. We welcome
-              developers of all skill levels and especially encourage freshman
-              to apply.
-            </Typography>
-          </Box>
-          <Box mb={3}>
-            <Typography variant="body1" gutterBottom className={classes.text}>
-              We don't believe coding challenges belong in our interview
-              process. If you are an experienced developer, we are much more
-              concerned with personal projects and past experiences than your
-              algorithmic prowess.
+              Our ideal candidate is someone who enjoys experimenting with
+              graphic design, typography, and imagery. They are forward thinking
+              and and enjoy evaluating how one design contributes to the larger
+              scheme of a platform, series, or campaign. Although proficiency
+              with Adobe Illustrator and Indesign are bonuses, we value
+              candidates who showcase a learning spirit and are enthusiastic
+              about fostering a collaborative community through branding
+              efforts.
             </Typography>
           </Box>
 
@@ -115,11 +113,21 @@ const ApplyBrandDesigner: React.FC = () => {
             </Typography>
             <Typography variant="body1" className={classes.text}>
               <ul className={classes.list}>
-                <li>This thing that you should be able to do</li>
-                <li>And this other thing thats fun and cool</li>
-                <li>Another not too intimidating requirement</li>
-                <li>Is a good team player</li>
-                <li>Cares about doing good for the community</li>
+                <li>
+                  Comfortable with Adobe Creative Cloud, particularly
+                  Illustrator and InDesign
+                </li>
+                <li>
+                  Thoughtful and can approach a design from many different
+                  viewer's perspectives
+                </li>
+                <li>
+                  Motivated and loves taking ideas from conception to completion
+                </li>
+                <li>
+                  Interested in brand development and how to express ideas
+                  through design
+                </li>
               </ul>
             </Typography>
           </Box>
@@ -133,17 +141,17 @@ const ApplyBrandDesigner: React.FC = () => {
           >
             <Step key={1} active>
               <StepLabel>
-                Prepare your resume, read through our website!
+                Prepare your resume and read through our website
               </StepLabel>
             </Step>
             <Step key={2} active>
-              <StepLabel>Send in your application.</StepLabel>
+              <StepLabel>Send in your application</StepLabel>
             </Step>
             <Step key={3} active>
               <StepLabel>Wait for us to contact you!</StepLabel>
             </Step>
           </Stepper>
-          <Box paddingLeft={"24px"} marginBottom={"2em"}>
+          <Box paddingLeft={'24px'} marginBottom={'2em'}>
             <Button
               variant="contained"
               color="primary"
@@ -151,7 +159,7 @@ const ApplyBrandDesigner: React.FC = () => {
               target="_blank"
             >
               <Typography variant="body1" className={classes.applyButton}>
-                Apply to be a Developer
+                Apply to be a Brand Designer
               </Typography>
             </Button>
           </Box>
