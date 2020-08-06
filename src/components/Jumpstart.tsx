@@ -1,65 +1,65 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { makeStyles } from '@material-ui/core/styles'
-import { Container, Box, Grid, Typography, Button } from '@material-ui/core'
-import Hero from './Hero'
-import { ReactComponent as JumpstartSvg } from '../svg/jumpstart.svg'
-import JumpstartAccordion from './JumpstartAccordion'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { makeStyles } from '@material-ui/core/styles';
+import { Container, Box, Grid, Typography, Button } from '@material-ui/core';
+import Hero from './Hero';
+import { ReactComponent as JumpstartSvg } from '../svg/jumpstart.svg';
+import JumpstartAccordion from './JumpstartAccordion';
 
 const useStyles = makeStyles({
   section: {
     marginTop: '10vh',
-    marginBottom: '10vh'
+    marginBottom: '10vh',
   },
   subtext: {
-    marginTop: '1.5vh'
+    marginTop: '1.5vh',
   },
   flexSection: {
     marginTop: '5vh',
     marginBottom: '10vh',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   button: {
-    textTransform: 'none'
+    textTransform: 'none',
   },
   accordionContainer: {
     display: 'flex',
-    flexDirection: 'column'
-  }
-})
+    flexDirection: 'column',
+  },
+});
 
 const Jumpstart: React.FC = () => {
   React.useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
-    <Container maxWidth='md'>
+    <Container maxWidth="md">
       <Helmet>
         <title>Write Title Here</title>
-        <meta name='description' content='Write a description for SEO here' />
+        <meta name="description" content="Write a description for SEO here" />
       </Helmet>
       <Hero
-        subtitle='Our brand new full-stack development program for first time developers.'
-        title='Jumpstart'
+        subtitle="Our brand new full-stack development program for first time developers."
+        title="Jumpstart"
         SvgNode={JumpstartSvg}
       />
 
       <Grid
         container
-        justify='space-between'
-        alignItems='flex-start'
-        direction='row'
+        justify="space-between"
+        alignItems="flex-start"
+        direction="row"
         className={classes.section}
         spacing={3}
       >
         <Grid item md={6}>
-          <Typography variant='h4'>What is Jumpstart?</Typography>
-          <Typography variant='body1' className={classes.subtext}>
+          <Typography variant="h4">What is Jumpstart?</Typography>
+          <Typography variant="body1" className={classes.subtext}>
             Jumpstart is our new program for teaching the basics of web
             development for beginners. We've planned a 10-week course + project
             to go through a lot of the fundamentals you'll want to know for
@@ -71,8 +71,8 @@ const Jumpstart: React.FC = () => {
           </Typography>
         </Grid>
         <Grid item md={6}>
-          <Typography variant='h4'>What will I learn?</Typography>
-          <Typography variant='body1' className={classes.subtext}>
+          <Typography variant="h4">What will I learn?</Typography>
+          <Typography variant="body1" className={classes.subtext}>
             Throughout the Jumpstart course, we'll be helping you build a
             functioning web application with a React + Typescript frontend and
             Vertx + Java backend. We'll be going through Git and the terminal,
@@ -83,8 +83,8 @@ const Jumpstart: React.FC = () => {
           </Typography>
         </Grid>
         <Grid item md={6}>
-          <Typography variant='h4'>What's the project?</Typography>
-          <Typography variant='body1' className={classes.subtext}>
+          <Typography variant="h4">What's the project?</Typography>
+          <Typography variant="body1" className={classes.subtext}>
             Throughout the duration of the program we'll be making a blog-like
             application. In the application, people will be able to view posts,
             create posts, clap! (like), comment, and do a few other things.
@@ -96,8 +96,8 @@ const Jumpstart: React.FC = () => {
           </Typography>
         </Grid>
         <Grid item md={6}>
-          <Typography variant='h4'>Wait, what's catch-up code?</Typography>
-          <Typography variant='body1' className={classes.subtext}>
+          <Typography variant="h4">Wait, what's catch-up code?</Typography>
+          <Typography variant="body1" className={classes.subtext}>
             Every week we'll be providing catch-up code to everyone before the
             start of the next meeting, to make sure everyone is caught up with
             where we are hoping they would be. The intention here is to help
@@ -111,81 +111,74 @@ const Jumpstart: React.FC = () => {
         </Grid>
       </Grid>
 
-      <Typography variant='h3' align='center'>
+      <Typography variant="h3" align="center">
         Want to join?
       </Typography>
 
       <Box className={classes.flexSection}>
         <Button
-          variant='text'
+          variant="outlined"
           className={classes.button}
           component="a"
-          href='https://c4cneu.com'
+          href="https://forms.gle/5AgQCcU5YpWgmEzr9"
+          color="primary"
         >
-          <Typography variant='h4' color='primary'>
-            Sign me up!
-          </Typography>
+          <Typography variant="h4">Sign up here!</Typography>
         </Button>
       </Box>
-      {/* 
-      <Box className={classes.section}>
-        <JumpstartAccordion
-          sections={[
-            {
-              title: 'Week 1',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-            {
-              title: 'Week 2',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-            {
-              title: 'Week 3',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-            {
-              title: 'Week 4',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-            {
-              title: 'Week 5',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-            {
-              title: 'Week 6',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-            {
-              title: 'Week 7',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-            {
-              title: 'Week 8',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-            {
-              title: 'Week 9',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-            {
-              title: 'Week 10',
-              body:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.',
-            },
-          ]}
-        />
-      </Box> */}
+      <Box paddingBottom={5}>
+        <Container maxWidth="sm">
+          <JumpstartAccordion
+            sections={[
+              {
+                title:
+                  'Sunday Sept. 27th - Project Overview and Terminal Setup',
+                body: `We'll be helping you set up the software you'll need to run the project and teaching you some basic terminal commands you'll need to be able to interact with your program.`,
+              },
+              {
+                title: 'Sunday Oct. 4th - Git and Frontend Basics',
+                body: `A quick tour of Git, one of the most useful tools for development, and the gist of HTML, CSS, and Javascript.`,
+              },
+              {
+                title: 'Sunday Oct. 11th - React',
+                body: `Yeah, that's right. We're going to be learning about that cool buzzword. (Trust us though, it makes frontend stuff easy and powerful).`,
+              },
+              {
+                title:
+                  'Sunday Oct. 18th - Server, Requests, and Backend Basics',
+                body: `What makes communication possible. We'll talk about the basic idea of servers and REST requests, and then get you working with back end routing.`,
+              },
+              {
+                title:
+                  'Sunday Oct. 25th - Testing and Advanced Backend Techniques',
+                body: `We know testing isn't as fun, but there are actually some pretty cool tools that you can use here. Also, we'll be going over other useful request types and ideas.`,
+              },
+              {
+                title: 'Sunday Nov. 1st - Advanced Frontend Techniques',
+                body: `Asynchronous frontend requests can sound scary, but we'll teach it in a way that shows that they really aren't (most of the time).`,
+              },
+              {
+                title: 'Sunday Nov. 8th - Database Basics',
+                body: `Do you want to know how to store things efficiently without keeping them just in memory? It's basically Excel, but better. And you can use it in code!`,
+              },
+              {
+                title: 'Sunday Nov. 15th - Advanced Database Concepts',
+                body: `Databases can can get pretty complicated though, but it can help a lot in the long run.`,
+              },
+              {
+                title: 'Sunday Nov. 22nd - Cloud Deployment and Hosting',
+                body: `Are you brave enough to show your friends and family what you made?`,
+              },
+              {
+                title: 'Sunday Dec. 6th - Project Wrap Up ',
+                body: `Bye bye. We loved working with you. :')`,
+              },
+            ]}
+          />
+        </Container>
+      </Box>
     </Container>
-  )
-}
+  );
+};
 
-export default Jumpstart
+export default Jumpstart;
