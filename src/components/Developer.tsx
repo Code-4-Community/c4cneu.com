@@ -23,11 +23,20 @@ const useStyles = makeStyles({
   },
   list: {
     marginTop: 0,
+    '& > li': {
+      marginBottom: '0.25em',
+    },
   },
   stepper: {
-    paddingTop: '1rem',
+    paddingTop: '2.5em',
+    paddingRight: '0',
+    maxWidth: '13em',
   },
-  application: {},
+  application: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+  },
   text: {
     //fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
   },
@@ -53,6 +62,7 @@ const useStyles = makeStyles({
   applyButton: {
     textTransform: 'none',
     fontWeight: 500,
+    maxWidth: '13em',
   },
 });
 
@@ -78,9 +88,11 @@ const Developer: React.FC = () => {
       />
 
       <Grid container spacing={3}>
-        <Grid item sm={8}>
-          <Box mb={3}>
-            <Typography variant="h6">What you'll be doing</Typography>
+        <Grid item sm={7}>
+          <Box mb={5}>
+            <Typography variant="h5" gutterBottom>
+              What you'll be doing
+            </Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
               Web Developers at C4C are responsible for creating and maintaing
               software products for our partner organizations. We will walk you
@@ -92,25 +104,22 @@ const Developer: React.FC = () => {
             </Typography>
           </Box>
 
-          <Box mb={1}>
-            <Typography variant="h6">What we’re looking for</Typography>
+          <Box mb={5}>
+            <Typography variant="h5" gutterBottom>
+              What we’re looking for
+            </Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
               What we want most out of our developers is dedication. We welcome
               developers of all skill levels and especially encourage freshman
-              to apply.
-            </Typography>
-          </Box>
-          <Box mb={3}>
-            <Typography variant="body1" gutterBottom className={classes.text}>
-              We don't believe coding challenges belong in our interview
-              process. If you are an experienced developer, we are much more
-              concerned with personal projects and past experiences than your
-              algorithmic prowess.
+              to apply. We don't believe coding challenges belong in our
+              interview process. If you are an experienced developer, we are
+              much more concerned with personal projects and past experiences
+              than your algorithmic prowess.
             </Typography>
           </Box>
 
-          <Box mb={3}>
-            <Typography variant="h6">
+          <Box mb={5}>
+            <Typography variant="h5" gutterBottom>
               Our ideal canditiate is someone who...
             </Typography>
             <Typography variant="body1" className={classes.text}>
@@ -125,7 +134,7 @@ const Developer: React.FC = () => {
           </Box>
         </Grid>
 
-        <Grid item sm={4} className={classes.application}>
+        <Grid item sm={5} className={classes.application}>
           <Stepper
             className={classes.stepper}
             activeStep={-1}

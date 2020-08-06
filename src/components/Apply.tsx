@@ -6,6 +6,9 @@ import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/apply.svg';
 
 const Apply: React.FC = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Container maxWidth="md">
       <Helmet>
