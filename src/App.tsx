@@ -15,7 +15,7 @@ import FAQ from './components/FAQ';
 import NotFound from './components/NotFound';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import { ThemeProvider } from '@material-ui/core';
+import { ThemeProvider, Fade } from '@material-ui/core';
 
 import theme from './theme';
 import ApplyBrandDesigner from './components/ApplyBrandDesigner';

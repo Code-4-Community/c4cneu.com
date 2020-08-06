@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Link } from '@material-ui/core';
 import Hero from './Hero';
-import { ReactComponent as SVG } from '../svg/faq_Ryan.svg';
+import { ReactComponent as SVG } from '../svg/faqRyan_4.svg';
 import JumpstartAccordion from './JumpstartAccordion';
 /*
 Template for future page components.

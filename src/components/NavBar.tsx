@@ -119,6 +119,11 @@ const NavBar: React.FC = () => {
                     Board
                   </Typography>
                 </Button> */}
+                <Button component={Link} to="/faq">
+                  <Typography variant="h6" className={classes.navlink}>
+                    FAQ
+                  </Typography>
+                </Button>
               </ButtonGroup>
             </Hidden>
             <Hidden smUp>
@@ -157,6 +162,9 @@ const NavBar: React.FC = () => {
                 {/* <MenuItem onClick={handleClose} component={Link} to="/board">
                   <Typography variant="body1">Board</Typography>
                 </MenuItem> */}
+                <MenuItem onClick={handleClose} component={Link} to="/faq">
+                  <Typography variant="body1">FAQ</Typography>
+                </MenuItem>
               </Menu>
             </Hidden>
           </div>
