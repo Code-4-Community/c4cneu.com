@@ -58,28 +58,60 @@ const NavBar: React.FC = () => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
+  const [onHomePage, setOnHomePage] = React.useState(
+    window.location.pathname === '/'
+  );
+
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleCloseMenu = () => {
     setAnchorEl(null);
+  };
+  const handleClose = () => {
+    setOnHomePage(false);
+    handleCloseMenu();
+  };
+  const Logo: React.FC = () => {
+    if (onHomePage) {
+      return (
+        <IconButton
+          edge="start"
+          className={classes.logo}
+          color="inherit"
+          aria-label="menu"
+          onClick={() => {
+            setOnHomePage(true);
+          }}
+        >
+          <C4CSvg className={classes.navBarLogo} />
+        </IconButton>
+      );
+    } else {
+      return (
+        <IconButton
+          edge="start"
+          className={classes.logo}
+          color="inherit"
+          aria-label="menu"
+          component={Link}
+          to="/"
+          onClick={() => {
+            setOnHomePage(true);
+          }}
+        >
+          <C4CSvg className={classes.navBarLogo} />
+        </IconButton>
+      );
+    }
   };
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Container maxWidth="md">
         <Toolbar disableGutters>
-          <IconButton
-            edge="start"
-            className={classes.logo}
-            color="inherit"
-            aria-label="menu"
-            component={Link}
-            to="/"
-          >
-            <C4CSvg className={classes.navBarLogo} />
-          </IconButton>
+          <Logo />
 
           <div className={classes.navlinks}>
             <Hidden xsDown>
@@ -87,22 +119,46 @@ const NavBar: React.FC = () => {
                 variant="text"
                 aria-label="text primary button group"
               >
-                <Button component={Link} to="/apply">
+                <Button
+                  component={Link}
+                  to="/apply"
+                  onClick={() => {
+                    setOnHomePage(false);
+                  }}
+                >
                   <Typography variant="h6" className={classes.navlink}>
                     Apply
                   </Typography>
                 </Button>
-                <Button component={Link} to="/projects">
+                <Button
+                  component={Link}
+                  to="/projects"
+                  onClick={() => {
+                    setOnHomePage(false);
+                  }}
+                >
                   <Typography variant="h6" className={classes.navlink}>
                     Projects
                   </Typography>
                 </Button>
-                <Button component={Link} to="/jumpstart">
+                <Button
+                  component={Link}
+                  to="/jumpstart"
+                  onClick={() => {
+                    setOnHomePage(false);
+                  }}
+                >
                   <Typography variant="h6" className={classes.navlink}>
                     Jumpstart
                   </Typography>
                 </Button>
-                <Button component={Link} to="/board">
+                <Button
+                  component={Link}
+                  to="/board"
+                  onClick={() => {
+                    setOnHomePage(false);
+                  }}
+                >
                   <Typography variant="h6" className={classes.navlink}>
                     Board
                   </Typography>
@@ -127,7 +183,7 @@ const NavBar: React.FC = () => {
                 anchorEl={anchorEl}
                 keepMounted
                 open={Boolean(anchorEl)}
-                onClose={handleClose}
+                onClose={handleCloseMenu}
               >
                 <MenuItem onClick={handleClose} component={Link} to="/apply">
                   <Typography variant="body1">Apply</Typography>
