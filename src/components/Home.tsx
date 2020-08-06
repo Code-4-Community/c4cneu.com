@@ -43,6 +43,10 @@ const useStyles = makeStyles({
   partnerLogos: {
     maxWidth: '100%',
     margin: 'auto',
+    transition: 'transform .2s',
+    "&:hover" : {
+      transform: 'scale(1.1)',
+    },
   },
   partnerLogoGrid: {
     padding: '2em',
