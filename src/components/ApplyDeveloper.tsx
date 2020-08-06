@@ -82,7 +82,7 @@ const ApplyDeveloper: React.FC = () => {
       </Helmet>
 
       <Hero
-        title="Web Developer"
+        title="Software Developer"
         subtitle="Write code to make an impact. Learn the web development process with us."
         SvgNode={SVG}
       />
@@ -155,7 +155,7 @@ const ApplyDeveloper: React.FC = () => {
           >
             <Step key={1} active>
               <StepLabel>
-                Prepare your resume and read through our website
+                Prepare your resume, and read through our website!
               </StepLabel>
             </Step>
             <Step key={2} active>

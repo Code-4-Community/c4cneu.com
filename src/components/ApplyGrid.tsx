@@ -29,7 +29,7 @@ const ApplyGrid: React.FC = () => {
 
         <ApplyCard
           title="Product Designer"
-          to="/apply/product_designer"
+          to="/apply/product-designer"
           enterTime={1500}
         >
           Designers create the look and feel of our products. Take an idea from
@@ -38,7 +38,7 @@ const ApplyGrid: React.FC = () => {
 
         <ApplyCard
           title="Brand Designer"
-          to="/apply/brand_designer"
+          to="/apply/brand-designer"
           enterTime={1750}
         >
           Brand Designers will innovate and refine C4C's identity. Guide our

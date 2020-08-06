@@ -12,8 +12,8 @@ import {
   StepLabel,
 } from '@material-ui/core';
 import Hero from './Hero';
-import { ReactComponent as SVG } from '../svg/developer.svg';
-import { QuoteBlock } from './QuoteBlock';
+import { ReactComponent as SVG } from '../svg/branddesigner.svg';
+import {TextQuoteBlock} from "./TextQuoteBlock";
 
 const useStyles = makeStyles({
   image: {
@@ -78,9 +78,9 @@ const ApplyBrandDesigner: React.FC = () => {
       />
 
       <Grid container spacing={3}>
-        <Grid item sm={8}>
-          <Box mb={3}>
-            <Typography variant="h6">What you'll be doing</Typography>
+        <Grid item sm={7}>
+          <Box mb={5}>
+            <Typography variant="h5" gutterBottom>What you'll be doing</Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
               As a Brand Designer, you will support the growth of C4C's brand
               identity by refining our guidelines, voice, and design system. You
@@ -93,8 +93,8 @@ const ApplyBrandDesigner: React.FC = () => {
             </Typography>
           </Box>
 
-          <Box mb={1}>
-            <Typography variant="h6">What we’re looking for</Typography>
+          <Box mb={5}>
+            <Typography variant="h5" gutterBottom>What we’re looking for</Typography>
             <Typography variant="body1" gutterBottom className={classes.text}>
               Our ideal candidate is someone who enjoys experimenting with
               graphic design, typography, and imagery. They are forward thinking
@@ -107,8 +107,8 @@ const ApplyBrandDesigner: React.FC = () => {
             </Typography>
           </Box>
 
-          <Box mb={3}>
-            <Typography variant="h6">
+          <Box mb={5}>
+            <Typography variant="h5" gutterBottom>
               Our ideal canditiate is someone who...
             </Typography>
             <Typography variant="body1" className={classes.text}>
@@ -141,7 +141,7 @@ const ApplyBrandDesigner: React.FC = () => {
           >
             <Step key={1} active>
               <StepLabel>
-                Prepare your resume and read through our website
+                Prepare your resume, and read through our website!
               </StepLabel>
             </Step>
             <Step key={2} active>
@@ -164,13 +164,12 @@ const ApplyBrandDesigner: React.FC = () => {
             </Button>
           </Box>
         </Grid>
-        <QuoteBlock
-          imageURL="http://images.fineartamerica.com/images-medium-large/close-up-of-cat-saulgranda.jpg"
-          quote="This is a decently long quote about how impactful and cool it is
+        <TextQuoteBlock
+            quote="This is a decently long quote about how impactful and cool it is
             to be a part of Code4Community. Something about how you learned a
             lot and grew as a developer."
-          name="Ryan Jung"
-          title="Web Developer - c4cneu.com"
+            name="Ryan Jung"
+            title="Web Developer - c4cneu.com"
         />
       </Grid>
     </Container>

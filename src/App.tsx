@@ -38,12 +38,12 @@ const App: React.FC = () => {
             <Route path="/apply" exact component={Apply} />
             <Route path="/apply/developer" exact component={ApplyDeveloper} />
             <Route
-              path="/apply/product_designer"
+              path="/apply/product-designer"
               exact
               component={ApplyProductDesigner}
             />
             <Route
-              path="/apply/brand_designer"
+              path="/apply/brand-designer"
               exact
               component={ApplyBrandDesigner}
             />
