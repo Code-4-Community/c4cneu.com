@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Container } from '@material-ui/core';
+import { Container, Box } from '@material-ui/core';
 import ApplyGrid from './ApplyGrid';
 import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/apply.svg';
@@ -24,7 +24,9 @@ const Apply: React.FC = () => {
         subtitle="Join us and make a difference helping non-profits in need."
         SvgNode={SVG}
       />
-      <ApplyGrid />
+      <Box paddingBottom={'25vh'}>
+        <ApplyGrid />
+      </Box>
     </Container>
   );
 };

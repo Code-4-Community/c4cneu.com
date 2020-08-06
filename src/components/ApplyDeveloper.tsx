@@ -1,19 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Container,
-  Box,
-  Typography,
-  Grid,
-  Button,
-  Stepper,
-  Step,
-  StepLabel,
-} from '@material-ui/core';
+import { Container, Box, Typography, Grid } from '@material-ui/core';
 import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/developer.svg';
 import { TextQuoteBlock } from './TextQuoteBlock';
+import CTA from './CTA';
 
 const useStyles = makeStyles({
   image: {
@@ -30,7 +22,7 @@ const useStyles = makeStyles({
   stepper: {
     paddingTop: '2.5em',
     paddingRight: '0',
-    maxWidth: '13em',
+    maxWidth: '16em',
   },
   application: {
     display: 'flex',
@@ -62,7 +54,7 @@ const useStyles = makeStyles({
   applyButton: {
     textTransform: 'none',
     fontWeight: 500,
-    maxWidth: '13em',
+    maxWidth: '16em',
   },
 });
 
@@ -148,35 +140,7 @@ const ApplyDeveloper: React.FC = () => {
         </Grid>
 
         <Grid item sm={5} className={classes.application}>
-          <Stepper
-            className={classes.stepper}
-            activeStep={-1}
-            orientation="vertical"
-          >
-            <Step key={1} active>
-              <StepLabel>
-                Prepare your resume, and read through our website!
-              </StepLabel>
-            </Step>
-            <Step key={2} active>
-              <StepLabel>Send in your application</StepLabel>
-            </Step>
-            <Step key={3} active>
-              <StepLabel>Wait for us to contact you!</StepLabel>
-            </Step>
-          </Stepper>
-          <Box paddingLeft={'24px'} marginBottom={'2em'}>
-            <Button
-              variant="contained"
-              color="primary"
-              href="http://c4cneu.com"
-              target="_blank"
-            >
-              <Typography variant="body1" className={classes.applyButton}>
-                Apply to be a Developer
-              </Typography>
-            </Button>
-          </Box>
+          <CTA />
         </Grid>
         <TextQuoteBlock
           quote="This is a decently long quote about how impactful and cool it is

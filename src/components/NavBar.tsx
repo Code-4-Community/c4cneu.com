@@ -123,21 +123,21 @@ const NavBar: React.FC = () => {
                     Apply
                   </Typography>
                 </Button>
-                <Button component={Link} to="/projects">
+                {/* <Button component={Link} to="/projects">
                   <Typography variant="h6" className={classes.navlink}>
                     Projects
                   </Typography>
-                </Button>
+                </Button> */}
                 <Button component={Link} to="/jumpstart">
                   <Typography variant="h6" className={classes.navlink}>
                     Jumpstart
                   </Typography>
                 </Button>
-                <Button component={Link} to="/board">
+                {/* <Button component={Link} to="/board">
                   <Typography variant="h6" className={classes.navlink}>
                     Board
                   </Typography>
-                </Button>
+                </Button> */}
               </ButtonGroup>
             </Hidden>
             <Hidden smUp>
@@ -163,9 +163,9 @@ const NavBar: React.FC = () => {
                 <MenuItem onClick={handleClose} component={Link} to="/apply">
                   <Typography variant="body1">Apply</Typography>
                 </MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/projects">
+                {/* <MenuItem onClick={handleClose} component={Link} to="/projects">
                   <Typography variant="body1">Projects</Typography>
-                </MenuItem>
+                </MenuItem> */}
                 <MenuItem
                   onClick={handleClose}
                   component={Link}
@@ -173,9 +173,9 @@ const NavBar: React.FC = () => {
                 >
                   <Typography variant="body1">Jumpstart</Typography>
                 </MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/board">
+                {/* <MenuItem onClick={handleClose} component={Link} to="/board">
                   <Typography variant="body1">Board</Typography>
-                </MenuItem>
+                </MenuItem> */}
               </Menu>
             </Hidden>
           </div>

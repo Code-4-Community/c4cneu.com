@@ -16,6 +16,9 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'center',
   },
+  roleTitle: {
+    fontWeight: 500,
+  },
 });
 
 interface HeroProps {
@@ -28,13 +31,15 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, SvgNode }) => {
   const classes = useStyles();
   return (
     <Grid container className={classes.root}>
-      <Grid md={6} className={classes.verticallyCenter}>
-        <Typography variant="h2">{title}</Typography>
+      <Grid sm={6} className={classes.verticallyCenter}>
+        <Typography className={classes.roleTitle} variant="h3">
+          {title}
+        </Typography>
         <Typography variant="h5" color="textSecondary">
           {subtitle}
         </Typography>
       </Grid>
-      <Grid md={6}>
+      <Grid sm={6}>
         <SvgNode className={classes.illustration} />
       </Grid>
     </Grid>

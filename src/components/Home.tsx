@@ -290,12 +290,21 @@ const Home: React.FC = () => {
               </Typography>
             </Button>
 
-            <Button size="large" variant="text" component={Link} to={'/apply'}>
+            <Button
+              size="large"
+              variant="text"
+              component={Link}
+              to={'/jumpstart'}
+            >
+              <Typography variant="h4" className={classes.endAction}>
+                Jumpstart your career
+              </Typography>
+            </Button>
+            {/* <Button size="large" variant="text" component={Link} to={'/apply'}>
               <Typography variant="h4" className={classes.endAction}>
                 Become one of our partners
               </Typography>
-            </Button>
-
+            </Button> */}
             {/* 
         <Button size='large' variant='contained' color='primary'>
           <Typography variant='h5' className={classes.endAction}>
