@@ -42,7 +42,7 @@ const useStyles = makeStyles({
   },
   partnerLogos: {
     maxWidth: '100%',
-    margin: 'auto',
+    margin: 0,
     transition: 'transform .2s',
     '&:hover': {
       transform: 'scale(1.05)',
@@ -50,7 +50,7 @@ const useStyles = makeStyles({
   },
   partnerLogoGrid: {
     padding: '2em',
-    display: 'flex',
+    display: 'block',
     justifyContent: 'center',
   },
   bigImage: {
