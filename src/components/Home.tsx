@@ -289,8 +289,6 @@ const Home: React.FC = () => {
             title="President of Code4Community"
           />
         </Fade>
-
-        
       </Grid>
       <Fade>
         <div className={classes.endSection}>
