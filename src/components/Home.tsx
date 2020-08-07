@@ -52,7 +52,7 @@ const useStyles = makeStyles({
     },
   },
   partnerLogoGrid: {
-    padding: '2em',
+    margin: '2em',
     display: 'block',
     justifyContent: 'center',
   },
@@ -103,7 +103,7 @@ const Home: React.FC = () => {
         <title>Code4Community</title>
         <meta
           name="description"
-          content="The Code4Community homepage. Code4Community. Designing software solutions for non-profit organizations in Boston."
+          content="Designing software solutions for non-profit organizations in Boston. Northeastern University’s only student led collective for charitable software development."
         />
       </Helmet>
 
