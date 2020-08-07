@@ -92,7 +92,7 @@ const useStyles = makeStyles({
 
 const Home: React.FC = () => {
   const classes = useStyles();
-  const typePause = 2500;
+  const typePause = 3000;
   React.useEffect(() => {
     clearInterval();
     clearTimeout();
