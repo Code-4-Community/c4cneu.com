@@ -42,7 +42,7 @@ const useStyles = makeStyles({
   },
   partnerLogos: {
     maxWidth: '100%',
-    margin: 'auto',
+    margin: 0,
     transition: 'transform .2s',
     '&:hover': {
       transform: 'scale(1.05)',
@@ -50,8 +50,8 @@ const useStyles = makeStyles({
   },
   partnerLogoGrid: {
     padding: '2em',
-    display: 'flex',
-    justifytContent: 'center',
+    display: 'block',
+    justifyContent: 'center',
   },
   bigImage: {
     maxWidth: '100%',
@@ -191,7 +191,7 @@ const Home: React.FC = () => {
           className={classes.section}
           spacing={3}
         >
-          <Grid item md={5} justify="center">
+          <Grid item md={5}>
             <img
               className={classes.bigImage}
               src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/NortheasternNotchedNLatin.png"

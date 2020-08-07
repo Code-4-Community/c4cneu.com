@@ -75,7 +75,7 @@ const ApplyDeveloper: React.FC = () => {
 
       <Hero
         title="Software Developer"
-        subtitle="Write code to make an impact. Learn the software development process with us."
+        subtitle="Develop long-term solutions. Write code to make an impact. "
         SvgNode={SVG}
       />
 

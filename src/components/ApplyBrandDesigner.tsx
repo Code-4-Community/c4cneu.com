@@ -75,7 +75,7 @@ const ApplyBrandDesigner: React.FC = () => {
 
       <Hero
         title="Brand Designer"
-        subtitle="Experiment with innovative designs. Build a powerful brand."
+        subtitle="Guide with innovative designs. Build a powerful brand."
         SvgNode={SVG}
       />
 

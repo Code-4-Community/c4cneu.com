@@ -6,6 +6,7 @@ const useStyles = makeStyles({
   illustration: {
     width: '100%',
     height: '100%',
+    padding: '1em',
   },
   root: {
     paddingTop: '2em',
@@ -18,6 +19,10 @@ const useStyles = makeStyles({
   },
   roleTitle: {
     fontWeight: 500,
+  },
+  svgWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
   },
 });
 
@@ -39,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, SvgNode }) => {
           {subtitle}
         </Typography>
       </Grid>
-      <Grid sm={6}>
+      <Grid sm={6} className={classes.svgWrapper}>
         <SvgNode className={classes.illustration} />
       </Grid>
     </Grid>
