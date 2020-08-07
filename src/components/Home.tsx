@@ -49,7 +49,7 @@ const useStyles = makeStyles({
     },
   },
   partnerLogoGrid: {
-    padding: '2em',
+    margin: '2em',
     display: 'block',
     justifyContent: 'center',
   },
