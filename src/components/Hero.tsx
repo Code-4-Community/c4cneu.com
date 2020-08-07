@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     padding: '1em',
   },
   root: {
-    paddingTop: '2em',
+    paddingTop: '1em',
     paddingBottom: '2em',
   },
   verticallyCenter: {

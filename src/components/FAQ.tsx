@@ -99,7 +99,7 @@ const FAQ: React.FC = () => {
         SvgNode={SVG}
       />
       <Container maxWidth="sm">
-        <Box py="10vh">
+        <Box py="5vh">
           <JumpstartAccordion sections={faq} />
         </Box>
       </Container>

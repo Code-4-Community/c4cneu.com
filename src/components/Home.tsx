@@ -269,6 +269,13 @@ const Home: React.FC = () => {
         </Fade>
         <Fade>
           <TextQuoteBlock
+            quote="At Code4Community, I've met so many Northeastern students with diverse experiences, work ethics, talents, and the passion to help our local community. We work alongside one another to improve our leadership, teamwork, and technical skills. This is the community that I love to see grow and be a part of!"
+            name="Sadaf Khansalar"
+            title="Operations and Administration Director"
+          />
+        </Fade>
+        <Fade>
+          <TextQuoteBlock
             quote="I’ve learned to build, lead, and collaborate with teams of developers and designers, all of which has prepared me very much for working in the industry. To be able to learn so much, and see the impact we have for on our partner organizations, makes me very grateful to be a part of this organization."
             name="Jack Blanc"
             title="Director of Engineering"
@@ -282,6 +289,8 @@ const Home: React.FC = () => {
             title="President of Code4Community"
           />
         </Fade>
+
+        
       </Grid>
       <Fade>
         <div className={classes.endSection}>
