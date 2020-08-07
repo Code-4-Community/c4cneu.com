@@ -4,6 +4,7 @@ import {
   AccordionDetails,
   AccordionSummary,
   Typography,
+  Fade,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { makeStyles } from '@material-ui/core/styles';
@@ -24,27 +25,31 @@ const useStyles = makeStyles({
 
 const JumpstartAccordion: React.FC<JumpstartAccordionProps> = (props) => {
   const classes = useStyles();
+  const fadeDelta = 200;
+  const fadeBase = 1000;
   return (
     <>
       {props.sections.map((section, index) => (
-        <Accordion key={index}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography
-              variant="body1"
-              className={classes.title}
-              color="primary"
+        <Fade in timeout={fadeBase + fadeDelta * index} key={index}>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
             >
-              {section.title}
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography variant="body2">{section.body}</Typography>
-          </AccordionDetails>
-        </Accordion>
+              <Typography
+                variant="body1"
+                className={classes.title}
+                color="primary"
+              >
+                {section.title}
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="body2">{section.body}</Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Fade>
       ))}
     </>
   );

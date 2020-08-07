@@ -20,6 +20,9 @@ import Typical from 'react-typical';
 import Fade from 'react-reveal/Fade';
 
 import { ReactComponent as ImpactfulSvg } from '../svg/impactful.svg';
+// @ts-ignore
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 const useStyles = makeStyles({
   homeLogo: {
     width: '16rem',
@@ -192,7 +195,7 @@ const Home: React.FC = () => {
           spacing={3}
         >
           <Grid item md={5}>
-            <img
+            <LazyLoadImage
               className={classes.bigImage}
               src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/NortheasternNotchedNLatin.png"
               alt="Content Block"
@@ -232,7 +235,7 @@ const Home: React.FC = () => {
                 href="https://lucyslovebus.org/"
                 className={classes.partnerLogoGrid}
               >
-                <img
+                <LazyLoadImage
                   src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LLB_2019_rgb.png"
                   alt="Lucy's Love Bus Logo"
                   className={classes.partnerLogos}
@@ -244,7 +247,7 @@ const Home: React.FC = () => {
                 href="https://bostontrees.org/"
                 className={classes.partnerLogoGrid}
               >
-                <img
+                <LazyLoadImage
                   src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/speakforthetrees_logo_original_RGB.jpg"
                   alt="Speak for the Trees"
                   className={classes.partnerLogos}
