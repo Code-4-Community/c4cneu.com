@@ -42,8 +42,10 @@ const StyledButton = withStyles((theme: Theme) =>
       borderBottom: '1px solid grey',
 
       borderRadius: 0,
+      transition: 'color 275ms ease',
       '&:hover': {
         backgroundColor: 'inherit',
+        color: theme.palette.primary.main,
       },
     },
     label: {

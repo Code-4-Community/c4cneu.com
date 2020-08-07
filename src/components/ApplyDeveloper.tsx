@@ -88,9 +88,9 @@ const ApplyDeveloper: React.FC = () => {
             <Typography variant="body1" gutterBottom className={classes.text}>
               Software Developers at C4C are responsible for creating and
               maintaining software products for our partner organizations.
-              Developers work in AGILE, collaborative teams and are exposed to
+              Developers work in Agile collaborative teams and are exposed to
               every aspect of the product development cycle. Developers can
-              expect to spend roughly 5-10 hours a week working on tickets with
+              expect to spend roughly 5-10 hours a week completing tickets with
               their team, with work ranging from Java API development to React
               UI development and cloud deployment.
             </Typography>
@@ -144,6 +144,11 @@ const ApplyDeveloper: React.FC = () => {
           <CTA onClick="https://forms.gle/n2b1Dkn1qMduR5qh7" />
         </Grid>
 
+        <TextQuoteBlock
+          quote="Code4Community gives you an unrivaled opportunity to learn software development while making a positive impact on the world. Too often at this school software is simply 'academic' or 'just business'. Unlike any other organization at Northeastern, Code4Community makes coding feel truly creative and compassionate. Why wait to make a difference?"
+          name="Ryan Jung"
+          title="Lead Software Developer"
+        />
         <TextQuoteBlock
           quote="C4C gave me a glimpse of how software development really works in industry. I am grateful for the mentorship I’ve received, and I feel well-prepared for my next co-op. Also, it feels good seeing your code directly benefit the community."
           name="Brandon Liang"
