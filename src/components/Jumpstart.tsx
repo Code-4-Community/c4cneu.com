@@ -5,6 +5,8 @@ import { Container, Box, Grid, Typography, Button } from '@material-ui/core';
 import Hero from './Hero';
 import { ReactComponent as JumpstartSvg } from '../svg/jumpstart.svg';
 import JumpstartAccordion from './JumpstartAccordion';
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles({
   section: {
@@ -61,6 +63,7 @@ const Jumpstart: React.FC = () => {
         spacing={3}
       >
         <Grid item sm={6}>
+          <Fade>
           <Typography variant="h4">What is Jumpstart?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Jumpstart is our new program for teaching the basics of web
@@ -72,8 +75,10 @@ const Jumpstart: React.FC = () => {
             basic understanding of programming is required (Java recommended),
             and you'll learn everything else you need from our weekly workshops.
           </Typography>
+          </Fade>
         </Grid>
         <Grid item sm={6}>
+          <Fade>
           <Typography variant="h4">What will I learn?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Throughout the Jumpstart course, we'll be helping you build a
@@ -84,8 +89,10 @@ const Jumpstart: React.FC = () => {
             sense. By the end of this course we'll have you comfortable with
             each of those topics.
           </Typography>
+          </Fade>
         </Grid>
         <Grid item sm={6}>
+          <Fade>
           <Typography variant="h4">What's the project?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Throughout the duration of the program we'll be making a blog-like
@@ -97,8 +104,10 @@ const Jumpstart: React.FC = () => {
             won't be any work requirements, and you can even extend the project
             as much as you'd like!
           </Typography>
+          </Fade>
         </Grid>
         <Grid item sm={6}>
+          <Fade>
           <Typography variant="h4">Wait, what's catch-up code?</Typography>
           <Typography variant="body1" className={classes.subtext}>
             Every week we'll be providing catch-up code to everyone before the
@@ -111,13 +120,16 @@ const Jumpstart: React.FC = () => {
             means that you don't have to do anything, but we can 100% guarantee
             that you won't learn as much as if you had done the work.
           </Typography>
+          </Fade>
         </Grid>
       </Grid>
 
+      <Fade>
       <Typography variant="h3" align="center">
         Want to join?
       </Typography>
-
+      </Fade>
+      <Fade>
       <Box className={classes.flexSection}>
         <Button
           variant="outlined"
@@ -129,6 +141,8 @@ const Jumpstart: React.FC = () => {
           <Typography variant="h4">Sign up here!</Typography>
         </Button>
       </Box>
+      </Fade>
+      <Fade>
       <Box paddingBottom={5}>
         <Container maxWidth="sm">
           <JumpstartAccordion
@@ -179,7 +193,9 @@ const Jumpstart: React.FC = () => {
             ]}
           />
         </Container>
+        
       </Box>
+      </Fade>
     </Container>
   );
 };

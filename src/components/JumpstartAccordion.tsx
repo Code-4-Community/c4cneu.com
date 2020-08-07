@@ -1,53 +1,58 @@
-import React from 'react';
+import React from 'react'
 import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
   Typography,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { makeStyles } from '@material-ui/core/styles';
+  Fade
+} from '@material-ui/core'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import { makeStyles } from '@material-ui/core/styles'
 
 interface JumpstartAccordionProps {
   readonly sections: Array<{
-    readonly title: string;
+    readonly title: string
 
-    readonly body: string | JSX.Element;
-  }>;
+    readonly body: string | JSX.Element
+  }>
 }
 
 const useStyles = makeStyles({
   title: {
-    fontWeight: 500,
-  },
-});
+    fontWeight: 500
+  }
+})
 
-const JumpstartAccordion: React.FC<JumpstartAccordionProps> = (props) => {
-  const classes = useStyles();
+const JumpstartAccordion: React.FC<JumpstartAccordionProps> = props => {
+  const classes = useStyles()
+  const fadeDelta = 200
+  const fadeBase = 1000
   return (
     <>
       {props.sections.map((section, index) => (
-        <Accordion key={index}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography
-              variant="body1"
-              className={classes.title}
-              color="primary"
+        <Fade in timeout={fadeBase + fadeDelta * index}>
+          <Accordion key={index}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls='panel1a-content'
+              id='panel1a-header'
             >
-              {section.title}
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography variant="body2">{section.body}</Typography>
-          </AccordionDetails>
-        </Accordion>
+              <Typography
+                variant='body1'
+                className={classes.title}
+                color='primary'
+              >
+                {section.title}
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant='body2'>{section.body}</Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Fade>
       ))}
     </>
-  );
-};
+  )
+}
 
-export default JumpstartAccordion;
+export default JumpstartAccordion
