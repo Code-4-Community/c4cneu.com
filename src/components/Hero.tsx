@@ -6,7 +6,7 @@ const useStyles = makeStyles({
   illustration: {
     width: '100%',
     height: '100%',
-    paddingTop:'1em'
+    padding: '1em',
   },
   root: {
     paddingTop: '2em',
@@ -22,8 +22,8 @@ const useStyles = makeStyles({
   },
   svgWrapper: {
     display: 'flex',
-    justifyContent: 'center'
-  }
+    justifyContent: 'center',
+  },
 });
 
 interface HeroProps {

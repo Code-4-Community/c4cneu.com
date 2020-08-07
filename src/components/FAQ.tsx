@@ -1,9 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Link } from '@material-ui/core';
 import Hero from './Hero';
-import { ReactComponent as SVG } from '../svg/faqRyan_4.svg';
+import { ReactComponent as SVG } from '../svg/faq.svg';
 import JumpstartAccordion from './JumpstartAccordion';
 import { Link as RouterLink } from 'react-router-dom';
 /*
@@ -19,9 +18,9 @@ const faq = [
     body: (
       <>
         Visit the{' '}
-          <RouterLink to="/apply">
-            <Link>Apply</Link>
-          </RouterLink>{' '}
+        <RouterLink to="/apply">
+          <Link>Apply</Link>
+        </RouterLink>{' '}
         page and submit your application. We’ll reach out to schedule a brief
         interview with 1-2 members of our team.
         <br />
@@ -87,7 +86,7 @@ const FAQ: React.FC = () => {
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>FAQ</title>
+        <title>FAQs</title>
         <meta
           name="description"
           content="Frequently asked questions about Code4Community."
@@ -95,7 +94,7 @@ const FAQ: React.FC = () => {
       </Helmet>
 
       <Hero
-        title="FAQ"
+        title="FAQs"
         subtitle="Everything you need to know about our product teams."
         SvgNode={SVG}
       />
