@@ -5,6 +5,7 @@ import { Container, Box, Link } from '@material-ui/core';
 import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/faqRyan_4.svg';
 import JumpstartAccordion from './JumpstartAccordion';
+import { Link as RouterLink } from 'react-router-dom';
 /*
 Template for future page components.
 Use MUI's CSS-in-JS makeStyles() as shown below for more complex CSS/
@@ -17,9 +18,12 @@ const faq = [
     title: 'How does the application process work?',
     body: (
       <>
-        Visit the <Link href="/apply">Apply</Link> page and submit your
-        application. We’ll reach out to schedule a brief interview with 1-2
-        members of our team.
+        Visit the{' '}
+          <RouterLink to="/apply">
+            <Link>Apply</Link>
+          </RouterLink>{' '}
+        page and submit your application. We’ll reach out to schedule a brief
+        interview with 1-2 members of our team.
         <br />
         Note: C4C does not believe coding challenges belong in our interview
         process, and we never factor school year into our decisions.
@@ -96,7 +100,7 @@ const FAQ: React.FC = () => {
         SvgNode={SVG}
       />
       <Container maxWidth="sm">
-        <Box pb="20vh">
+        <Box py="10vh">
           <JumpstartAccordion sections={faq} />
         </Box>
       </Container>

@@ -51,7 +51,7 @@ const useStyles = makeStyles({
   partnerLogoGrid: {
     padding: '2em',
     display: 'flex',
-    justifytContent: 'center',
+    justifyContent: 'center',
   },
   bigImage: {
     maxWidth: '100%',
