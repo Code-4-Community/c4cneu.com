@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import { Container, Box, Typography } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core';
 import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/404.svg';
 
