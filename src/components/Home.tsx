@@ -191,7 +191,7 @@ const Home: React.FC = () => {
           className={classes.section}
           spacing={3}
         >
-          <Grid item md={5} justify="center">
+          <Grid item md={5}>
             <img
               className={classes.bigImage}
               src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/NortheasternNotchedNLatin.png"
