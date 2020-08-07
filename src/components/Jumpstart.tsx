@@ -181,7 +181,7 @@ const Jumpstart: React.FC = () => {
                 },
                 {
                   title: 'Sunday Nov. 15th - Advanced Database Concepts',
-                  body: `Databases can can get pretty complicated though, but it can help a lot in the long run.`,
+                  body: `Databases can get pretty complicated though, but it can help a lot in the long run.`,
                 },
                 {
                   title: 'Sunday Nov. 22nd - Cloud Deployment and Hosting',
