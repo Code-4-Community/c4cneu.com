@@ -62,6 +62,7 @@ const Jumpstart: React.FC = () => {
         className={classes.section}
         spacing={3}
       >
+        <Grid item sm={6}>
           <Fade>
             <Typography variant="h4">What is Jumpstart?</Typography>
             <Typography variant="body1" className={classes.subtext}>

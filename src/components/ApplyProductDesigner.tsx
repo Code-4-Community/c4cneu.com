@@ -6,12 +6,8 @@ import Hero from './Hero';
 import { ReactComponent as SVG } from '../svg/productdesigner.svg';
 import { TextQuoteBlock } from './TextQuoteBlock';
 import CTA from './CTA';
-<<<<<<< HEAD
-
-=======
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
->>>>>>> b9407df11b52a77180171aae4b2b4f67f9ce6e6e
 const useStyles = makeStyles({
   image: {
     width: '100%',
