@@ -1,14 +1,20 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { makeStyles } from '@material-ui/core/styles';
-import { Container, Box, Paper } from '@material-ui/core';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+
+import {
+  CardActionArea,
+  CardContent,
+  Button,
+  Typography,
+  CardMedia,
+  Card,
+  Container,
+  Box,
+  CardActions,
+  Paper,
+  makeStyles
+}
+  from '@material-ui/core';
 
 const useStyles = makeStyles({
   example: {
@@ -40,11 +46,11 @@ const Project: React.FC = () => {
                 Lucy's Love Bus
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Lucy’s Love Bus improves quality of life for children with cancer or other life-threatening illnesses with 
-                integrative therapies like massage, meditation, acupuncture, music therapy, and therapeutic horseback riding. 
+                Lucy’s Love Bus improves quality of life for children with cancer or other life-threatening illnesses with
+                integrative therapies like massage, meditation, acupuncture, music therapy, and therapeutic horseback riding.
                 Integrative therapies ease children’s pain and anxiety during and after traditional medical treatments.
-                The Sajni Center is a space of hope and healing for children with life-threatening illness or chronic 
-                medical conditions and their families. Here they host events for the children and their families. We created 
+                The Sajni Center is a space of hope and healing for children with life-threatening illness or chronic
+                medical conditions and their families. Here they host events for the children and their families. We created
                 the event planning and ticket purchasing system for all the events hosted by Lucy's Love Bus.
               </Typography>
             </CardContent>
@@ -72,11 +78,11 @@ const Project: React.FC = () => {
                 Speak For The Trees
           </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-              Speak for the Trees Boston aims to improve the size and health of the urban forest in the greater Boston area, 
-              with a focus on under-served and under-canopied neighborhoods. They work with volunteers to inventory (collect data) 
-              trees, plant trees, and educate those about trees. C4C built a block reservation system, allowing SFFT's volunteers 
-              to reserve blocks of trees that they will be able to inventory and then mark them as complete when they are 
-              finished collecting the required data.
+                Speak for the Trees Boston aims to improve the size and health of the urban forest in the greater Boston area,
+                with a focus on under-served and under-canopied neighborhoods. They work with volunteers to inventory (collect data)
+                trees, plant trees, and educate those about trees. C4C built a block reservation system, allowing SFFT's volunteers
+                to reserve blocks of trees that they will be able to inventory and then mark them as complete when they are
+                finished collecting the required data.
           </Typography>
             </CardContent>
           </CardActionArea>
