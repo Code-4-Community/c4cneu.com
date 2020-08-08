@@ -11,7 +11,6 @@ import {
   Container,
   Box,
   CardActions,
-  Paper,
   makeStyles
 }
   from '@material-ui/core';
@@ -20,25 +19,27 @@ const useStyles = makeStyles({
   example: {
     color: 'red',
   },
+  'project-card': {},
+  'project-img': {}
 });
 
-const Project: React.FC = () => {
+const Projects: React.FC = () => {
   const classes = useStyles();
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>Code4Community - Projects</title>
-        <meta name="description" content="Write a description for SEO here" />
+        <title>Projects</title>
+        <meta name="description" content="C4C delivers web applications to Boston-based nonprofits." />
       </Helmet>
       <Box my={4}>
-        <Paper className={classes.example} />
 
-        <Card className="project-card">
+        <Card className={classes['project-card']}>
           <CardActionArea>
             <CardMedia
               component="img"
-              className="project-img"
+              className={classes['project-img']}
               image="./llb.png"
+              alt="llb.png"
               title="LLB"
             />
             <CardContent>
@@ -65,12 +66,13 @@ const Project: React.FC = () => {
           </CardActions>
         </Card>
 
-        <Card className="project-card">
+        <Card className={classes['project-card']}>
           <CardActionArea>
             <CardMedia
               component="img"
-              className="project-img"
+              className={classes['project-img']}
               image="./sfft.png"
+              alt="sfft.png"
               title="SFFT"
             />
             <CardContent>
@@ -101,4 +103,4 @@ const Project: React.FC = () => {
   );
 };
 
-export default Project;
+export default Projects;
