@@ -163,6 +163,13 @@ const ApplyDeveloper: React.FC = () => {
           name="Brandon Liang"
           title="Software Developer"
         />
+        <Fade>
+          <TextQuoteBlock
+            quote="What I love most about C4C is its emphasis on the community. Whether its helping out the greater Boston area or teaching Northeastern students coding or connecting with other club members, C4C always makes community its number one priority. You will never feel alone in C4C."
+            name="Max Sebso"
+            title="Software Developer"
+          />
+        </Fade>
       </Grid>
     </Container>
   );

@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
                 align="center"
                 variant="subtitle2"
               >
-                Made with love by Code4Community.
+                Made with love by Code4Community
               </Typography>
               <Typography
                 color="textSecondary"

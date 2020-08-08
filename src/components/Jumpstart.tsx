@@ -10,7 +10,7 @@ import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles({
   section: {
-    marginTop: '10vh',
+    marginTop: '5vh',
     marginBottom: '10vh',
   },
   subtext: {
@@ -64,52 +64,52 @@ const Jumpstart: React.FC = () => {
       >
         <Grid item sm={6}>
           <Fade>
-            <Typography variant="h4">What is Jumpstart?</Typography>
+            <Typography variant="h5">What is Jumpstart?</Typography>
             <Typography variant="body1" className={classes.subtext}>
               Jumpstart is Code4Community's new program that focuses on teaching
               the basics of web development for beginners. We have planned a
               10-week course that runs through a lot of the fundamentals you'll
-              want to know for developing a web application. Through the program's
-              project, you will be learning technologies like React, Typescript,
-              Vertx, and Java. A basic understanding of programming is required
-              (Java recommended), and you'll learn everything else you need from
-              our weekly workshops!
+              want to know for developing a web application. Through the
+              program's project, you will be learning technologies like React,
+              Typescript, Vertx, and Java. A basic understanding of programming
+              is required (Java recommended), and you'll learn everything else
+              you need from our weekly workshops!
             </Typography>
           </Fade>
         </Grid>
         <Grid item sm={6}>
           <Fade>
-            <Typography variant="h4">What will I learn?</Typography>
+            <Typography variant="h5">What will I learn?</Typography>
             <Typography variant="body1" className={classes.subtext}>
               Throughout the Jumpstart course, we'll be helping you build a
-              functioning web application with a React and Typescript frontend and
-              a Vertx and Java backend. We'll be going through Git, the terminal,
-              HTML, CSS, Javascript, REST requests and APIs, databases, cloud
-              deployment, and testing. Don't worry if any of that doesn't make
-              sense. By the end of this course we'll have you comfortable with
-              each of these topics.
+              functioning web application with a React and Typescript frontend
+              and a Vertx and Java backend. We'll be going through Git, the
+              terminal, HTML, CSS, Javascript, REST requests and APIs,
+              databases, cloud deployment, and testing. Don't worry if any of
+              that doesn't make sense. By the end of this course we'll have you
+              comfortable with each of these topics.
             </Typography>
           </Fade>
         </Grid>
         <Grid item sm={6}>
           <Fade>
-            <Typography variant="h4">What's the project?</Typography>
+            <Typography variant="h5">What's the project?</Typography>
             <Typography variant="body1" className={classes.subtext}>
               Throughout the duration of the program we'll be making a blog-like
               web application. In our app, people will be able to view posts,
-              create posts, "clap!" (like), comment, and more. You aren't required
-              to follow along with our blog app, you can create whatever
-              application you want! However, we'll be providing help, examples,
-              and weekly catch-up code for our blog application - we'd still love
-              to help you out with your project though. There also won't be any
-              extra requirements, and you can even extend your project as much as
-              you'd like!
+              create posts, "clap!" (like), comment, and more. You aren't
+              required to follow along with our blog app, you can create
+              whatever application you want! However, we'll be providing help,
+              examples, and weekly catch-up code for our blog application - we'd
+              still love to help you out with your project though. There also
+              won't be any extra requirements, and you can even extend your
+              project as much as you'd like!
             </Typography>
           </Fade>
         </Grid>
         <Grid item sm={6}>
           <Fade>
-            <Typography variant="h4">Wait, what's catch-up code?</Typography>
+            <Typography variant="h5">Wait, what's catch-up code?</Typography>
             <Typography variant="body1" className={classes.subtext}>
               Every week we'll be providing catch-up code to everyone before the
               start of the next meeting, to make sure everyone is caught up with
@@ -117,9 +117,9 @@ const Jumpstart: React.FC = () => {
               those who are stuck somewhere on their project, missed the last
               meeting, or were too busy during the week to make enough progress
               stay caught up with their project and prevent them from falling
-              behind. Although this means that you aren't required to finish your
-              weekly progress, we can 100% guarantee that you won't learn as much
-              by skipping the work.
+              behind. Although this means that you aren't required to finish
+              your weekly progress, we can 100% guarantee that you won't learn
+              as much by skipping the work.
             </Typography>
           </Fade>
         </Grid>
@@ -139,7 +139,7 @@ const Jumpstart: React.FC = () => {
             href="https://forms.gle/5AgQCcU5YpWgmEzr9"
             color="primary"
           >
-            <Typography variant="h4">Sign up here!</Typography>
+            <Typography variant="h5">Sign up here!</Typography>
           </Button>
         </Box>
       </Fade>
