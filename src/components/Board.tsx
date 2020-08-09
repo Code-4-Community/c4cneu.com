@@ -39,10 +39,7 @@ const Template: React.FC = () => {
       <Container maxWidth="md" className={classes.hero}>
         <Helmet>
           <title>Members</title>
-          <meta
-            name="E-Board"
-            content="Meet the people of Code4Comunity"
-          />
+          <meta name="E-Board" content="Meet the people of Code4Comunity" />
         </Helmet>
         <Hero
           title="Members"

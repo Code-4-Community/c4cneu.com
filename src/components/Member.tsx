@@ -99,6 +99,9 @@ const useStyles = makeStyles((theme) => ({
       width: 22,
       height: 22,
       paddingRight: 10,
+      '&:hover': {
+        transform: 'none',
+      },
     },
     mail: {
       position: 'relative',
@@ -106,6 +109,9 @@ const useStyles = makeStyles((theme) => ({
       width: 22,
       height: 22,
       color: 'white',
+      '&:hover': {
+        transform: 'none',
+      },
     },
     icons: {
       position: 'absolute',
@@ -144,7 +150,8 @@ const Member: React.FC<MemberProps> = ({
           <a href={linkedin} rel="noopener noreferrer" target="_blank">
             <img
               className={classes.linkedin}
-              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/icons/linkedin_icon.svg"/>
+              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/icons/linkedin_icon.svg"
+            />
           </a>
           <a href={'mailto:' + email} rel="noopener noreferrer" target="_blank">
             <img
