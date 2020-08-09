@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
       transform: 'scale(1.2)',
     },
     borderRadius: 12,
-    backgroundColor: 'transparent',
+    backgroundColor: 'white',
   },
   mail: {
     cursor: 'pointer',
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
       transform: 'scale(1.2)',
     },
     borderRadius: 12,
-    backgroundColor: 'transparent',
+    backgroundColor: 'white',
   },
   icons: {
     position: 'absolute',
