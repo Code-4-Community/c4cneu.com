@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     padding: '75px 62px',
     display: 'block',
-    opacity: 1,
+    opacity: 0,
     zIndex: 1,
     mixBlendMode: 'multiply',
     background: 'transparent',
@@ -101,8 +101,9 @@ const useStyles = makeStyles((theme) => ({
     },
     mail: {
       position: 'relative',
-      width: 21,
-      height: 21,
+      top: 1,
+      width: 22,
+      height: 22,
       color: 'white',
     },
     icons: {
