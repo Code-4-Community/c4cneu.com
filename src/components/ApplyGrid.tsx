@@ -12,7 +12,7 @@ const ApplyGrid: React.FC = () => {
     <>
       <Grid
         container
-        spacing={3}
+        spacing={5}
         direction="row"
         justify="flex-start"
         alignItems="flex-start"
@@ -22,9 +22,9 @@ const ApplyGrid: React.FC = () => {
           to="/apply/developer"
           enterTime={1000}
         >
-          Developers write the code that make C4C projects a reality. Help us
-          tackle tough technical problems while architecting the code that
-          powers C4C!
+          Developers write the code that make our projects a reality. Help us
+          tackle tough technical problems while creating the code that powers
+          C4C!
         </ApplyCard>
 
         <ApplyCard
@@ -42,7 +42,7 @@ const ApplyGrid: React.FC = () => {
           enterTime={1750}
         >
           Brand Designers will innovate and refine C4C's identity. Guide our
-          branding and content to align to C4C's mission and goals.
+          branding and content to align with C4C's mission and goals.
         </ApplyCard>
 
         {/*<ApplyCard title="Marketing Director" to="TODO" enterTime={1750}>*/}

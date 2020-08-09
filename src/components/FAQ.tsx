@@ -1,10 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Link } from '@material-ui/core';
 import Hero from './Hero';
-import { ReactComponent as SVG } from '../svg/faqRyan_4.svg';
+import { ReactComponent as SVG } from '../svg/faq.svg';
 import JumpstartAccordion from './JumpstartAccordion';
+import { Link as RouterLink } from 'react-router-dom';
 /*
 Template for future page components.
 Use MUI's CSS-in-JS makeStyles() as shown below for more complex CSS/
@@ -17,8 +17,12 @@ const faq = [
     title: 'How does the application process work?',
     body: (
       <>
-        Visit the ‘Apply’ page on our website c4cneu.com We’ll reach out to
-        schedule a brief interview with 1-2 members of our team.
+        Visit the{' '}
+        <RouterLink to="/apply">
+          <Link>Apply</Link>
+        </RouterLink>{' '}
+        page and submit your application. We’ll reach out to schedule a brief
+        interview with 1-2 members of our team.
         <br />
         Note: C4C does not believe coding challenges belong in our interview
         process, and we never factor school year into our decisions.
@@ -28,13 +32,13 @@ const faq = [
   {
     title: 'Who do we work with?',
     body:
-      'We work with nonprofits in the Greater Boston area that are working to improve the community we live in. We look for organizations that are doing important work, that have a need for a software solution, but lack the resources to pursue typical development channels.',
+      'We work with nonprofits in the Greater Boston area that strive to improve the community we live in. We look for organizations that have a need for a software solution, but lack the resources to pursue typical development channels.',
   },
   {
     title: 'How much of a time commitment is C4C?',
     body: (
       <>
-        8-10 hours a week comprised of:
+        5-10 hours a week comprised of:
         <Box mt={-2}>
           <ol>
             <li> A weekly, one hour meeting with your team</li>
@@ -55,18 +59,14 @@ const faq = [
     body: 'Product team members meet once a week.',
   },
   {
-    title: 'What is the culture like at C4C?',
-    body: 'Entrepreneurial, open environment, inclusive and very supportive',
-  },
-  {
     title: 'What is the product team structure?',
     body:
-      'Teams are structured around a single project that everyone works on together. Each team is made up of: a project lead, 1-2 designers, and several full stack developers.',
+      'Teams are structured around a single project that everyone works on together. Each team is made up of: a project lead, 1-2 designers, and several software developers.',
   },
   {
     title: 'How many people are in C4C? How many people are on a product team?',
     body:
-      'C4C is roughly 20 members strong and each product team is roughly 8 people.',
+      'Depending on how many partners and projects we are taking on in a semester, our organization size may vary. However, our product teams are usually around 8 members each.',
   },
   {
     title: 'What have you worked on in the past?',
@@ -86,7 +86,7 @@ const FAQ: React.FC = () => {
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>FAQ</title>
+        <title>FAQs</title>
         <meta
           name="description"
           content="Frequently asked questions about Code4Community."
@@ -94,12 +94,12 @@ const FAQ: React.FC = () => {
       </Helmet>
 
       <Hero
-        title="FAQ"
-        subtitle="Everything you need to know about our production teams."
+        title="FAQs"
+        subtitle="Everything you need to know about our product teams."
         SvgNode={SVG}
       />
       <Container maxWidth="sm">
-        <Box pb="50vh">
+        <Box py="5vh">
           <JumpstartAccordion sections={faq} />
         </Box>
       </Container>

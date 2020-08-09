@@ -34,7 +34,7 @@ export const TextQuoteBlock: React.FC<QuoteBlockProps> = ({
       alignItems="center"
       className={classes.root}
     >
-      <Typography variant="h5" align="center" className={classes.quote}>
+      <Typography variant="h6" align="left" className={classes.quote}>
         &ldquo;{quote}&rdquo;
       </Typography>
 

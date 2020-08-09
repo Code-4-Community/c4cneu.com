@@ -20,6 +20,9 @@ import Typical from 'react-typical';
 import Fade from 'react-reveal/Fade';
 
 import { ReactComponent as ImpactfulSvg } from '../svg/impactful.svg';
+// @ts-ignore
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 const useStyles = makeStyles({
   homeLogo: {
     width: '16rem',
@@ -42,16 +45,16 @@ const useStyles = makeStyles({
   },
   partnerLogos: {
     maxWidth: '100%',
-    margin: 'auto',
+    margin: 0,
     transition: 'transform .2s',
     '&:hover': {
-      transform: 'scale(1.1)',
+      transform: 'scale(1.05)',
     },
   },
   partnerLogoGrid: {
-    padding: '2em',
-    display: 'flex',
-    justifytContent: 'center',
+    margin: '2em',
+    display: 'block',
+    justifyContent: 'center',
   },
   bigImage: {
     maxWidth: '100%',
@@ -100,7 +103,7 @@ const Home: React.FC = () => {
         <title>Code4Community</title>
         <meta
           name="description"
-          content="The Code4Community homepage. Code4Community. Designing software solutions for non-profit organizations in Boston."
+          content="Designing software solutions for non-profit organizations in Boston. Northeastern University’s only student led collective for charitable software development."
         />
       </Helmet>
 
@@ -168,12 +171,12 @@ const Home: React.FC = () => {
         >
           <Grid item sm={7}>
             <Typography variant="h4" gutterBottom>
-              Impactful, deliberate and compassionate software at no cost.
+              Impactful, deliberate and inclusive software at no cost.
             </Typography>
             <Typography variant="body1">
               C4C strives to deliver work engineered with excellence and led by
-              inclusive inclusive design principles to ensure our solutions are
-              intuitive, performant, and deliver the best user experience.
+              inclusive design principles to ensure our solutions are intuitive,
+              performant, and deliver the best user experience.
             </Typography>
           </Grid>
           <Grid item sm={5}>
@@ -191,8 +194,8 @@ const Home: React.FC = () => {
           className={classes.section}
           spacing={3}
         >
-          <Grid item md={5} justify="center">
-            <img
+          <Grid item md={5}>
+            <LazyLoadImage
               className={classes.bigImage}
               src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/NortheasternNotchedNLatin.png"
               alt="Content Block"
@@ -204,9 +207,10 @@ const Home: React.FC = () => {
               charitable software development.
             </Typography>
             <Typography variant="body1">
-              C4C strives to deliver work engineered with excellence and led by
-              inclusive design principles to ensure our solutions are intuitive,
-              performant, and deliver the best user experience.
+              C4C is led by Northeastern students who are passionate about
+              developing meaningful and exciting products. Students have the
+              opportunity to learn the fundamentals of product and software
+              development, while also contributing to the Boston community.
             </Typography>
           </Grid>
         </Grid>
@@ -231,7 +235,7 @@ const Home: React.FC = () => {
                 href="https://lucyslovebus.org/"
                 className={classes.partnerLogoGrid}
               >
-                <img
+                <LazyLoadImage
                   src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LLB_2019_rgb.png"
                   alt="Lucy's Love Bus Logo"
                   className={classes.partnerLogos}
@@ -243,7 +247,7 @@ const Home: React.FC = () => {
                 href="https://bostontrees.org/"
                 className={classes.partnerLogoGrid}
               >
-                <img
+                <LazyLoadImage
                   src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/speakforthetrees_logo_original_RGB.jpg"
                   alt="Speak for the Trees"
                   className={classes.partnerLogos}
@@ -258,28 +262,31 @@ const Home: React.FC = () => {
       <Grid container className={classes.section}>
         <Fade>
           <TextQuoteBlock
-            quote="This is a quote thats only made out of text. No images. Looks nice I think, very elegant and minimal. A little boring - admittedly."
-            name="Ryan Jung"
-            title="Web Developer - c4cneu.com"
+            quote="Code4Community is a stellar example of a student organization that changes the world. At Code4Community you will apply and improve your skills, while helping non-profits increase efficiency and modernize. The work you do will touch and benefit the lives of those who need it most for years to come. Code4Community has showed me the power of software and has inspired me to use my skills to help make the world a better place."
+            name="Stephen Alt"
+            title="Founder - Code4Community"
           />
         </Fade>
         <Fade>
           <TextQuoteBlock
-            quote="This is a decently long quote about how impactful and cool it is
-              to be a part of Code4Community. Something about how you learned a
-              lot and grew as a developer."
-            name="Ryan Jung"
-            title="Web Developer - c4cneu.com"
+            quote="At Code4Community, I've met so many Northeastern students with diverse experiences, work ethics, talents, and the passion to help our local community. We work alongside one another to improve our leadership, teamwork, and technical skills. This is the community that I love to see grow and be a part of!"
+            name="Sadaf Khansalar"
+            title="Operations and Administration Director"
+          />
+        </Fade>
+        <Fade>
+          <TextQuoteBlock
+            quote="I’ve learned to build, lead, and collaborate with teams of developers and designers, all of which has prepared me very much for working in the industry. To be able to learn so much, and see the impact we have for on our partner organizations, makes me very grateful to be a part of this organization."
+            name="Jack Blanc"
+            title="Director of Engineering"
           />
         </Fade>
 
         <Fade>
           <TextQuoteBlock
-            quote="This is a decently long quote about how impactful and cool it is
-              to be a part of Code4Community. Something about how you learned a
-              lot and grew as a developer."
-            name="Ryan Jung"
-            title="Web Developer - c4cneu.com"
+            quote="C4C is a club of passionate students that empower each other while building products that make a difference in our community. Members at any stage in their academic journey have opportunities to grow and learn within a community of students committed to empowering themselves and the people around them."
+            name="Liam Moynihan"
+            title="President of Code4Community"
           />
         </Fade>
       </Grid>

@@ -5,21 +5,22 @@ import { Helmet } from 'react-helmet';
 import Home from './components/Home';
 import Apply from './components/Apply';
 import ApplyDeveloper from './components/ApplyDeveloper';
+import ApplyProductDesigner from './components/ApplyProductDesigner';
+import ApplyBrandDesigner from './components/ApplyBrandDesigner';
+
 import Partner from './components/Partner';
 import Projects from './components/Projects';
 import Jumpstart from './components/Jumpstart';
 import Events from './components/Events';
 import Board from './components/Board';
-import ApplyProductDesigner from './components/ApplyProductDesigner';
 import FAQ from './components/FAQ';
 import NotFound from './components/NotFound';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+
 import { ThemeProvider } from '@material-ui/core';
 
 import theme from './theme';
-import ApplyBrandDesigner from './components/ApplyBrandDesigner';
-
 const App: React.FC = () => {
   return (
     <>

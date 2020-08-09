@@ -1,5 +1,10 @@
 import React from 'react';
-import { makeStyles, withStyles, createStyles } from '@material-ui/core/styles';
+import {
+  makeStyles,
+  withStyles,
+  createStyles,
+  Theme,
+} from '@material-ui/core/styles';
 import {
   Grid,
   Card,
@@ -11,46 +16,49 @@ import {
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-const useStyles = makeStyles({
-  card: {
-    padding: 0,
-    margin: 'auto',
-  },
-  content: {
-    paddingLeft: 0,
-    paddingRight: 0,
-  },
-  heading: {
-    fontWeight: 'bold',
-  },
-  disableLinkColor: {
-    color: 'inherit',
-    textDecoration: 'inherit',
-  },
-});
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    card: {
+      padding: 0,
+      margin: 'auto',
+    },
+    content: {
+      paddingLeft: 0,
+      paddingRight: 0,
+    },
+    heading: {
+      fontWeight: 'bold',
+    },
+    disableLinkColor: {
+      color: 'inherit',
+      textDecoration: 'inherit',
+    },
+  })
+);
 // CSS for underline animation
 //https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/#technique-4-using-transform
-const StyledButton = withStyles(() =>
+const StyledButton = withStyles((theme: Theme) =>
   createStyles({
     root: {
       padding: 0,
-      borderBottom: '1px solid grey',
+      borderBottom: '1px solid ' + theme.palette.divider,
 
       borderRadius: 0,
+      transition: 'color 275ms ease',
       '&:hover': {
         backgroundColor: 'inherit',
+        color: theme.palette.primary.main,
       },
     },
     label: {
+      fontSize: '1.1em',
       overflow: 'hidden',
       '& > span': {
         position: 'absolute',
-
         overflow: 'hidden',
-
         transform: 'translateX(-100%)',
-        transition: 'transform 275ms ease',
-        borderBottom: '1px solid black',
+        transition: 'transform 200ms ease',
+        borderBottom: '1px solid ' + theme.palette.primary.main,
         paddingTop: 1,
       },
 

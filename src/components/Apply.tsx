@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Container, Box } from '@material-ui/core';
 import ApplyGrid from './ApplyGrid';
 import Hero from './Hero';
-import { ReactComponent as SVG } from '../svg/apply.svg';
+import { ReactComponent as SVG } from '../svg/team.svg';
 
 const Apply: React.FC = () => {
   React.useEffect(() => {

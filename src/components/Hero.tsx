@@ -6,9 +6,10 @@ const useStyles = makeStyles({
   illustration: {
     width: '100%',
     height: '100%',
+    padding: '1em',
   },
   root: {
-    paddingTop: '2em',
+    paddingTop: '1em',
     paddingBottom: '2em',
   },
   verticallyCenter: {
@@ -18,6 +19,10 @@ const useStyles = makeStyles({
   },
   roleTitle: {
     fontWeight: 500,
+  },
+  svgWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
   },
 });
 
@@ -31,7 +36,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, SvgNode }) => {
   const classes = useStyles();
   return (
     <Grid container className={classes.root}>
-      <Grid sm={6} className={classes.verticallyCenter}>
+      <Grid item sm={6} className={classes.verticallyCenter}>
         <Typography className={classes.roleTitle} variant="h3">
           {title}
         </Typography>
@@ -39,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, SvgNode }) => {
           {subtitle}
         </Typography>
       </Grid>
-      <Grid sm={6}>
+      <Grid item sm={6} className={classes.svgWrapper}>
         <SvgNode className={classes.illustration} />
       </Grid>
     </Grid>
