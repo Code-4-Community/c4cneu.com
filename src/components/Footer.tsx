@@ -45,6 +45,10 @@ const Footer: React.FC = () => {
                 Jumpstart
               </Link>
               {' | '}
+              <Link to="/board" className={classes.footerLink}>
+                Board
+              </Link>
+              {' | '}
               <Link to="/faq" className={classes.footerLink}>
                 FAQ
               </Link>
