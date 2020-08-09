@@ -11,17 +11,16 @@ const useStyles = makeStyles((theme) => ({
     width: '290px',
     height: '300px',
     '&:hover': {
-      cursor: 'pointer',
       '& $portrait': {
         borderBottom: 'none',
-        transition: 'filter 0.2s ease-in-out',
+        transition: 'filter 0.3s ease-in-out',
         filter: 'blur(2.5px)',
       },
       '& $icons': {
         opacity: 1,
-        transition: 'opacity .2s ease-in-out',
-        MozTransition: 'opacity .2s ease-in-out',
-        WebkitTransition: 'opacity .2s ease-in-out',
+        transition: 'opacity .3s ease-in-out',
+        MozTransition: 'opacity .3s ease-in-out',
+        WebkitTransition: 'opacity .3s ease-in-out',
       },
     },
   },
@@ -39,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
   position: {},
   linkedin: {
+    cursor: 'pointer',
     transition: 'all .2s ease-in-out',
     position: 'relative',
     width: 70,
@@ -51,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'white',
   },
   mail: {
+    cursor: 'pointer',
     transition: 'all .2s ease-in-out',
     position: 'relative',
     width: 70,
