@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
       cursor: 'pointer',
       '& $portrait': {
         borderBottom: 'none',
+        transition: 'filter 0.2s ease-in-out',
         filter: 'blur(2.5px)',
       },
       '& $icons': {
@@ -38,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
   position: {},
   linkedin: {
-    transition: 'all .1s ease-in-out',
+    transition: 'all .2s ease-in-out',
     position: 'relative',
     width: 70,
     height: 70,
@@ -48,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   mail: {
-    transition: 'all .1s ease-in-out',
+    transition: 'all .2s ease-in-out',
     position: 'relative',
     width: 75,
     height: 75,
