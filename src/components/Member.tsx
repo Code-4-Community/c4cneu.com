@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 interface MemberProps {
-  name: string;
+  readonly name: string;
   position: string;
   image: string;
   linkedin: string;
@@ -142,13 +142,12 @@ const Member: React.FC<MemberProps> = ({
           <a href={linkedin} rel="noopener noreferrer" target="_blank">
             <img
               className={classes.linkedin}
-              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/icons/linkedin_icon.jpg"
-            />
+              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/icons/linkedin_icon.svg"/>
           </a>
           <a href={'mailto:' + email} rel="noopener noreferrer" target="_blank">
             <img
               className={classes.mail}
-              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/icons/mail_icon.jpg"
+              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/icons/mail_icon.svg"
             />
           </a>
         </div>
