@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
       transform: 'scale(1.2)',
     },
     borderRadius: 12,
-    backgroundColor: 'white',
+    backgroundColor: 'transparent',
   },
   mail: {
     cursor: 'pointer',
@@ -57,12 +57,11 @@ const useStyles = makeStyles((theme) => ({
     width: 70,
     height: 70,
     top: 0,
-    color: 'white',
     '&:hover': {
       transform: 'scale(1.2)',
     },
     borderRadius: 12,
-    backgroundColor: 'white',
+    backgroundColor: 'transparent',
   },
   icons: {
     position: 'absolute',
@@ -70,7 +69,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'block',
     opacity: 0,
     zIndex: 1,
-    background: 'transparent',
   },
   cardText: {
     padding: 7,
@@ -104,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
       height: 22,
       marginRight: 0,
       paddingRight: 10,
+      background: 'transparent',
       '&:hover': {
         transform: 'none',
       },
@@ -113,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
       top: 1,
       width: 22,
       height: 22,
-      color: 'white',
+      background: 'transparent',
       '&:hover': {
         transform: 'none',
       },
