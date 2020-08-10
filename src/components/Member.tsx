@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Grid } from '@material-ui/core';
+import { Paper, Grid, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   person: {
@@ -33,10 +33,13 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
   },
   name: {
-    fontWeight: 600,
-    paddingBottom: 6,
+    fontWeight: 500,
+    paddingBottom: 2,
   },
-  position: {},
+  position: {
+    fontWeight: 400,
+    fontSize: 12,
+  },
   linkedin: {
     cursor: 'pointer',
     transition: 'all .2s ease-in-out',
@@ -71,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
   },
   cardText: {
-    padding: 7,
+    padding: 5,
     fontSize: 12,
   },
   '@media screen and (max-width: 600px)': {
@@ -93,8 +96,11 @@ const useStyles = makeStyles((theme) => ({
       overflow: 'hidden',
     },
     cardText: {
-      padding: 3,
+      padding: 2,
       fontSize: 10,
+      '& $position': {
+        fontSize: 10,
+      }
     },
     linkedin: {
       position: 'relative',
@@ -119,14 +125,14 @@ const useStyles = makeStyles((theme) => ({
     },
     icons: {
       position: 'absolute',
-      padding: '242px 96px',
+      padding: '243px 96px',
       display: 'block',
       opacity: 1,
     },
     name: {
       fontWeight: 550,
-      paddingBottom: 4,
-      fontSize: 11.5,
+      paddingBottom: 0,
+      fontSize: 11,
     },
   },
 }));
@@ -166,8 +172,8 @@ const Member: React.FC<MemberProps> = ({
         </div>
         <img className={classes.portrait} src={image} />
         <div className={classes.cardText}>
-          <div className={classes.name}>{name}</div>
-          <div className={classes.position}>{position}</div>
+        <Typography className={classes.name} variant="subtitle2">{name}</Typography >
+        <Typography className={classes.position} variant="subtitle2">{position}</Typography >
         </div>
       </Paper>
     </Grid>
