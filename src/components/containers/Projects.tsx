@@ -27,7 +27,9 @@ const Projects: React.FC = () => {
                         medical conditions and their families. Here they host events for the children and their families. We created \
                         the event planning and ticket purchasing system for all the events hosted by Lucy's Love Bus."}
           path="./llb.png"
-          abbr="LLB" />
+          abbr="LLB"
+          share="https://example.com"
+          learnMore="https://www.lovebusprograms.org/" />
 
         <ProjectCard title={"Speak For The Trees"} paragraph={"Speak for the Trees Boston aims to improve the size and health \
                 of the urban forest in the greater Boston area, with a focus on under-served and under-canopied neighborhoods. \
@@ -35,7 +37,9 @@ const Projects: React.FC = () => {
                 C4C built a block reservation system, allowing SFFT's volunteers to reserve blocks of trees that they will \
                 be able to inventory and then mark them as complete when they are finished collecting the required data."}
           path="./sfft.png"
-          abbr="SFFT" />
+          abbr="SFFT" 
+          share="https://example.com"
+          learnMore="https://app.sfttbos.org" />
       </Box>
     </Container>
   );

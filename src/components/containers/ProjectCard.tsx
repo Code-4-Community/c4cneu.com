@@ -12,7 +12,9 @@ import {
     from '@material-ui/core';
 
 const useStyles = makeStyles({
-    'project-card': {},
+    'project-card': {
+        margin: '5%'
+    },
     'project-img': {}
 });
 
@@ -21,9 +23,11 @@ interface CardProps {
     readonly paragraph: string;
     readonly path: string;
     readonly abbr: string;
+    readonly share: string;
+    readonly learnMore: string;
 }
 
-const ProjectCard: React.FC<CardProps> = ({ title, paragraph, path, abbr }) => {
+const ProjectCard: React.FC<CardProps> = ({ title, paragraph, path, abbr, share, learnMore }) => {
     const classes = useStyles();
     return (
         <Card className={classes['project-card']}>
@@ -43,10 +47,10 @@ const ProjectCard: React.FC<CardProps> = ({ title, paragraph, path, abbr }) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href={share}>
                     Share
         </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href={learnMore}>
                     Learn More
         </Button>
             </CardActions>
