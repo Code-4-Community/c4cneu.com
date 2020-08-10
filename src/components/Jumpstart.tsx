@@ -10,7 +10,7 @@ import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles({
   section: {
-    marginTop: '10vh',
+    marginTop: '5vh',
     marginBottom: '10vh',
   },
   subtext: {
@@ -64,7 +64,7 @@ const Jumpstart: React.FC = () => {
       >
         <Grid item sm={6}>
           <Fade>
-            <Typography variant="h4">What is Jumpstart?</Typography>
+            <Typography variant="h5">What is Jumpstart?</Typography>
             <Typography variant="body1" className={classes.subtext}>
               Jumpstart is Code4Community's new program that focuses on teaching
               the basics of web development for beginners. We have planned a
@@ -79,7 +79,7 @@ const Jumpstart: React.FC = () => {
         </Grid>
         <Grid item sm={6}>
           <Fade>
-            <Typography variant="h4">What will I learn?</Typography>
+            <Typography variant="h5">What will I learn?</Typography>
             <Typography variant="body1" className={classes.subtext}>
               Throughout the Jumpstart course, we'll be helping you build a
               functioning web application with a React and Typescript frontend
@@ -93,7 +93,7 @@ const Jumpstart: React.FC = () => {
         </Grid>
         <Grid item sm={6}>
           <Fade>
-            <Typography variant="h4">What's the project?</Typography>
+            <Typography variant="h5">What's the project?</Typography>
             <Typography variant="body1" className={classes.subtext}>
               Throughout the duration of the program we'll be making a blog-like
               web application. In our app, people will be able to view posts,
@@ -109,7 +109,7 @@ const Jumpstart: React.FC = () => {
         </Grid>
         <Grid item sm={6}>
           <Fade>
-            <Typography variant="h4">Wait, what's catch-up code?</Typography>
+            <Typography variant="h5">Wait, what's catch-up code?</Typography>
             <Typography variant="body1" className={classes.subtext}>
               Every week we'll be providing catch-up code to everyone before the
               start of the next meeting, to make sure everyone is caught up with
@@ -139,7 +139,7 @@ const Jumpstart: React.FC = () => {
             href="https://forms.gle/5AgQCcU5YpWgmEzr9"
             color="primary"
           >
-            <Typography variant="h4">Sign up here!</Typography>
+            <Typography variant="h5">Sign up here!</Typography>
           </Button>
         </Box>
       </Fade>
