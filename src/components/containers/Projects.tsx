@@ -1,8 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Hero from '../Hero';
 import { Container, Box } from '@material-ui/core';
 
 import ProjectCard from './ProjectCard';
+import { ReactComponent as ProjectsSvg } from '../../svg/projects.svg';
 
 const Projects: React.FC = () => {
   return (
@@ -11,6 +13,11 @@ const Projects: React.FC = () => {
         <title>Projects</title>
         <meta name="description" content="C4C delivers web applications to Boston-based nonprofits." />
       </Helmet>
+      <Hero
+        subtitle="Take a look at some of the work we've done."
+        title="Projects"
+        SvgNode={ProjectsSvg}
+      />
       <Box my={4}>
         <ProjectCard title={"Lucy's Love Bus"} paragraph={"Lucy’s Love Bus improves quality of life for children with cancer \
                         or other life-threatening illnesses with integrative therapies like massage, meditation, \

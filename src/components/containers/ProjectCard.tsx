@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {
-    CardActionArea,
     CardContent,
     Button,
     Typography,
@@ -28,23 +27,21 @@ const ProjectCard: React.FC<CardProps> = ({ title, paragraph, path, abbr }) => {
     const classes = useStyles();
     return (
         <Card className={classes['project-card']}>
-            <CardActionArea>
-                <CardMedia
-                    component="img"
-                    className={classes['project-img']}
-                    image={path}
-                    alt={path}
-                    title={abbr}
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        {title}
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        {paragraph}
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
+            <CardMedia
+                component="img"
+                className={classes['project-img']}
+                image={path}
+                alt={path}
+                title={abbr}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                    {title}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                    {paragraph}
+                </Typography>
+            </CardContent>
             <CardActions>
                 <Button size="small" color="primary">
                     Share
