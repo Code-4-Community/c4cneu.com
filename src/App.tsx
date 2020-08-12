@@ -7,7 +7,6 @@ import Apply from './components/Apply';
 import ApplyDeveloper from './components/ApplyDeveloper';
 import ApplyProductDesigner from './components/ApplyProductDesigner';
 import ApplyBrandDesigner from './components/ApplyBrandDesigner';
-
 import Partner from './components/Partner';
 import Projects from './components/Projects';
 import Jumpstart from './components/Jumpstart';
@@ -15,6 +14,7 @@ import Events from './components/Events';
 import Board from './components/Board';
 import FAQ from './components/FAQ';
 import NotFound from './components/NotFound';
+import BannerAlert from './components/BannerAlert';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
@@ -33,6 +33,7 @@ const App: React.FC = () => {
         </Helmet>
 
         <Router>
+          <BannerAlert />
           <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
