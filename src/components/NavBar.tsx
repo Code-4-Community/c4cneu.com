@@ -116,7 +116,7 @@ const NavBar: React.FC = () => {
                 </Button>
                 <Button component={Link} to="/board">
                   <Typography variant="h6" className={classes.navlink}>
-                    Board
+                    People
                   </Typography>
                 </Button>
                 <Button component={Link} to="/faq">

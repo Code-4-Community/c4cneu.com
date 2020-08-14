@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
               </Link>
               {' | '}
               <Link to="/board" className={classes.footerLink}>
-                Board
+                People
               </Link>
               {' | '}
               <Link to="/faq" className={classes.footerLink}>
