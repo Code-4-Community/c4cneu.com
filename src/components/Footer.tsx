@@ -29,6 +29,8 @@ const useStyles = makeStyles({
 
 const Footer: React.FC = () => {
   const classes = useStyles();
+  const eventsDocsLink =
+    'https://docs.google.com/document/d/1b4cPxZ1MvorE5Ktz1epJ3nxlKggRA_NmV8wvg_RixIM/edit?usp=sharing';
   return (
     <Container maxWidth="md" className={classes.root}>
       <Divider />
@@ -39,6 +41,15 @@ const Footer: React.FC = () => {
               <Link to="/apply" className={classes.footerLink}>
                 Apply
               </Link>
+              {' | '}
+              <a
+                href={eventsDocsLink}
+                rel="noopener noreferrer"
+                target="_blank"
+                className={classes.footerLink}
+              >
+                Events
+              </a>
               {' | '}
               <Link to="/jumpstart" className={classes.footerLink}>
                 Jumpstart
