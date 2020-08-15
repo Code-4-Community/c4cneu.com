@@ -30,7 +30,7 @@ const useStyles = makeStyles({
 const Footer: React.FC = () => {
   const classes = useStyles();
   const eventsDocsLink =
-    'https://docs.google.com/document/d/1b4cPxZ1MvorE5Ktz1epJ3nxlKggRA_NmV8wvg_RixIM/edit?usp=sharing';
+    'https://docs.google.com/document/d/1CbTWfAhkmy7l-BbuaZJ1lSIsheUOcVfQRaBQPGAZRH4/edit?usp=sharing';
   return (
     <Container maxWidth="md" className={classes.root}>
       <Divider />

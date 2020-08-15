@@ -76,7 +76,7 @@ const NavBar: React.FC = () => {
   };
 
   const eventsDocsLink =
-    'https://docs.google.com/document/d/1b4cPxZ1MvorE5Ktz1epJ3nxlKggRA_NmV8wvg_RixIM/edit?usp=sharing';
+    'https://docs.google.com/document/d/1CbTWfAhkmy7l-BbuaZJ1lSIsheUOcVfQRaBQPGAZRH4/edit?usp=sharing';
 
   return (
     <AppBar position="static" color="transparent" elevation={0}>
