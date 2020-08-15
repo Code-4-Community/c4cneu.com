@@ -75,6 +75,9 @@ const NavBar: React.FC = () => {
     setAnchorEl(null);
   };
 
+  const eventsDocsLink =
+    'https://docs.google.com/document/d/1b4cPxZ1MvorE5Ktz1epJ3nxlKggRA_NmV8wvg_RixIM/edit?usp=sharing';
+
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Container maxWidth="md">
@@ -109,6 +112,11 @@ const NavBar: React.FC = () => {
                     Projects
                   </Typography>
                 </Button> */}
+                <Button href={eventsDocsLink} target="_blank">
+                  <Typography variant="h6" className={classes.navlink}>
+                    Events
+                  </Typography>
+                </Button>
                 <Button component={Link} to="/jumpstart">
                   <Typography variant="h6" className={classes.navlink}>
                     Jumpstart
@@ -152,6 +160,14 @@ const NavBar: React.FC = () => {
                 {/* <MenuItem onClick={handleClose} component={Link} to="/projects">
                   <Typography variant="body1">Projects</Typography>
                 </MenuItem> */}
+                <MenuItem
+                  onClick={handleClose}
+                  component="a"
+                  href={eventsDocsLink}
+                  target="_blank"
+                >
+                  <Typography variant="body1">Events</Typography>
+                </MenuItem>
                 <MenuItem
                   onClick={handleClose}
                   component={Link}
