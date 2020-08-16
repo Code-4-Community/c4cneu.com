@@ -171,7 +171,7 @@ const ApplyDeveloper: React.FC = () => {
           />
           <TextQuoteBlock
             quote="I joined C4C without much knowledge related to software development, which left me feeling anxious about not having the proper skills to be a developer. However, thanks to an amazing team and their mentorship, I was able to learn and grow to become confident in my software development skills both in and out of C4C."
-            name="Kimin lee"
+            name="Kimin Lee"
             title="Software Developer"
           />
         </Fade>
