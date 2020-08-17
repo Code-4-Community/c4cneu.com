@@ -2,11 +2,9 @@ import React from 'react';
 
 import {
     CardContent,
-    Button,
     Typography,
     CardMedia,
     Card,
-    CardActions,
     makeStyles
 }
     from '@material-ui/core';
@@ -23,21 +21,22 @@ interface CardProps {
     readonly paragraph: string;
     readonly path: string;
     readonly abbr: string;
-    readonly share: string;
     readonly learnMore: string;
 }
 
-const ProjectCard: React.FC<CardProps> = ({ title, paragraph, path, abbr, share, learnMore }) => {
+const ProjectCard: React.FC<CardProps> = ({ title, paragraph, path, abbr, learnMore }) => {
     const classes = useStyles();
     return (
         <Card className={classes['project-card']}>
-            <CardMedia
-                component="img"
-                className={classes['project-img']}
-                image={path}
-                alt={path}
-                title={abbr}
-            />
+            <a href={learnMore}>
+                <CardMedia
+                    component="img"
+                    className={classes['project-img']}
+                    image={path}
+                    alt={path}
+                    title={abbr}
+                />
+            </a>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
                     {title}
@@ -46,14 +45,6 @@ const ProjectCard: React.FC<CardProps> = ({ title, paragraph, path, abbr, share,
                     {paragraph}
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small" color="primary" href={share}>
-                    Share
-        </Button>
-                <Button size="small" color="primary" href={learnMore}>
-                    Learn More
-        </Button>
-            </CardActions>
         </Card>
     );
 };
