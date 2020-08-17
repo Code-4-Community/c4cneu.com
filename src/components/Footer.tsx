@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                 Jumpstart
               </Link>
               {' | '}
-              <Link to="/board" className={classes.footerLink}>
+              <Link to="/people" className={classes.footerLink}>
                 People
               </Link>
               {' | '}
