@@ -153,20 +153,25 @@ const ApplyDeveloper: React.FC = () => {
           </Fade>
         </Grid>
 
-        <TextQuoteBlock
-          quote="Code4Community gives you an unrivaled opportunity to learn software development while making a positive impact on the world. Too often at this school software is simply 'academic' or 'just business'. Unlike any other organization at Northeastern, Code4Community makes coding feel truly creative and compassionate. Why wait to make a difference?"
-          name="Ryan Jung"
-          title="Lead Software Developer"
-        />
-        <TextQuoteBlock
-          quote="C4C gave me a glimpse of how software development really works in industry. I am grateful for the mentorship I’ve received, and I feel well-prepared for my next co-op. Also, it feels good seeing your code directly benefit the community."
-          name="Brandon Liang"
-          title="Software Developer"
-        />
         <Fade>
+          <TextQuoteBlock
+            quote="Code4Community gives you an unrivaled opportunity to learn software development while making a positive impact on the world. Too often at this school software is simply 'academic' or 'just business'. Unlike any other organization at Northeastern, Code4Community makes coding feel truly creative and compassionate. Why wait to make a difference?"
+            name="Ryan Jung"
+            title="Lead Software Developer"
+          />
+          <TextQuoteBlock
+            quote="C4C gave me a glimpse of how software development really works in industry. I am grateful for the mentorship I’ve received, and I feel well-prepared for my next co-op. Also, it feels good seeing your code directly benefit the community."
+            name="Brandon Liang"
+            title="Software Developer"
+          />
           <TextQuoteBlock
             quote="What I love most about C4C is its emphasis on the community. Whether its helping out the greater Boston area or teaching Northeastern students coding or connecting with other club members, C4C always makes community its number one priority. You will never feel alone in C4C."
             name="Max Sebso"
+            title="Software Developer"
+          />
+          <TextQuoteBlock
+            quote="I joined C4C without much knowledge related to software development, which left me feeling anxious about not having the proper skills to be a developer. However, thanks to an amazing team and their mentorship, I was able to learn and grow to become confident in my software development skills both in and out of C4C."
+            name="Kimin Lee"
             title="Software Developer"
           />
         </Fade>
