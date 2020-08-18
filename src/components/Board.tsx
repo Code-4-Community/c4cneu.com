@@ -90,6 +90,13 @@ const Template: React.FC = () => {
                 email="emison.a@northeastern.edu"
               />
               <Member
+                name="Vedanshi Konecny"
+                position="Marketing Director"
+                image="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Vedansha-S.jpg"
+                linkedin="https://www.linkedin.com/in/vedanshi-shah-267369179/"
+                email="shah.ve@northeastern.edu"
+              />
+              <Member
                 name="Jack Tonina"
                 position="School Liaison"
                 image="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Jack-T.jpg"
