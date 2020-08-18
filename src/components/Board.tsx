@@ -39,11 +39,11 @@ const Template: React.FC = () => {
       <Container maxWidth="md" className={classes.hero}>
         <Helmet>
           <title>People</title>
-          <meta name="People" content="Meet the people of Code4Comunity." />
+          <meta name="People" content="Meet the people of Code4Community." />
         </Helmet>
         <Hero
           title="People"
-          subtitle="Meet the people of Code4Comunity."
+          subtitle="Meet the people of Code4Community."
           SvgNode={SVG}
         />
       </Container>
