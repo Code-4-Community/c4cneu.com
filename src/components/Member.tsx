@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Grid, Typography} from '@material-ui/core';
+import { Paper, Grid, Typography } from '@material-ui/core';
 // @ts-ignore
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 10,
       '& $position': {
         fontSize: 10,
-      }
+      },
     },
     linkedin: {
       position: 'relative',
@@ -174,10 +174,14 @@ const Member: React.FC<MemberProps> = ({
             />
           </a>
         </div>
-        <LazyLoadImage className={classes.portrait} src={image} alt={name}/>
+        <LazyLoadImage className={classes.portrait} src={image} alt={name} />
         <div className={classes.cardText}>
-        <Typography className={classes.name} variant="subtitle2">{name}</Typography >
-        <Typography className={classes.position} variant="subtitle2">{position}</Typography >
+          <Typography className={classes.name} variant="subtitle2">
+            {name}
+          </Typography>
+          <Typography className={classes.position} variant="subtitle2">
+            {position}
+          </Typography>
         </div>
       </Paper>
     </Grid>

@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   positionTitle: {
     fontSize: '40px',
     margin: '30px 0px',
-  }
+  },
 });
 
 const Template: React.FC = () => {
@@ -50,7 +50,11 @@ const Template: React.FC = () => {
       <Fade>
         <Container maxWidth="md">
           <div className={classes.root}>
-            <Typography variant="h3" align="left" className={classes.positionTitle}>
+            <Typography
+              variant="h3"
+              align="left"
+              className={classes.positionTitle}
+            >
               E-Board
             </Typography>
             <Grid container justify="center" alignItems="center" spacing={3}>

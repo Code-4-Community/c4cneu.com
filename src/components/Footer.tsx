@@ -78,7 +78,12 @@ const Footer: React.FC = () => {
                 Github
               </a>
               {' | '}
-              <a href="https://c4cneu.slack.com" className={classes.footerLink} target="_blank">
+              <a
+                href="https://c4cneu.slack.com"
+                className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Slack
               </a>
               {' | '}
