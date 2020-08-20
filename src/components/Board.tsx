@@ -77,7 +77,7 @@ const Template: React.FC = () => {
               />
               <Member
                 name="Sadaf Khansalar"
-                position="Club Operations & Administration Director"
+                position="Administrative Director"
                 image="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Sadaf-K.jpg"
                 linkedin="https://www.linkedin.com/in/sadafkhansalar/"
                 email="khansalar.s@northeastern.edu"
