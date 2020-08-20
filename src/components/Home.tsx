@@ -271,7 +271,7 @@ const Home: React.FC = () => {
           <TextQuoteBlock
             quote="At Code4Community, I've met so many Northeastern students with diverse experiences, work ethics, talents, and the passion to help our local community. We work alongside one another to improve our leadership, teamwork, and technical skills. This is the community that I love to see grow and be a part of!"
             name="Sadaf Khansalar"
-            title="Operations and Administration Director"
+            title="Administrative Director"
           />
         </Fade>
         <Fade>
