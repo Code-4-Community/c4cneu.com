@@ -264,7 +264,7 @@ const Home: React.FC = () => {
           <TextQuoteBlock
             quote="Code4Community is a stellar example of a student organization that changes the world. At Code4Community you will apply and improve your skills, while helping non-profits increase efficiency and modernize. The work you do will touch and benefit the lives of those who need it most for years to come. Code4Community has showed me the power of software and has inspired me to use my skills to help make the world a better place."
             name="Stephen Alt"
-            title="Founder - Code4Community"
+            title="Founder of Code4Community"
           />
         </Fade>
         <Fade>
