@@ -107,22 +107,16 @@ const NavBar: React.FC = () => {
                     Apply
                   </Typography>
                 </Button>
-                {/* <Button component={Link} to="/projects">
-                  <Typography variant="h6" className={classes.navlink}>
-                    Projects
-                  </Typography>
-                </Button> */}
-
                 <Button component={Link} to="/jumpstart">
                   <Typography variant="h6" className={classes.navlink}>
                     Jumpstart
                   </Typography>
                 </Button>
-                {/* <Button component={Link} to="/board">
+                <Button component={Link} to="/people">
                   <Typography variant="h6" className={classes.navlink}>
-                    Board
+                    People
                   </Typography>
-                </Button> */}
+                </Button>
                 <Button href={eventsDocsLink} target="_blank">
                   <Typography variant="h6" className={classes.navlink}>
                     Events
@@ -172,6 +166,9 @@ const NavBar: React.FC = () => {
                 {/* <MenuItem onClick={handleClose} component={Link} to="/board">
                   <Typography variant="body1">Board</Typography>
                 </MenuItem> */}
+                <MenuItem onClick={handleClose} component={Link} to="/people">
+                  <Typography variant="body1">People</Typography>
+                </MenuItem>
                 <MenuItem
                   onClick={handleClose}
                   component="a"

@@ -52,7 +52,7 @@ const App: React.FC = () => {
             <Route path="/projects" exact component={Projects} />
             <Route path="/jumpstart" exact component={Jumpstart} />
             <Route path="/events" exact component={Events} />
-            <Route path="/board" exact component={Board} />
+            <Route path="/people" exact component={Board} />
             <Route path="/faq" exact component={FAQ} />
 
             <Route path="*" exact component={NotFound} />
