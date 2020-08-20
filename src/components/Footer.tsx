@@ -72,17 +72,21 @@ const Footer: React.FC = () => {
               <a
                 href="https://github.com/Code-4-Community"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Github
               </a>
               {' | '}
-              <a href="https://c4cneu.slack.com" className={classes.footerLink}>
+              <a href="https://c4cneu.slack.com" className={classes.footerLink} target="_blank">
                 Slack
               </a>
               {' | '}
               <a
                 href="https://www.facebook.com/c4cneu/"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Facebook
               </a>
@@ -90,6 +94,8 @@ const Footer: React.FC = () => {
               <a
                 href="http://instagram.com/c4cneu"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Instagram
               </a>
@@ -97,6 +103,8 @@ const Footer: React.FC = () => {
               <a
                 href="https://www.linkedin.com/company/code-4-community/"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 LinkedIn
               </a>
@@ -111,6 +119,8 @@ const Footer: React.FC = () => {
               <a
                 href="https://c4cneu.us4.list-manage.com/subscribe?u=4b534cd2e8fe8be8150d03977&id=b1915b8b8b"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 mailing list
               </a>
