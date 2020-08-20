@@ -58,7 +58,10 @@ const Footer: React.FC = () => {
               align="left"
               variant="subtitle2"
             >
-              Contact us at c4cneu@gmail.com
+              Contact us at{' '}
+              <a href="mailto:c4cneu@gmail.com" className={classes.footerLink}>
+                c4cneu@gmail.com
+              </a>
             </Typography>
           </Grid>
 
