@@ -75,9 +75,6 @@ const NavBar: React.FC = () => {
     setAnchorEl(null);
   };
 
-  const eventsDocsLink =
-    'https://docs.google.com/document/d/1CbTWfAhkmy7l-BbuaZJ1lSIsheUOcVfQRaBQPGAZRH4/edit?usp=sharing';
-
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Container maxWidth="md">
@@ -107,6 +104,11 @@ const NavBar: React.FC = () => {
                     Apply
                   </Typography>
                 </Button>
+                <Button component={Link} to="/events">
+                  <Typography variant="h6" className={classes.navlink}>
+                    Events
+                  </Typography>
+                </Button>
                 <Button component={Link} to="/jumpstart">
                   <Typography variant="h6" className={classes.navlink}>
                     Jumpstart
@@ -117,11 +119,7 @@ const NavBar: React.FC = () => {
                     People
                   </Typography>
                 </Button>
-                <Button href={eventsDocsLink} target="_blank">
-                  <Typography variant="h6" className={classes.navlink}>
-                    Events
-                  </Typography>
-                </Button>
+
                 <Button component={Link} to="/faq">
                   <Typography variant="h6" className={classes.navlink}>
                     FAQs
@@ -152,10 +150,9 @@ const NavBar: React.FC = () => {
                 <MenuItem onClick={handleClose} component={Link} to="/apply">
                   <Typography variant="body1">Apply</Typography>
                 </MenuItem>
-                {/* <MenuItem onClick={handleClose} component={Link} to="/projects">
-                  <Typography variant="body1">Projects</Typography>
-                </MenuItem> */}
-
+                <MenuItem onClick={handleClose} component={Link} to="/events">
+                  <Typography variant="body1">Events</Typography>
+                </MenuItem>
                 <MenuItem
                   onClick={handleClose}
                   component={Link}
@@ -169,14 +166,7 @@ const NavBar: React.FC = () => {
                 <MenuItem onClick={handleClose} component={Link} to="/people">
                   <Typography variant="body1">People</Typography>
                 </MenuItem>
-                <MenuItem
-                  onClick={handleClose}
-                  component="a"
-                  href={eventsDocsLink}
-                  target="_blank"
-                >
-                  <Typography variant="body1">Events</Typography>
-                </MenuItem>
+
                 <MenuItem onClick={handleClose} component={Link} to="/faq">
                   <Typography variant="body1">FAQs</Typography>
                 </MenuItem>

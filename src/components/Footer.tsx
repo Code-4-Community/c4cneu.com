@@ -33,8 +33,6 @@ const Footer: React.FC = () => {
     setOnHomePage(currentPath === '/');
   }, [location]);
 
-  const eventsDocsLink =
-    'https://docs.google.com/document/d/1CbTWfAhkmy7l-BbuaZJ1lSIsheUOcVfQRaBQPGAZRH4/edit?usp=sharing';
   return (
     <Container maxWidth="md" className={classes.root}>
       <Divider />
@@ -54,6 +52,10 @@ const Footer: React.FC = () => {
                 Apply
               </Link>
               {' | '}
+              <Link to="/events" className={classes.footerLink}>
+                Events
+              </Link>
+              {' | '}
               <Link to="/jumpstart" className={classes.footerLink}>
                 Jumpstart
               </Link>
@@ -61,15 +63,6 @@ const Footer: React.FC = () => {
               <Link to="/people" className={classes.footerLink}>
                 People
               </Link>
-              {' | '}
-              <a
-                href={eventsDocsLink}
-                rel="noopener noreferrer"
-                target="_blank"
-                className={classes.footerLink}
-              >
-                Events
-              </a>
               {' | '}
               <Link to="/faq" className={classes.footerLink}>
                 FAQs
