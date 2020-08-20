@@ -33,6 +33,9 @@ const useStyles = makeStyles({
 });
 
 const Template: React.FC = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const classes = useStyles();
   return (
     <div>
