@@ -3,12 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Typography, Divider, Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
-/*
-Template for future page components.
-Use MUI's CSS-in-JS makeStyles() as shown below for more complex CSS/
-Otherwise, use <Box> components where possible for inline styling.
-Every page must have a Helmet tag for SEO purposes.
-*/
+import { useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -29,6 +24,17 @@ const useStyles = makeStyles({
 
 const Footer: React.FC = () => {
   const classes = useStyles();
+
+  const [onHomePage, setOnHomePage] = React.useState(false);
+  const location = useLocation();
+
+  React.useEffect(() => {
+    const currentPath = location.pathname;
+    setOnHomePage(currentPath === '/');
+  }, [location]);
+
+  const eventsDocsLink =
+    'https://docs.google.com/document/d/1CbTWfAhkmy7l-BbuaZJ1lSIsheUOcVfQRaBQPGAZRH4/edit?usp=sharing';
   return (
     <Container maxWidth="md" className={classes.root}>
       <Divider />
@@ -36,6 +42,14 @@ const Footer: React.FC = () => {
         <Grid container spacing={1}>
           <Grid item xs={6}>
             <Typography gutterBottom color="textSecondary" variant="subtitle2">
+              {onHomePage ? (
+                <span className={classes.footerLink}>Home</span>
+              ) : (
+                <Link to="/" className={classes.footerLink}>
+                  Home
+                </Link>
+              )}
+              {' | '}
               <Link to="/apply" className={classes.footerLink}>
                 Apply
               </Link>
@@ -48,8 +62,17 @@ const Footer: React.FC = () => {
                 People
               </Link>
               {' | '}
+              <a
+                href={eventsDocsLink}
+                rel="noopener noreferrer"
+                target="_blank"
+                className={classes.footerLink}
+              >
+                Events
+              </a>
+              {' | '}
               <Link to="/faq" className={classes.footerLink}>
-                FAQ
+                FAQs
               </Link>
             </Typography>
             <Typography

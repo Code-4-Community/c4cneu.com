@@ -7,7 +7,6 @@ import Apply from './components/Apply';
 import ApplyDeveloper from './components/ApplyDeveloper';
 import ApplyProductDesigner from './components/ApplyProductDesigner';
 import ApplyBrandDesigner from './components/ApplyBrandDesigner';
-
 import Partner from './components/Partner';
 import Projects from './components/Projects';
 import Jumpstart from './components/Jumpstart';
