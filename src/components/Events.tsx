@@ -62,7 +62,13 @@ const Events: React.FC = () => {
               </Link>{' '}
               program. Stay tuned for more events by checking our official event
               schedule and joining our{' '}
-              <Link href="https://c4cneu.us4.list-manage.com/subscribe?u=4b534cd2e8fe8be8150d03977&id=b1915b8b8b" target="_blank">mailing list</Link>.
+              <Link
+                href="https://c4cneu.us4.list-manage.com/subscribe?u=4b534cd2e8fe8be8150d03977&id=b1915b8b8b"
+                target="_blank"
+              >
+                mailing list
+              </Link>
+              .
             </Typography>
           </Box>
         </Grid>
