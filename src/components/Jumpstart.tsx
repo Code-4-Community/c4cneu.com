@@ -73,7 +73,8 @@ const Jumpstart: React.FC = () => {
               program's project, you will be learning technologies like React,
               Typescript, Vertx, and Java. A basic understanding of programming
               is required (Java recommended), and you'll learn everything else
-              you need from our weekly workshops!
+              you need from our weekly workshops! Jumpstart sessions will all be
+              online and recorded, see our FAQ for details.
             </Typography>
           </Fade>
         </Grid>

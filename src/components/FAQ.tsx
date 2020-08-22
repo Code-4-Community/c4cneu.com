@@ -14,6 +14,16 @@ Every page must have a Helmet tag for SEO purposes.
 
 const faq = [
   {
+    title: 'Will C4C events be held virtually?',
+    body:
+      'Yes, all C4C events will be held virtually and recorded. Our event planners are working hard to ensure that all our recordings will be available and easily accessible.',
+  },
+  {
+    title: "Can I still apply to join C4C if I'm not on campus this semester?",
+    body:
+      'Absolutely! Our product teams are now working fully remotely, so no matter where you are you can still join C4C and help the Boston community. Our teams are comfortable working with others in different timezones, and we will never consider your current location to be a negative factor in our application process.',
+  },
+  {
     title: 'How does the application process work?',
     body: (
       <>

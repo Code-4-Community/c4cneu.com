@@ -109,16 +109,21 @@ const NavBar: React.FC = () => {
                     Projects
                   </Typography>
                 </Button>
+                <Button component={Link} to="/events">
+                  <Typography variant="h6" className={classes.navlink}>
+                    Events
+                  </Typography>
+                </Button>
                 <Button component={Link} to="/jumpstart">
                   <Typography variant="h6" className={classes.navlink}>
                     Jumpstart
                   </Typography>
                 </Button>
-                {/* <Button component={Link} to="/board">
+                <Button component={Link} to="/people">
                   <Typography variant="h6" className={classes.navlink}>
-                    Board
+                    People
                   </Typography>
-                </Button> */}
+                </Button>
                 <Button component={Link} to="/faq">
                   <Typography variant="h6" className={classes.navlink}>
                     FAQs
@@ -152,19 +157,22 @@ const NavBar: React.FC = () => {
                 <MenuItem onClick={handleClose} component={Link} to="/projects">
                   <Typography variant="body1">Projects</Typography>
                 </MenuItem>
-                <MenuItem
-                  onClick={handleClose}
-                  component={Link}
-                  to="/jumpstart"
-                >
-                  <Typography variant="body1">Jumpstart</Typography>
-                </MenuItem>
-                {/* <MenuItem onClick={handleClose} component={Link} to="/board">
-                  <Typography variant="body1">Board</Typography>
-                </MenuItem> */}
-                <MenuItem onClick={handleClose} component={Link} to="/faq">
-                  <Typography variant="body1">FAQs</Typography>
-                </MenuItem>
+                  <MenuItem onClick={handleClose} component={Link} to="/events">
+                    <Typography variant="body1">Events</Typography>
+                  </MenuItem>
+                  <MenuItem
+                    onClick={handleClose}
+                    component={Link}
+                    to="/jumpstart"
+                  >
+                    <Typography variant="body1">Jumpstart</Typography>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose} component={Link} to="/people">
+                    <Typography variant="body1">People</Typography>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose} component={Link} to="/faq">
+                    <Typography variant="body1">FAQs</Typography>
+                  </MenuItem>
               </Menu>
             </Hidden>
           </div>

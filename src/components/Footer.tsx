@@ -3,12 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Typography, Divider, Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
-/*
-Template for future page components.
-Use MUI's CSS-in-JS makeStyles() as shown below for more complex CSS/
-Otherwise, use <Box> components where possible for inline styling.
-Every page must have a Helmet tag for SEO purposes.
-*/
+import { useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -29,6 +24,15 @@ const useStyles = makeStyles({
 
 const Footer: React.FC = () => {
   const classes = useStyles();
+
+  const [onHomePage, setOnHomePage] = React.useState(false);
+  const location = useLocation();
+
+  React.useEffect(() => {
+    const currentPath = location.pathname;
+    setOnHomePage(currentPath === '/');
+  }, [location]);
+
   return (
     <Container maxWidth="md" className={classes.root}>
       <Divider />
@@ -36,16 +40,32 @@ const Footer: React.FC = () => {
         <Grid container spacing={1}>
           <Grid item xs={6}>
             <Typography gutterBottom color="textSecondary" variant="subtitle2">
+              {onHomePage ? (
+                <span className={classes.footerLink}>Home</span>
+              ) : (
+                <Link to="/" className={classes.footerLink}>
+                  Home
+                </Link>
+              )}
+              {' | '}
               <Link to="/apply" className={classes.footerLink}>
                 Apply
+              </Link>
+              {' | '}
+              <Link to="/events" className={classes.footerLink}>
+                Events
               </Link>
               {' | '}
               <Link to="/jumpstart" className={classes.footerLink}>
                 Jumpstart
               </Link>
               {' | '}
+              <Link to="/people" className={classes.footerLink}>
+                People
+              </Link>
+              {' | '}
               <Link to="/faq" className={classes.footerLink}>
-                FAQ
+                FAQs
               </Link>
             </Typography>
             <Typography
@@ -54,7 +74,10 @@ const Footer: React.FC = () => {
               align="left"
               variant="subtitle2"
             >
-              Contact us at c4cneu@gmail.com
+              Contact us at{' '}
+              <a href="mailto:c4cneu@gmail.com" className={classes.footerLink}>
+                c4cneu@gmail.com
+              </a>
             </Typography>
           </Grid>
 
@@ -68,17 +91,26 @@ const Footer: React.FC = () => {
               <a
                 href="https://github.com/Code-4-Community"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Github
               </a>
               {' | '}
-              <a href="https://c4cneu.slack.com" className={classes.footerLink}>
+              <a
+                href="https://c4cneu.slack.com"
+                className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Slack
               </a>
               {' | '}
               <a
                 href="https://www.facebook.com/c4cneu/"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Facebook
               </a>
@@ -86,6 +118,8 @@ const Footer: React.FC = () => {
               <a
                 href="http://instagram.com/c4cneu"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Instagram
               </a>
@@ -93,6 +127,8 @@ const Footer: React.FC = () => {
               <a
                 href="https://www.linkedin.com/company/code-4-community/"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 LinkedIn
               </a>
@@ -107,6 +143,8 @@ const Footer: React.FC = () => {
               <a
                 href="https://c4cneu.us4.list-manage.com/subscribe?u=4b534cd2e8fe8be8150d03977&id=b1915b8b8b"
                 className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 mailing list
               </a>
