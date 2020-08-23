@@ -110,7 +110,9 @@ const Jumpstart: React.FC = () => {
         </Grid>
         <Grid item sm={6}>
           <Fade>
-            <Typography variant="h5">Wait, what's catch-up code?</Typography>
+            <Typography variant="h5">
+              Can I still join if I miss a meeting?
+            </Typography>
             <Typography variant="body1" className={classes.subtext}>
               Every week we'll be providing catch-up code to everyone before the
               start of the next meeting, to make sure everyone is caught up with
