@@ -165,7 +165,12 @@ const ApplyDeveloper: React.FC = () => {
 
         <Fade>
           <TextQuoteBlock
-            quote="Code4Community gives you an unrivaled opportunity to learn software development while making a positive impact on the world. Too often at this school software is simply 'academic' or 'just business'. Unlike any other organization at Northeastern, Code4Community makes coding feel truly creative and compassionate. Why wait to make a difference?"
+            quote="Joining C4C pushed me out of my comfort zone almost immediately, but it’s also taught me more than many CS courses I’ve taken – everyone truly embraces a “learn by doing” attitude, and there are so many smart and kind people to help you out when you get stuck!"
+            name="Jackie Lincroft"
+            title="Software Developer"
+          />
+          <TextQuoteBlock
+            quote="Code4Community gives you an unrivaled opportunity to learn software development while making a positive impact on the world. Too often at this school software is simply 'academic' or 'just business'. Unlike any other organization at Northeastern, Code4Community makes coding feel truly creative and compassionate."
             name="Ryan Jung"
             title="Lead Software Developer"
           />

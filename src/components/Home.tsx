@@ -262,6 +262,13 @@ const Home: React.FC = () => {
       <Grid container className={classes.section}>
         <Fade>
           <TextQuoteBlock
+            quote="If the members of C4C are any indication of our future movers and shakers, we are in good hands. We were given frequent updates and they paid attention to every single detail, ensuring that the user experience was seamless and easy to follow. 2020 has been challenging on many fronts and our organization has been truly touched that the team remains so attentive and driven to complete the project in the midst of a global pandemic. We can't wait to launch the application and spread the word about the great group."
+            name="Jackie Walker"
+            title="Director of Programs at Lucy's Love Bus"
+          />
+        </Fade>
+        <Fade>
+          <TextQuoteBlock
             quote="Code4Community is a stellar example of a student organization that changes the world. At Code4Community you will apply and improve your skills, while helping non-profits increase efficiency and modernize. The work you do will touch and benefit the lives of those who need it most for years to come. Code4Community has showed me the power of software and has inspired me to use my skills to help make the world a better place."
             name="Stephen Alt"
             title="Founder of Code4Community"
