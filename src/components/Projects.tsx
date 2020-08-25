@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
                         medical conditions and their families. Here they host events for the children and their families. We created \
                         the event planning and ticket purchasing system for all the events hosted by Lucy's Love Bus."}
             appDesc={"Event Registration System"}
-            path="./llb.png"
+            path="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LLB_2019_rgb.png"
             abbr="LLB"
             learnMore="https://www.lovebusprograms.org/" />
 
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
                 C4C built a block reservation system, allowing SFFT's volunteers to reserve blocks of trees that they will \
                 be able to inventory and then mark them as complete when they are finished collecting the required data."}
             appDesc={"Tree Inventory System"}
-            path="./sfft.png"
+            path="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/sfft-project-page.png"
             abbr="SFFT"
             learnMore="https://app.sfttbos.org" />
         </Grid>
