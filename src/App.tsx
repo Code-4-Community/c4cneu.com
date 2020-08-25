@@ -8,7 +8,7 @@ import ApplyDeveloper from './components/ApplyDeveloper';
 import ApplyProductDesigner from './components/ApplyProductDesigner';
 import ApplyBrandDesigner from './components/ApplyBrandDesigner';
 import Partner from './components/Partner';
-import Projects from './components/containers/Projects';
+import Projects from './components/Projects';
 import Jumpstart from './components/Jumpstart';
 import Events from './components/Events';
 import Board from './components/Board';
