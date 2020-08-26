@@ -1,4 +1,12 @@
-const people = [
+export interface Person {
+    readonly name: string;
+    readonly position: string;
+    readonly image: string;
+    readonly linkedin: string;
+    readonly email: string;
+}
+
+export const people: Person[] = [
     {
         name: "Liam Moynihan",
         position: "President",
@@ -56,5 +64,3 @@ const people = [
         email: "konecny.j@northeastern.edu", 
     },
 ]
-
-export default people;

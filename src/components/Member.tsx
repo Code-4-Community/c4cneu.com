@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Paper, Grid, Typography } from '@material-ui/core';
 // @ts-ignore
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Person } from './PeopleData';
 
 const useStyles = makeStyles((theme) => ({
   person: {
@@ -139,15 +140,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-interface MemberProps {
-  readonly name: string;
-  position: string;
-  image: string;
-  linkedin: string;
-  email: string;
-}
-
-const Member: React.FC<MemberProps> = ({
+const Member: React.FC<Person> = ({
   name,
   position,
   image,

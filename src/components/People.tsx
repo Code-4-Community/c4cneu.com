@@ -5,7 +5,7 @@ import { Container, Grid, Typography } from '@material-ui/core';
 import { ReactComponent as SVG } from '../svg/people.svg';
 
 import Member from './Member';
-import PeopleData from './PeopleData';
+import { people } from './PeopleData';
 import Hero from './Hero';
 
 // @ts-ignore
@@ -62,7 +62,7 @@ const People: React.FC = () => {
               E-Board
             </Typography>
             <Grid container justify="center" alignItems="center" spacing={3}>
-              {PeopleData.map(person => <Member name={person.name} position={person.position} image={person.image} linkedin={person.linkedin} email={person.email} />)}
+              {people.map(person => <Member {...person} />)}
             </Grid>
           </div>
         </Container>
