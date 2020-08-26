@@ -8,7 +8,7 @@ import {
   Button,
   Divider,
 } from '@material-ui/core';
-import { TextQuoteBlock } from './TextQuoteBlock';
+import { TextQuoteBlock } from '../../components/TextQuoteBlock';
 
 import { Link } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ import Typical from 'react-typical';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
-import { ReactComponent as ImpactfulSvg } from '../svg/impactful.svg';
+import { ReactComponent as ImpactfulSvg } from '../../svg/impactful.svg';
 // @ts-ignore
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 

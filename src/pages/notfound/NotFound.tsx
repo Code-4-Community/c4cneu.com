@@ -2,8 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import { Container } from '@material-ui/core';
-import Hero from './Hero';
-import { ReactComponent as SVG } from '../svg/404.svg';
+import Hero from '../../components/Hero';
+import { ReactComponent as SVG } from '../../svg/404.svg';
 
 const NotFound: React.FC = () => {
   return (

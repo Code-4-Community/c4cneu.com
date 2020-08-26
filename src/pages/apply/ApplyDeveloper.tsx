@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Typography, Grid } from '@material-ui/core';
-import Hero from './Hero';
-import { ReactComponent as SVG } from '../svg/developer.svg';
-import { TextQuoteBlock } from './TextQuoteBlock';
+import Hero from '../../components/Hero';
+import { ReactComponent as SVG } from '../../svg/developer.svg';
+import { TextQuoteBlock } from '../../components/TextQuoteBlock';
 import CTA from './CTA';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Container, Box, Link } from '@material-ui/core';
-import Hero from './Hero';
-import { ReactComponent as SVG } from '../svg/faq.svg';
-import JumpstartAccordion from './JumpstartAccordion';
+import Hero from '../../components/Hero';
+import { ReactComponent as SVG } from '../../svg/faq.svg';
+import JumpstartAccordion from '../../components/Accordion';
 import { Link as RouterLink } from 'react-router-dom';
 /*
 Template for future page components.
