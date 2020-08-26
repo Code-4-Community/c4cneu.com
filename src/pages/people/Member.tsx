@@ -78,7 +78,7 @@ const Member: React.FC<MemberProps> = ({
 }) => {
   const classes = useStyles();
   return (
-    <Grid item md={4}>
+    <Grid item sm={4}>
       <Paper className={classes.person} elevation={0}>
 
         <LazyLoadImage className={classes.portrait} src={image} alt={name} />
