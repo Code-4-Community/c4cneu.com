@@ -93,10 +93,13 @@ const useStyles = makeStyles({
 const Home: React.FC = () => {
   const classes = useStyles();
   const typePause = 3000;
+
   React.useEffect(() => {
+    window.scrollTo(0, 0);
     clearInterval();
     clearTimeout();
   }, []);
+  
   return (
     <Container maxWidth="md">
       <Helmet>
