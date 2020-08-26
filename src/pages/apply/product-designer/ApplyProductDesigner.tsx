@@ -2,10 +2,10 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Typography, Grid } from '@material-ui/core';
-import Hero from '../../components/Hero';
-import { ReactComponent as SVG } from '../../svg/branddesigner.svg';
-import { TextQuoteBlock } from '../../components/TextQuoteBlock';
-import CTA from './CTA';
+import Hero from '../../../components/Hero';
+import { ReactComponent as SVG } from './productdesigner.svg';
+import { TextQuoteBlock } from '../../../components/TextQuoteBlock';
+import CTA from '../CTA';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 const useStyles = makeStyles({
@@ -59,7 +59,7 @@ const useStyles = makeStyles({
   },
 });
 
-const ApplyBrandDesigner: React.FC = () => {
+const ApplyProductDesigner: React.FC = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -67,7 +67,7 @@ const ApplyBrandDesigner: React.FC = () => {
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>Developer</title>
+        <title>Product Designer</title>
         <meta
           name="description"
           content="Apply to be a Web Developer at Code4Community."
@@ -75,8 +75,8 @@ const ApplyBrandDesigner: React.FC = () => {
       </Helmet>
 
       <Hero
-        title="Brand Designer"
-        subtitle="Guide with innovative designs. Build a powerful brand."
+        title="Product Designer"
+        subtitle="Design accessible software for a cause. Shape user experiences."
         SvgNode={SVG}
       />
 
@@ -88,14 +88,16 @@ const ApplyBrandDesigner: React.FC = () => {
                 What you'll be doing
               </Typography>
               <Typography variant="body1" gutterBottom className={classes.text}>
-                As a Brand Designer, you will support the growth of C4C's brand
-                identity by refining our guidelines, voice, and design system.
-                You will work closely with the E-Board to build rapport with our
-                members and followers, research trending styles, and
-                competitively position C4C as an organization through our shared
-                content. The main collateral you will be working on is content
-                that can be used on our social media accounts with eye-catching
-                assets that innovatively express the C4C brand.
+                Product Designers are the main stakeholders for the design/UI of
+                our projects. As a designer, you'll get to work with our
+                software developers to create intuitive, user friendly products
+                that meet the needs of our non profit partners and their
+                members. You'll have the creative freedom to own, iterate, and
+                improve the product using the feedback from our product teams
+                and partners to achieve a high quality user experience. While
+                your journey will start with mock-ups, you will be continuously
+                reiterating at different fidelity levels to ensure the designs
+                translate to working codable products.
               </Typography>
             </Box>
           </Fade>
@@ -105,14 +107,13 @@ const ApplyBrandDesigner: React.FC = () => {
                 What we’re looking for
               </Typography>
               <Typography variant="body1" gutterBottom className={classes.text}>
-                Our ideal candidate is someone who enjoys experimenting with
-                graphic design, typography, and imagery. They are forward
-                thinking and enjoy evaluating how one design contributes to the
-                larger scheme of a platform, series, or campaign. Although
-                proficiency with Adobe Illustrator and Indesign are bonuses, we
-                value candidates who showcase a learning spirit and are
-                enthusiastic about fostering a collaborative community through
-                branding efforts.
+                A great designer is someone who places the user at the forefront
+                of the ideation and creation process. We want candidates
+                interested in problem solving and are skilled at communicating
+                ideas. Although having web design experience is a bonus, we
+                value candidates that showcase a learning spirit, dedication to
+                the iterative process, and a receptive nature to understand
+                product needs and developer capabilities.
               </Typography>
             </Box>
           </Fade>
@@ -124,20 +125,20 @@ const ApplyBrandDesigner: React.FC = () => {
               <Typography variant="body1" className={classes.text}>
                 <ul className={classes.list}>
                   <li>
-                    Comfortable with Adobe Creative Cloud, particularly
-                    Illustrator and InDesign
+                    Motivated to learn new technologies and grow as a designer
+                  </li>
+                  <li>Passionate about helping the Boston community</li>
+                  <li>
+                    A strong communicator who facilitates collaboration amongst
+                    the product team
                   </li>
                   <li>
-                    Thoughtful and can approach a design from many different
-                    perspectives
+                    Interested in being a part of the entire product life cycle:
+                    software inception to completion
                   </li>
                   <li>
-                    Motivated and loves taking ideas from conception to
-                    completion
-                  </li>
-                  <li>
-                    Interested in brand development and how to express ideas
-                    through design
+                    Dedicated to the C4C mission and has excellent follow
+                    through
                   </li>
                 </ul>
               </Typography>
@@ -157,14 +158,14 @@ const ApplyBrandDesigner: React.FC = () => {
 
         <Grid item sm={5} className={classes.application}>
           <Fade>
-            <CTA onClick="https://forms.gle/v6HVUjQSPjVP4mkV9" />
+            <CTA onClick="https://forms.gle/jRMLRVpozaPMMW1H9" />
           </Fade>
         </Grid>
         <Fade>
           <TextQuoteBlock
-            quote="Applying fundamental design knowledge to a real functioning product has been one of the most rewarding learning experiences I've had the opportunity to partake in. It's a whole other world when there are actual stakeholders for your project, and a development team to iterate with."
-            name="Reine Nisheiwat"
-            title="Director of Design"
+            quote="C4C is a purposeful club that maintains a unique dynamic from idea to launch. Having the opportunity to work in the design team not only gave me a taste of working in a start-up environment, but also a sense of accomplishment that encourages excitement for projects to come."
+            name="Jennifer Adisoetjahya"
+            title="UI/UX and Branding Lead"
           />
         </Fade>
       </Grid>
@@ -172,4 +173,4 @@ const ApplyBrandDesigner: React.FC = () => {
   );
 };
 
-export default ApplyBrandDesigner;
+export default ApplyProductDesigner;

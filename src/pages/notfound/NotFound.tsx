@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import { Container } from '@material-ui/core';
 import Hero from '../../components/Hero';
-import { ReactComponent as SVG } from '../../svg/404.svg';
+import { ReactComponent as SVG } from './404.svg';
 
 const NotFound: React.FC = () => {
   return (

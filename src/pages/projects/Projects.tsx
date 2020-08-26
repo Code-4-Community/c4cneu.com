@@ -4,7 +4,7 @@ import Hero from '../../components/Hero';
 import { Container, Grid } from '@material-ui/core';
 
 import ProjectCard from './ProjectCard';
-import { ReactComponent as ProjectsSvg } from '../../svg/projects.svg';
+import { ReactComponent as ProjectsSvg } from './projects.svg';
 
 const Projects: React.FC = () => {
   return (

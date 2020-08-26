@@ -19,7 +19,7 @@ import Typical from 'react-typical';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
-import { ReactComponent as ImpactfulSvg } from '../../svg/impactful.svg';
+import { ReactComponent as ImpactfulSvg } from './impactful.svg';
 // @ts-ignore
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
     clearInterval();
     clearTimeout();
   }, []);
-  
+
   return (
     <Container maxWidth="md">
       <Helmet>

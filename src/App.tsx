@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet';
 
 import Home from './pages/home/Home';
 import Apply from './pages/apply/Apply';
-import ApplyDeveloper from './pages/apply/ApplyDeveloper';
-import ApplyProductDesigner from './pages/apply/ApplyProductDesigner';
-import ApplyBrandDesigner from './pages/apply/ApplyBrandDesigner';
+import ApplyDeveloper from './pages/apply/developer/ApplyDeveloper';
+import ApplyProductDesigner from './pages/apply/product-designer/ApplyProductDesigner';
+import ApplyBrandDesigner from './pages/apply/brand-designer/ApplyBrandDesigner';
 import Projects from './pages/projects/Projects';
 import Jumpstart from './pages/jumpstart/Jumpstart';
 import Events from './pages/events/Events';
