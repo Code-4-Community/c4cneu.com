@@ -9,10 +9,10 @@ import {
   Box,
   Link,
 } from '@material-ui/core';
-import { ReactComponent as SVG } from '../svg/events.svg';
+import { ReactComponent as SVG } from './events.svg';
 import { Link as RouterLink } from 'react-router-dom';
 
-import Hero from './Hero';
+import Hero from '../../components/Hero';
 
 const useStyles = makeStyles({
   button: {

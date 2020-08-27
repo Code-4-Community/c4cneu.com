@@ -8,7 +8,7 @@ import {
   Button,
   Divider,
 } from '@material-ui/core';
-import { TextQuoteBlock } from './TextQuoteBlock';
+import { TextQuoteBlock } from '../../components/TextQuoteBlock';
 
 import { Link } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ import Typical from 'react-typical';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
-import { ReactComponent as ImpactfulSvg } from '../svg/impactful.svg';
+import { ReactComponent as ImpactfulSvg } from './impactful.svg';
 // @ts-ignore
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -93,10 +93,13 @@ const useStyles = makeStyles({
 const Home: React.FC = () => {
   const classes = useStyles();
   const typePause = 3000;
+
   React.useEffect(() => {
+    window.scrollTo(0, 0);
     clearInterval();
     clearTimeout();
   }, []);
+
   return (
     <Container maxWidth="md">
       <Helmet>

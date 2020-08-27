@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Grid, Typography, Button } from '@material-ui/core';
-import Hero from './Hero';
-import { ReactComponent as JumpstartSvg } from '../svg/jumpstart.svg';
-import JumpstartAccordion from './JumpstartAccordion';
+import Hero from '../../components/Hero';
+import { ReactComponent as JumpstartSvg } from './jumpstart.svg';
+import JumpstartAccordion from '../../components/Accordion';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
