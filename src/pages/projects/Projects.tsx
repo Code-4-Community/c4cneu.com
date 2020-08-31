@@ -31,15 +31,7 @@ const Projects: React.FC = () => {
         >
           { 
             ProjectJSON.cards.map((value, index) => {
-              return <ProjectCard
-                title={value.title}
-                paragraph={value.paragraph}
-                appDesc={value.appDesc}
-                path={value.path}
-                abbr={value.abbr}
-                learnMore={value.learnMore}
-                key={index} 
-              />
+              return <ProjectCard {...value} key={index} />
             })
           }
         </Grid>
