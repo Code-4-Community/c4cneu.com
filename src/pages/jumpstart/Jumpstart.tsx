@@ -151,7 +151,7 @@ const Jumpstart: React.FC = () => {
         <Box paddingBottom={5}>
           <Container maxWidth="sm">
             <JumpstartAccordion
-              sections={JumpstartJSON.jumpstartLayout}
+              sections={JumpstartData}
             />
           </Container>
         </Box>
