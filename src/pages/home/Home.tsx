@@ -265,7 +265,7 @@ const Home: React.FC = () => {
       <Grid container className={classes.section}>
         <Fade>
           <TextQuoteBlock
-            quote="If the members of C4C are any indication of our future movers and shakers, we are in good hands. We were given frequent updates and they paid attention to every single detail, ensuring that the user experience was seamless and easy to follow. 2020 has been challenging on many fronts and our organization has been truly touched that the team remains so attentive and driven to complete the project in the midst of a global pandemic. We can't wait to launch the application and spread the word about the great group."
+            quote="If the members of C4C are any indication of our future movers and shakers, we are in good hands. We were given frequent updates and they paid attention to every single detail, ensuring that the user experience was seamless and easy to follow. 2020 has been challenging on many fronts and our organization has been truly touched that the team remains so attentive and driven to complete the project in the midst of a global pandemic."
             name="Jackie Walker"
             title="Director of Programs at Lucy's Love Bus"
           />
