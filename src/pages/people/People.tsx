@@ -62,8 +62,8 @@ const People: React.FC = () => {
               E-Board
             </Typography>
             <Grid container justify="center" alignItems="center" spacing={3}>
-              {people.map((person) => (
-                <Member {...person} />
+              {people.map((person, i) => (
+                <Member {...person} key={i} />
               ))}
             </Grid>
           </div>
