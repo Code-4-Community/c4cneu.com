@@ -48,12 +48,12 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 12,
     backgroundColor: 'white',
   },
- 
+
   icons: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingBottom: '0.5em'
+    paddingBottom: '0.5em',
   },
   cardText: {
     padding: 5,
@@ -80,7 +80,6 @@ const Member: React.FC<MemberProps> = ({
   return (
     <Grid item sm={4}>
       <Paper className={classes.person} elevation={0}>
-
         <LazyLoadImage className={classes.portrait} src={image} alt={name} />
         <div className={classes.cardText}>
           <Typography className={classes.name} variant="subtitle2">
@@ -91,7 +90,7 @@ const Member: React.FC<MemberProps> = ({
           </Typography>
         </div>
         <div className={classes.icons}>
-        <a href={linkedin} rel="noopener noreferrer" target="_blank">
+          <a href={linkedin} rel="noopener noreferrer" target="_blank">
             <img
               className={classes.icon}
               src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/icons/linkedin_icon.svg"
@@ -105,7 +104,7 @@ const Member: React.FC<MemberProps> = ({
               alt="Email"
             />
           </a>
-          </div>
+        </div>
       </Paper>
     </Grid>
   );

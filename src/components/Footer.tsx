@@ -132,6 +132,15 @@ const Footer: React.FC = () => {
               >
                 LinkedIn
               </a>
+              {' | '}
+              <a
+                href="https://youtube.com/channel/UC7FI2u_BVjB0EkKMmx-yibA"
+                className={classes.footerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Youtube
+              </a>
             </Typography>
             <Typography
               gutterBottom
