@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     padding: '1em',
   },
   appDescription: {
-    'font-weight': '300',
+    fontWeight: 300,
   },
 });
 
