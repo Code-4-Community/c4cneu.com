@@ -1,5 +1,13 @@
-export default {
-  cards: [
+export interface Project {
+  readonly title: string;
+  readonly paragraph: string;
+  readonly appDesc: string;
+  readonly path: string;
+  readonly abbr: string;
+  readonly learnMore: string;
+}
+
+export const projects : Project[] = [
     {
       title: "Lucy's Love Bus",
       paragraph: `Lucy’s Love Bus improves quality of life for children with cancer
@@ -28,5 +36,4 @@ export default {
       abbr: 'SFFT',
       learnMore: 'https://app.sfttbos.org',
     },
-  ],
-};
+];

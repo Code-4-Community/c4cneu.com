@@ -6,7 +6,7 @@ import { Container, Grid } from '@material-ui/core';
 import ProjectCard from './ProjectCard';
 import { ReactComponent as ProjectsSvg } from './projects.svg';
 
-import ProjectJSON from './ProjectJSON';
+import { projects } from './ProjectJSON';
 
 const Projects: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
       </Container>
       <Container maxWidth="md">
         <Grid container justify="center" alignItems="flex-start" spacing={1}>
-          {ProjectJSON.cards.map((value, index) => {
+          {projects.map((value, index) => {
             return <ProjectCard {...value} key={index} />;
           })}
         </Grid>
