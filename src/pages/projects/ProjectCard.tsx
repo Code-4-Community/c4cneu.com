@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 
 const useStyles = makeStyles({
-  'project-card': {
+  projectCard: {
     margin: '5%',
     transition: 'transform .2s',
     '&:hover': {
@@ -19,11 +19,11 @@ const useStyles = makeStyles({
     },
     height: 'max(fit-content, 500px)',
   },
-  'project-img': {
+  projectImg: {
     width: 'calc(100% - 2em)',
     padding: '1em',
   },
-  'app-description': {
+  appDescription: {
     'font-weight': '300',
   },
 });
@@ -48,12 +48,12 @@ const ProjectCard: React.FC<CardProps> = ({
   const classes = useStyles();
   return (
     <Grid item md={6}>
-      <Card className={classes['project-card']}>
+      <Card className={classes.projectCard}>
         <Box height={'max(175, 100%)'}>
           <a href={learnMore}>
             <CardMedia
               component="img"
-              className={classes['project-img']}
+              className={classes.projectImg}
               image={path}
               alt={path}
               title={abbr}
@@ -67,7 +67,7 @@ const ProjectCard: React.FC<CardProps> = ({
 
           <Typography
             variant="h6"
-            className={classes['app-description']}
+            className={classes.appDescription}
             gutterBottom
             color="textSecondary"
             component="p"
