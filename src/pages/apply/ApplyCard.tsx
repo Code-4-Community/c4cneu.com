@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  makeStyles,
   withStyles,
   createStyles,
   Theme,
+  makeStyles,
 } from '@material-ui/core/styles';
 import {
   Grid,
@@ -16,25 +16,24 @@ import {
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    card: {
-      padding: 0,
-      margin: 'auto',
-    },
-    content: {
-      paddingLeft: 0,
-      paddingRight: 0,
-    },
-    heading: {
-      fontWeight: 'bold',
-    },
-    disableLinkColor: {
-      color: 'inherit',
-      textDecoration: 'inherit',
-    },
-  })
-);
+const useStyles = makeStyles({
+  card: {
+    padding: 0,
+    margin: 'auto',
+  },
+  content: {
+    paddingLeft: 0,
+    paddingRight: 0,
+  },
+  heading: {
+    fontWeight: 'bold',
+  },
+  disableLinkColor: {
+    color: 'inherit',
+    textDecoration: 'inherit',
+  },
+});
+
 // CSS for underline animation
 //https://css-tricks.com/4-ways-to-animate-the-color-of-a-text-link-on-hover/#technique-4-using-transform
 const StyledButton = withStyles((theme: Theme) =>

@@ -150,9 +150,7 @@ const Jumpstart: React.FC = () => {
       <Fade>
         <Box paddingBottom={5}>
           <Container maxWidth="sm">
-            <JumpstartAccordion
-              sections={JumpstartData}
-            />
+            <JumpstartAccordion sections={JumpstartData} />
           </Container>
         </Box>
       </Fade>
