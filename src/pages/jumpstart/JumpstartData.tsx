@@ -1,5 +1,10 @@
 export default [
   {
+    title: 'Sunday Sept. 27th - Project Overview and Terminal Setup',
+    body:
+      "We'll be helping you set up the software you'll need to run the project and teaching you some basic terminal commands you'll need to be able to interact with your program.",
+  },
+  {
     title: 'Online (Week of Sept. 27, out now) - Git Tutorial  Workshop',
     body:
       'A quick tour of Git, one of the most useful tools for development (not required for the course). It keeps track of your development history and lets you work collaboratively with others.',
