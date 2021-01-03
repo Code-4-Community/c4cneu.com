@@ -12,6 +12,7 @@ import Jumpstart from './pages/jumpstart/Jumpstart';
 import Events from './pages/events/Events';
 import People from './pages/people/People';
 import FAQ from './pages/faq/FAQ';
+import ResumeBook from './pages/resumeBook/ResumeBook';
 import NotFound from './pages/notfound/NotFound';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -51,7 +52,7 @@ const App: React.FC = () => {
             <Route path="/events" exact component={Events} />
             <Route path="/people" exact component={People} />
             <Route path="/faq" exact component={FAQ} />
-
+            <Route path="/resume-book" exact component={ResumeBook} />
             <Route path="*" exact component={NotFound} />
           </Switch>
           <Footer />

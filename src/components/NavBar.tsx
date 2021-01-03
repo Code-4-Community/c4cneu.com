@@ -124,57 +124,53 @@ const NavBar: React.FC = () => {
                     People
                   </Typography>
                 </Button>
-                <Button component={Link} to="/faq">
-                  <Typography variant="h6" className={classes.navlink}>
-                    FAQs
-                  </Typography>
-                </Button>
               </ButtonGroup>
             </Hidden>
-            <Hidden smUp>
-              <IconButton
-                edge="end"
-                className={classes.menuButton}
-                color="inherit"
-                aria-label="menu"
-                aria-controls="simple-menu"
-                aria-haspopup="true"
-                onClick={handleClick}
-              >
-                <MenuIcon fontSize="large" />
-              </IconButton>
+            <IconButton
+              edge="end"
+              className={classes.menuButton}
+              color="inherit"
+              aria-label="menu"
+              aria-controls="simple-menu"
+              aria-haspopup="true"
+              onClick={handleClick}
+            >
+              <MenuIcon fontSize="large" />
+            </IconButton>
 
-              <Menu
-                id="simple-menu"
-                anchorEl={anchorEl}
-                keepMounted
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
+            <Menu
+              id="simple-menu"
+              anchorEl={anchorEl}
+              keepMounted
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+            >
+              <MenuItem onClick={handleClose} component={Link} to="/apply">
+                <Typography variant="body1">Apply</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/projects">
+                <Typography variant="body1">Projects</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/events">
+                <Typography variant="body1">Events</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/jumpstart">
+                <Typography variant="body1">Jumpstart</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/people">
+                <Typography variant="body1">People</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/faq">
+                <Typography variant="body1">FAQs</Typography>
+              </MenuItem>
+              <MenuItem
+                onClick={handleClose}
+                component={Link}
+                to="/resume-book"
               >
-                <MenuItem onClick={handleClose} component={Link} to="/apply">
-                  <Typography variant="body1">Apply</Typography>
-                </MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/projects">
-                  <Typography variant="body1">Projects</Typography>
-                </MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/events">
-                  <Typography variant="body1">Events</Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={handleClose}
-                  component={Link}
-                  to="/jumpstart"
-                >
-                  <Typography variant="body1">Jumpstart</Typography>
-                </MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/people">
-                  <Typography variant="body1">People</Typography>
-                </MenuItem>
-                <MenuItem onClick={handleClose} component={Link} to="/faq">
-                  <Typography variant="body1">FAQs</Typography>
-                </MenuItem>
-              </Menu>
-            </Hidden>
+                <Typography variant="body1">Resume Book</Typography>
+              </MenuItem>
+            </Menu>
           </div>
         </Toolbar>
       </Container>
