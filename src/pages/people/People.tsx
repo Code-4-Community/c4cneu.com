@@ -31,6 +31,7 @@ const useStyles = makeStyles({
     fontSize: '40px',
     margin: '30px 0px',
   },
+
 });
 
 const People: React.FC = () => {
@@ -54,14 +55,7 @@ const People: React.FC = () => {
       <Fade>
         <Container maxWidth="md">
           <div className={classes.root}>
-            <Typography
-              variant="h3"
-              align="left"
-              className={classes.positionTitle}
-            >
-              E-Board
-            </Typography>
-            <Grid container justify="center" alignItems="center" spacing={3}>
+            <Grid container justify="center" alignItems="center" spacing={3} >
               {people.map((person, i) => (
                 <Member {...person} key={i} />
               ))}

@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
     fontSize: 14,
+
     '&:hover': {
       '& $icons': {
         opacity: 1,
@@ -23,8 +24,10 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     margin: 0,
     paddingBottom: 0,
-    width: '100%',
-    height: 'auto',
+    maxWidth: '100%',
+    width: '280px',
+    height: '280px',
+    objectFit: 'cover',
     overflow: 'hidden',
   },
   name: {
@@ -59,6 +62,9 @@ const useStyles = makeStyles((theme) => ({
     padding: 5,
     fontSize: 12,
   },
+  gridItem: {
+    minWidth: "280px",
+  }
 }));
 
 interface MemberProps {
@@ -78,7 +84,7 @@ const Member: React.FC<MemberProps> = ({
 }) => {
   const classes = useStyles();
   return (
-    <Grid item sm={4}>
+    <Grid item sm={4} className={classes.gridItem}>
       <Paper className={classes.person} elevation={0}>
         <LazyLoadImage className={classes.portrait} src={image} alt={name} />
         <div className={classes.cardText}>

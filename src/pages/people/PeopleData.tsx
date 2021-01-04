@@ -71,4 +71,12 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/justin-konecny/',
     email: 'konecny.j@northeastern.edu',
   },
+  {
+    name: 'Ryan Jung',
+    position: 'Technical Lead',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Ryan-J.jpg',
+    linkedin: 'https://www.linkedin.com/in/justin-konecny/',
+    email: 'jung.ry@northeastern.edu',
+  },
 ];
