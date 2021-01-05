@@ -9,6 +9,7 @@ import {
   Box,
   Link,
 } from '@material-ui/core';
+import Alert from '@material-ui/lab/Alert';
 import { ReactComponent as SVG } from './events.svg';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -43,6 +44,11 @@ const Events: React.FC = () => {
           content="Upcoming events held by Code4Community."
         />
       </Helmet>
+      <Alert severity="warning">
+        <Typography variant="body1">
+          There are currently no events planned for Spring 2021.
+        </Typography>
+      </Alert>
       <Hero
         title="Events"
         subtitle="Join our weekly events to grow your skills and learn more about Code4Community."
@@ -79,6 +85,7 @@ const Events: React.FC = () => {
             className={classes.button}
             href={eventsDocsLink}
             target="_blank"
+            disabled
           >
             <Typography variant="h6">View the event schedule</Typography>
           </Button>
