@@ -52,9 +52,10 @@ const useStyles = makeStyles({
     },
   },
   partnerLogoGrid: {
-    margin: '2em',
+    margin: '1em',
     display: 'block',
     justifyContent: 'center',
+    maxWidth: 250,
   },
   bigImage: {
     maxWidth: '100%',
@@ -143,6 +144,8 @@ const Home: React.FC = () => {
                 'children fighting cancer.',
                 typePause,
                 "the future of Boston's urban forest.",
+                typePause,
+                'students in the Caribbean.',
                 typePause,
                 'people and causes we love.',
                 typePause * 2,
@@ -233,7 +236,7 @@ const Home: React.FC = () => {
             spacing={3}
             className={classes.partners}
           >
-            <Grid item sm={6}>
+            <Grid item>
               <a
                 href="https://lucyslovebus.org/"
                 className={classes.partnerLogoGrid}
@@ -245,7 +248,7 @@ const Home: React.FC = () => {
                 />
               </a>
             </Grid>
-            <Grid item sm={6}>
+            <Grid item>
               <a
                 href="https://bostontrees.org/"
                 className={classes.partnerLogoGrid}
@@ -253,6 +256,18 @@ const Home: React.FC = () => {
                 <LazyLoadImage
                   src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/speakforthetrees_logo_original_RGB.jpg"
                   alt="Speak for the Trees"
+                  className={classes.partnerLogos}
+                />
+              </a>
+            </Grid>
+            <Grid item>
+              <a
+                href="https://www.handsacrossthesea.net"
+                className={classes.partnerLogoGrid}
+              >
+                <LazyLoadImage
+                  src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/HandsLogo.jpg"
+                  alt="Hands Across the Sea"
                   className={classes.partnerLogos}
                 />
               </a>
