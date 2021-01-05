@@ -45,8 +45,9 @@ const Events: React.FC = () => {
         />
       </Helmet>
       <Alert severity="warning">
-         <Typography variant="body1">There are currently no events planned for Spring 2021.</Typography>
-
+        <Typography variant="body1">
+          There are currently no events planned for Spring 2021.
+        </Typography>
       </Alert>
       <Hero
         title="Events"
@@ -87,8 +88,7 @@ const Events: React.FC = () => {
             disabled
           >
             <Typography variant="h6">View the event schedule</Typography>
-          </Button>            
-
+          </Button>
         </Grid>
       </Grid>
     </Container>

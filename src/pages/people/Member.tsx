@@ -63,8 +63,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 12,
   },
   gridItem: {
-    minWidth: "280px",
-  }
+    minWidth: '280px',
+  },
 }));
 
 interface MemberProps {
