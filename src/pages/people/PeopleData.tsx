@@ -76,7 +76,7 @@ export const people: Person[] = [
     position: 'Technical Lead',
     image:
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Ryan-J.jpg',
-    linkedin: 'https://www.linkedin.com/in/justin-konecny/',
+    linkedin: 'https://www.linkedin.com/in/ryanmjung/',
     email: 'jung.ry@northeastern.edu',
   },
 ];
