@@ -36,4 +36,17 @@ export const projects: Project[] = [
     abbr: 'SFFT',
     learnMore: 'https://app.sfttbos.org',
   },
+  {
+    title: 'Hands Across the Sea',
+    paragraph: `Hands Across the Sea is dedicated to raising literacy levels of Eastern Caribbean children by providing
+          learning resources to communities in 6 different island nations. HATS has many volunteers monitoring their
+          literacy programs and C4C has helped optimize their data collection system. Volunteers can now easily enter
+          data through a dynamic data-driven form and HATS executives can easily view and analyze this data through
+          a separate data visualization application.`,
+    appDesc: 'Data Collection and Presentation System',
+    path:
+        'https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/HandsLogo.jpg',
+    abbr: 'HATS',
+    learnMore: 'https://www.handsacrossthesea.net/',
+  },
 ];
