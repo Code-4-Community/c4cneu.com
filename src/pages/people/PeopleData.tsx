@@ -57,7 +57,7 @@ export const people: Person[] = [
   },
   {
     name: 'Jack Tonina',
-    position: 'Project Manager',
+    position: 'Project Manager, Master of Coin',
     image:
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Jack-T.jpg',
     linkedin: 'https://www.linkedin.com/in/jack-tonina-6328b9147/',
