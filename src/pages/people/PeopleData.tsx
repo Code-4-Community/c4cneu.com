@@ -17,7 +17,7 @@ export const people: Person[] = [
   },
   {
     name: 'Jack Blanc',
-    position: 'Director of Engineering',
+    position: 'Director of Engineering, Technoking',
     image:
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Jack-B.jpg',
     linkedin: 'https://www.linkedin.com/in/blancjack/',
