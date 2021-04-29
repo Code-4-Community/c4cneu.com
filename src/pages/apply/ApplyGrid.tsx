@@ -28,6 +28,15 @@ const ApplyGrid: React.FC = () => {
         </ApplyCard>
 
         <ApplyCard
+            title="Project Manager"
+            to="/apply/project-manager"
+            enterTime={1000}
+        >
+          Project Managers scope out our products and prioritize the team's work. Help
+          us take the vision of our clients and turn it into a reality!
+        </ApplyCard>
+
+        <ApplyCard
           title="Product Designer"
           to="/apply/product-designer"
           enterTime={1500}
