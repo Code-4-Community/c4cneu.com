@@ -92,7 +92,7 @@ const ApplyProjectManager: React.FC = () => {
                 Project Managers at C4C are responsible for scoping out the features
                 of our projects, prioritizing developer work, and ensuring we're on track
                 to deliver a high quality product at the end of the year. Project Managers
-                lead team and client meetings and with the help of our tech leads adjust and
+                lead team and client meetings, and with the help of our tech leads adjust and
                 optimize the team's focus and process. They are the main drivers of our initial
                 project specification and help turn that specification into actionable and Agile
                 developer tickets.
@@ -124,7 +124,7 @@ const ApplyProjectManager: React.FC = () => {
                   <li>
                     Organized and forward thinking
                   </li>
-                  <li>Passionate about helping the Boston community</li>
+                  <li>Experienced in working within an Agile development process</li>
                   <li>
                     A strong communicator who facilitates collaboration amongst
                     the product team
@@ -161,12 +161,12 @@ const ApplyProjectManager: React.FC = () => {
 
         <Fade>
           <TextQuoteBlock
-            quote=""
-            name="Jack Tonina"
+            quote="Joining C4C gave me a taste of what a project manager’s role is like in the real world and provided me with a valuable opportunity to hone important cross-functional skills! I’m so proud to be part of a such a supportive and community-oriented organization!"
+            name="Sanjana Mishra"
             title="Project Manager"
           />
           <TextQuoteBlock
-              quote=""
+              quote="Code4Community gave me an amazing leadership opportunity and furthered my professional experience. I feel like I can talk about my impact on the community to peers and even in job interviews. Everyone here is extremely supportive and we're all here to help each other grow."
               name="Chloe Gold"
               title="Director of Project Management"
           />
