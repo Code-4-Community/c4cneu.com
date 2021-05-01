@@ -1,27 +1,27 @@
-import React from 'react';
-
 import {
-  CardContent,
-  Typography,
-  CardMedia,
-  Card,
-  makeStyles,
   Box,
+  Card,
+  CardContent,
+  CardMedia,
   Grid,
-} from '@material-ui/core';
+  makeStyles,
+  Typography,
+} from "@material-ui/core";
+import React from "react";
 
 const useStyles = makeStyles({
   projectCard: {
-    margin: '5%',
-    transition: 'transform .2s',
-    '&:hover': {
-      transform: 'scale(1.01)',
-    },
-    height: 'max(fit-content, 500px)',
+    margin: "5%",
+    height: "max(fit-content, 500px)",
+    overflow: 'visible'
   },
   projectImg: {
-    width: 'calc(100% - 2em)',
-    padding: '1em',
+    height: "160px",
+    objectFit: "contain",
+    transition: "transform .2s",
+    "&:hover": {
+      transform: "scale(1.01)",
+    },
   },
   appDescription: {
     fontWeight: 300,
@@ -48,8 +48,8 @@ const ProjectCard: React.FC<CardProps> = ({
   const classes = useStyles();
   return (
     <Grid item md={6}>
-      <Card className={classes.projectCard}>
-        <Box height={'max(175, 100%)'}>
+      <Card className={classes.projectCard} elevation={0}>
+        <Box height={"max(175, 100%)"}>
           <a href={learnMore}>
             <CardMedia
               component="img"
