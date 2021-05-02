@@ -48,12 +48,12 @@ export const people: Person[] = [
     email: 'emison.a@northeastern.edu',
   },
   {
-    name: 'Vedanshi Shah',
+    name: 'Abby Yeomans',
     position: 'Marketing Director',
     image:
-      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Vedansha-S.jpg',
-    linkedin: 'https://www.linkedin.com/in/vedanshi-shah-267369179/',
-    email: 'shah.ve@northeastern.edu',
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Yeomans-A.JPG',
+    linkedin: 'https://www.linkedin.com/in/abbyyeomans23/',
+    email: 'yeomans.a@northeastern.edu',
   },
   {
     name: 'Jack Tonina',
