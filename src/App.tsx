@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import Home from './pages/home/Home';
 import Apply from './pages/apply/Apply';
 import ApplyDeveloper from './pages/apply/developer/ApplyDeveloper';
+import ApplyProjectManager from "./pages/apply/project-manager/ApplyProjectManager";
 import ApplyProductDesigner from './pages/apply/product-designer/ApplyProductDesigner';
 import ApplyBrandDesigner from './pages/apply/brand-designer/ApplyBrandDesigner';
 import Projects from './pages/projects/Projects';
@@ -37,6 +38,7 @@ const App: React.FC = () => {
             <Route path="/" exact component={Home} />
             <Route path="/apply" exact component={Apply} />
             <Route path="/apply/developer" exact component={ApplyDeveloper} />
+            <Route path="/apply/project-manager" exact component={ApplyProjectManager} />
             <Route
               path="/apply/product-designer"
               exact
