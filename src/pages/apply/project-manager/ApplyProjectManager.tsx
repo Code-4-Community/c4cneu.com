@@ -130,8 +130,8 @@ const ApplyProjectManager: React.FC = () => {
                     the product team
                   </li>
                   <li>
-                    Interested in being a part of the entire product life cycle:
-                    software inception to completion
+                    Interested in being a part of the entire product life cycle from
+                    project proposal to delivery
                   </li>
                   <li>
                     Dedicated to the C4C mission and has excellent follow
