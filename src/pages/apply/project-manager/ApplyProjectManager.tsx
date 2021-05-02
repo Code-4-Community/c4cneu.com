@@ -170,6 +170,11 @@ const ApplyProjectManager: React.FC = () => {
               name="Chloe Gold"
               title="Director of Project Management"
           />
+          <TextQuoteBlock
+              quote="Working as a product manager for Code4Community has truly been a one of a kind learning experience. leading a team of full time students towards delivering software for a non-profit has been difficult, however thrilling and very rewarding."
+              name="Jack Tonina"
+              title="Director of Project Management"
+          />
         </Fade>
       </Grid>
     </Container>
