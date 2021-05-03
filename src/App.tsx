@@ -11,6 +11,7 @@ import ApplyBrandDesigner from './pages/apply/brand-designer/ApplyBrandDesigner'
 import Projects from './pages/projects/Projects';
 import Jumpstart from './pages/jumpstart/Jumpstart';
 import Events from './pages/events/Events';
+import DemoDay from "./pages/demoday/DemoDay";
 import People from './pages/people/People';
 import FAQ from './pages/faq/FAQ';
 import ResumeBook from './pages/resumeBook/ResumeBook';
@@ -52,6 +53,7 @@ const App: React.FC = () => {
             <Route path="/projects" exact component={Projects} />
             <Route path="/jumpstart" exact component={Jumpstart} />
             <Route path="/events" exact component={Events} />
+            <Route path="/demoday" exact component={DemoDay} />
             <Route path="/people" exact component={People} />
             <Route path="/faq" exact component={FAQ} />
             <Route path="/resume-book" exact component={ResumeBook} />
