@@ -1,23 +1,20 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-
 import {
   AppBar,
-  Container,
-  Toolbar,
-  Typography,
   Button,
+  ButtonGroup,
+  Container,
+  Hidden,
   IconButton,
   Menu,
   MenuItem,
-  Hidden,
-  ButtonGroup,
+  Toolbar,
+  Typography,
 } from '@material-ui/core';
-
+import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
-import { useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles({
   navBarLogo: {
@@ -109,9 +106,9 @@ const NavBar: React.FC = () => {
                     Projects
                   </Typography>
                 </Button>
-                <Button component={Link} to="/events">
+                <Button component={Link} to="/demoday">
                   <Typography variant="h6" className={classes.navlink}>
-                    Events
+                    Demo Day
                   </Typography>
                 </Button>
                 <Button component={Link} to="/jumpstart">
@@ -150,6 +147,9 @@ const NavBar: React.FC = () => {
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} to="/projects">
                 <Typography variant="body1">Projects</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/demoday">
+                <Typography variant="body1"> Demo Day</Typography>
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} to="/events">
                 <Typography variant="body1">Events</Typography>
