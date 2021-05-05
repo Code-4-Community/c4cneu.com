@@ -9,12 +9,12 @@ import {
   MenuItem,
   Toolbar,
   Typography,
-} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import MenuIcon from "@material-ui/icons/Menu";
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import { ReactComponent as C4CSvg } from "../svg/C4C.svg";
+} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import MenuIcon from '@material-ui/icons/Menu';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
 
 const useStyles = makeStyles({
   navBarLogo: {
@@ -29,25 +29,25 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   navlinks: {
-    display: "flex",
-    justifyContent: "flex-end",
-    alignItems: "center",
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
 
-    width: "100%",
+    width: '100%',
   },
   disableLinkColor: {
-    color: "inherit",
-    textDecoration: "inherit",
+    color: 'inherit',
+    textDecoration: 'inherit',
   },
   navlink: {
-    paddingLeft: "0.5em",
-    paddingRight: "0.5em",
-    textTransform: "none",
+    paddingLeft: '0.5em',
+    paddingRight: '0.5em',
+    textTransform: 'none',
     fontWeight: 300,
   },
   logo: {
-    "&:hover": {
-      background: "transparent",
+    '&:hover': {
+      background: 'transparent',
     },
   },
 });
@@ -61,7 +61,7 @@ const NavBar: React.FC = () => {
 
   React.useEffect(() => {
     const currentPath = location.pathname;
-    setOnHomePage(currentPath === "/");
+    setOnHomePage(currentPath === '/');
   }, [location]);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
