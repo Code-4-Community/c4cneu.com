@@ -109,9 +109,9 @@ const NavBar: React.FC = () => {
                     Projects
                   </Typography>
                 </Button>
-                <Button component={Link} to="/events">
+                <Button component={Link} to="/demoday">
                   <Typography variant="h6" className={classes.navlink}>
-                    Events
+                    Demo Day
                   </Typography>
                 </Button>
                 <Button component={Link} to="/jumpstart">
