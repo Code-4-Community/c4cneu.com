@@ -1,23 +1,20 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-
 import {
   AppBar,
-  Container,
-  Toolbar,
-  Typography,
   Button,
+  ButtonGroup,
+  Container,
+  Hidden,
   IconButton,
   Menu,
   MenuItem,
-  Hidden,
-  ButtonGroup,
-} from '@material-ui/core';
-
-import MenuIcon from '@material-ui/icons/Menu';
-import { Link } from 'react-router-dom';
-import { ReactComponent as C4CSvg } from '../svg/C4C.svg';
-import { useLocation } from 'react-router-dom';
+  Toolbar,
+  Typography,
+} from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import MenuIcon from "@material-ui/icons/Menu";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { ReactComponent as C4CSvg } from "../svg/C4C.svg";
 
 const useStyles = makeStyles({
   navBarLogo: {
@@ -32,25 +29,25 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   navlinks: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
+    display: "flex",
+    justifyContent: "flex-end",
+    alignItems: "center",
 
-    width: '100%',
+    width: "100%",
   },
   disableLinkColor: {
-    color: 'inherit',
-    textDecoration: 'inherit',
+    color: "inherit",
+    textDecoration: "inherit",
   },
   navlink: {
-    paddingLeft: '0.5em',
-    paddingRight: '0.5em',
-    textTransform: 'none',
+    paddingLeft: "0.5em",
+    paddingRight: "0.5em",
+    textTransform: "none",
     fontWeight: 300,
   },
   logo: {
-    '&:hover': {
-      background: 'transparent',
+    "&:hover": {
+      background: "transparent",
     },
   },
 });
@@ -64,7 +61,7 @@ const NavBar: React.FC = () => {
 
   React.useEffect(() => {
     const currentPath = location.pathname;
-    setOnHomePage(currentPath === '/');
+    setOnHomePage(currentPath === "/");
   }, [location]);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -150,6 +147,9 @@ const NavBar: React.FC = () => {
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} to="/projects">
                 <Typography variant="body1">Projects</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/demoday">
+                <Typography variant="body1"> Demo Day</Typography>
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} to="/events">
                 <Typography variant="body1">Events</Typography>
