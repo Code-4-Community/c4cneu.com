@@ -7,24 +7,58 @@ import {
   Grid,
   Typography,
   Box,
-  Link, Card, CardContent,
+  Link, Card, CardContent, CardActions, CardHeader, Paper, CardMedia,
 } from '@material-ui/core';
 import Alert from '@material-ui/lab/Alert';
 import { ReactComponent as SVG } from './demoday.svg';
 import { Link as RouterLink } from 'react-router-dom';
 
 import Hero from '../../components/Hero';
+import {projects} from "../projects/ProjectJSON";
+import ProjectCard from "../projects/ProjectCard";
 
 const useStyles = makeStyles({
   button: {
     textTransform: 'none',
   },
-  buttonContainer: {
+  detailsContainer: {
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'flex-start',
   },
-  link: {},
+  detailLine: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  centerLine: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+  },
+  infoText: {
+    marginTop: "0.5em",
+    fontStyle: "italic",
+  },
+  icon: {
+    paddingTop: 5,
+    paddingBottom: 5,
+    width: 25,
+    height: 25,
+    marginLeft: '0.5em',
+    marginRight: '0.5em',
+    backgroundColor: 'white',
+  },
+  projectImg: {
+    height: "160px",
+    objectFit: "contain",
+    transition: "transform .2s",
+    "&:hover": {
+      transform: "scale(1.01)",
+    },
+  },
 });
 
 const DemoDay: React.FC = () => {
@@ -52,25 +86,91 @@ const DemoDay: React.FC = () => {
       <Grid container>
         <Grid item md={6}>
           <Box pb={3}>
-            <Typography variant="h6">About this event</Typography>
+            <Typography variant="h6" gutterBottom>
+              About this event
+            </Typography>
+            <Typography variant="body1" paragraph>
+              Demo Day is Code4Community's annual live virtual event to show off the applications
+              we've managed to build over the last year and give some insight into what
+              we have planned for next year!
+            </Typography>
             <Typography variant="body1">
-              May 27th at 6:00 p.m. EST
-              Held over virtually Zoom
+              We're inviting partners, prospective members, Northeastern faculty, and the
+              entire Northeastern community to come celebrate the hard work of our product
+              teams and hear what we have in store for next year!
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs className={classes.buttonContainer}>
-          <Button
-              variant="contained"
-              color="primary"
-              className={classes.button}
-              href={rsvpLink}
-              target="_blank"
-          >
-            <Typography variant="h6">RSVP Now</Typography>
-          </Button>
+        <Grid item xs>
+          <Container maxWidth="xs">
+            <Card>
+              <CardContent className={classes.detailsContainer}>
+                <Container className={classes.centerLine}>
+                  <Typography variant="h6" gutterBottom>
+                    RSVP Now
+                  </Typography>
+                </Container>
+                <Box className={classes.detailLine}>
+                  <img
+                      className={classes.icon}
+                      src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Icons/calendar.svg"
+                      alt="Linkedin"
+                  />
+                  <Typography>
+                    Thursday, May 27th
+                  </Typography>
+                </Box>
+                <Box className={classes.detailLine}>
+                  <img
+                      className={classes.icon}
+                      src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Icons/time-clock.svg"
+                      alt="Linkedin"
+                  />
+                  <Typography>
+                    6:00 p.m. - 7:00 p.m. EST
+                  </Typography>
+                </Box>
+                <Box className={classes.detailLine}>
+                  <img
+                      className={classes.icon}
+                      src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Icons/zoom.svg"
+                      alt="Linkedin"
+                  />
+                  <Typography>
+                    Held virtually over zoom
+                  </Typography>
+                </Box>
+                <Container className={classes.centerLine} disableGutters>
+                  <Typography className={classes.infoText} align="center">
+                    RSVPs will receive a zoom link before the event.
+                  </Typography>
+                </Container>
+              </CardContent>
+              <CardActions>
+                <Container className={classes.centerLine}>
+                  <Button
+                      variant="contained"
+                      color="primary"
+                      className={classes.button}
+                      href={rsvpLink}
+                      target="_blank"
+                  >
+                    <Typography variant="h6">Reserve My Spot</Typography>
+                  </Button>
+                </Container>
+              </CardActions>
+            </Card>
+          </Container>
         </Grid>
       </Grid>
+
+      <Container maxWidth="md">
+        <Grid container justify="center" alignItems="flex-start" spacing={1}>
+          {projects.map((value, index) => {
+            return <ProjectCard {...value} key={index} />;
+          })}
+        </Grid>
+      </Container>
     </Container>
   );
 };
