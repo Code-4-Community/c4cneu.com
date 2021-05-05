@@ -1,25 +1,25 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { makeStyles } from '@material-ui/core/styles';
 import {
-  Container,
+  Box,
   Button,
+  Card,
+  CardActions,
+  CardContent,
+  Container,
   Grid,
   Typography,
-  Box,
-  Link, Card, CardContent, CardActions, CardHeader, Paper, CardMedia,
 } from '@material-ui/core';
-import Alert from '@material-ui/lab/Alert';
-import { ReactComponent as SVG } from './demoday.svg';
-import { Link as RouterLink } from 'react-router-dom';
-
+import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import Hero from '../../components/Hero';
-import {projects} from "../projects/ProjectJSON";
-import ProjectCard from "../projects/ProjectCard";
+import ProjectCard from '../projects/ProjectCard';
+import { projects } from '../projects/ProjectJSON';
+import { ReactComponent as SVG } from './demoday.svg';
 
 const useStyles = makeStyles({
   button: {
     textTransform: 'none',
+    margin: 16,
   },
   detailsContainer: {
     display: 'flex',
@@ -39,8 +39,8 @@ const useStyles = makeStyles({
     width: '100%',
   },
   infoText: {
-    marginTop: "0.5em",
-    fontStyle: "italic",
+    marginTop: '0.5em',
+    fontStyle: 'italic',
   },
   icon: {
     paddingTop: 5,
@@ -52,11 +52,11 @@ const useStyles = makeStyles({
     backgroundColor: 'white',
   },
   projectImg: {
-    height: "160px",
-    objectFit: "contain",
-    transition: "transform .2s",
-    "&:hover": {
-      transform: "scale(1.01)",
+    height: '160px',
+    objectFit: 'contain',
+    transition: 'transform .2s',
+    '&:hover': {
+      transform: 'scale(1.01)',
     },
   },
 });
@@ -90,14 +90,15 @@ const DemoDay: React.FC = () => {
               About this event
             </Typography>
             <Typography variant="body1" paragraph>
-              Demo Day is Code4Community's annual live virtual event to show off the applications
-              we've managed to build over the last year and give some insight into what
-              we have planned for next year!
+              Demo Day is Code4Community's annual live virtual event to show off
+              the applications we've managed to build over the last year and
+              give some insight into what we have planned for next year!
             </Typography>
             <Typography variant="body1">
-              We're inviting partners, prospective members, Northeastern faculty, and the
-              entire Northeastern community to come celebrate the hard work of our product
-              teams and hear what we have in store for next year!
+              We're inviting partners, prospective members, Northeastern
+              faculty, and the entire Northeastern community to come celebrate
+              the hard work of our product teams and hear what we have in store
+              for next year!
             </Typography>
           </Box>
         </Grid>
@@ -112,33 +113,27 @@ const DemoDay: React.FC = () => {
                 </Container>
                 <Box className={classes.detailLine}>
                   <img
-                      className={classes.icon}
-                      src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Icons/calendar.svg"
-                      alt="Linkedin"
+                    className={classes.icon}
+                    src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Icons/calendar.svg"
+                    alt="Linkedin"
                   />
-                  <Typography>
-                    Thursday, May 27th
-                  </Typography>
+                  <Typography>Thursday, May 27th</Typography>
                 </Box>
                 <Box className={classes.detailLine}>
                   <img
-                      className={classes.icon}
-                      src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Icons/time-clock.svg"
-                      alt="Linkedin"
+                    className={classes.icon}
+                    src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Icons/time-clock.svg"
+                    alt="Linkedin"
                   />
-                  <Typography>
-                    6:00 p.m. - 7:00 p.m. EST
-                  </Typography>
+                  <Typography>6:00 p.m. - 7:00 p.m. EST</Typography>
                 </Box>
                 <Box className={classes.detailLine}>
                   <img
-                      className={classes.icon}
-                      src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Icons/zoom.svg"
-                      alt="Linkedin"
+                    className={classes.icon}
+                    src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Icons/zoom.svg"
+                    alt="Linkedin"
                   />
-                  <Typography>
-                    Held virtually over zoom
-                  </Typography>
+                  <Typography>Held virtually over zoom</Typography>
                 </Box>
                 <Container className={classes.centerLine} disableGutters>
                   <Typography className={classes.infoText} align="center">
@@ -149,11 +144,11 @@ const DemoDay: React.FC = () => {
               <CardActions>
                 <Container className={classes.centerLine}>
                   <Button
-                      variant="contained"
-                      color="primary"
-                      className={classes.button}
-                      href={rsvpLink}
-                      target="_blank"
+                    variant="contained"
+                    color="primary"
+                    className={classes.button}
+                    href={rsvpLink}
+                    target="_blank"
                   >
                     <Typography variant="h6">Reserve My Spot</Typography>
                   </Button>
