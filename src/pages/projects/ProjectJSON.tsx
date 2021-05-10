@@ -38,7 +38,12 @@ export const projects: Project[] = [
   },
   {
     title: 'Hands Across the Sea',
-    paragraph: `Hands Across the Sea is a US-based international NGO dedicated to raising children’s literacy through school and community library programs in six different Eastern Caribbean island nations. Hands frontline Program Officers monitor progress of literacy programs at hundreds of primary and secondary schools across the region, and C4C is helping optimize their data collection and visualization systems so that the organization can continue to grow and share the impact of its work. Employees can now easily enter data through a dynamic data-driven form and Hands leadership is able to view and analyze this data, allowing them to leverage it to secure more funding and raise awareness.`,
+    paragraph: `Hands Across the Sea is a US-based international NGO dedicated to raising children’s literacy through school 
+    and community library programs in six different Eastern Caribbean island nations. Hands frontline Program Officers 
+    monitor progress of literacy programs at hundreds of primary and secondary schools across the region, and C4C is helping 
+    optimize their data collection and visualization systems so that the organization can continue to grow and share the 
+    impact of its work. Employees can now easily enter data through a dynamic data-driven form and Hands leadership is able 
+    to view and analyze this data, allowing them to leverage it to secure more funding and raise awareness.`,
     appDesc: 'Data Collection and Presentation System',
     path:
         'https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/HandsLogo.jpg',
