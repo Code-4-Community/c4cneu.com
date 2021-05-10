@@ -34,15 +34,11 @@ export const projects: Project[] = [
     path:
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/sfft-project-page.png',
     abbr: 'SFFT',
-    learnMore: 'https://app.sfttbos.org',
+    learnMore: 'https://treeboston.org/',
   },
   {
     title: 'Hands Across the Sea',
-    paragraph: `Hands Across the Sea is dedicated to raising literacy levels of Eastern Caribbean children by providing
-          learning resources to communities in 6 different island nations. HATS has many volunteers monitoring their
-          literacy programs and C4C has helped optimize their data collection system. Volunteers can now easily enter
-          data through a dynamic data-driven form and HATS executives can easily view and analyze this data through
-          a separate data visualization application.`,
+    paragraph: `Hands Across the Sea is a US-based international NGO dedicated to raising children’s literacy through school and community library programs in six different Eastern Caribbean island nations. Hands frontline Program Officers monitor progress of literacy programs at hundreds of primary and secondary schools across the region, and C4C is helping optimize their data collection and visualization systems so that the organization can continue to grow and share the impact of its work. Employees can now easily enter data through a dynamic data-driven form and Hands leadership is able to view and analyze this data, allowing them to leverage it to secure more funding and raise awareness.`,
     appDesc: 'Data Collection and Presentation System',
     path:
         'https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/HandsLogo.jpg',
