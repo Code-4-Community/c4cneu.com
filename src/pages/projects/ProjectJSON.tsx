@@ -45,8 +45,7 @@ export const projects: Project[] = [
     impact of its work. Employees can now easily enter data through a dynamic data-driven form and Hands leadership is able 
     to view and analyze this data, allowing them to leverage it to secure more funding and raise awareness.`,
     appDesc: 'Data Collection and Presentation System',
-    path:
-        'https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/HandsLogo.jpg',
+    path: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/HandsLogo.jpg',
     abbr: 'HATS',
     learnMore: 'https://www.handsacrossthesea.net/',
   },
