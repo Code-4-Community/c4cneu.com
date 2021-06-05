@@ -106,11 +106,6 @@ const NavBar: React.FC = () => {
                     Projects
                   </Typography>
                 </Button>
-                <Button component={Link} to="/demoday">
-                  <Typography variant="h6" className={classes.navlink}>
-                    Demo Day
-                  </Typography>
-                </Button>
                 <Button component={Link} to="/jumpstart">
                   <Typography variant="h6" className={classes.navlink}>
                     Jumpstart
@@ -147,9 +142,6 @@ const NavBar: React.FC = () => {
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} to="/projects">
                 <Typography variant="body1">Projects</Typography>
-              </MenuItem>
-              <MenuItem onClick={handleClose} component={Link} to="/demoday">
-                <Typography variant="body1"> Demo Day</Typography>
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} to="/events">
                 <Typography variant="body1">Events</Typography>
