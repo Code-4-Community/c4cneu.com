@@ -272,6 +272,18 @@ const Home: React.FC = () => {
                 />
               </a>
             </Grid>
+            <Grid item>
+              <a
+                href="https://www.povertyactionlab.org/"
+                className={classes.partnerLogoGrid}
+              >
+                <LazyLoadImage
+                  src=""
+                  alt="Jameel Abdul Latif Poverty Action Lab"
+                  className={classes.partnerLogos}
+                />
+              </a>
+            </Grid>
           </Grid>
         </div>
       </Fade>
