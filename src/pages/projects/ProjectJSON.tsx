@@ -49,4 +49,12 @@ export const projects: Project[] = [
     abbr: 'HATS',
     learnMore: 'https://www.handsacrossthesea.net/',
   },
+  {
+    title: 'J-PAL',
+    paragraph: `The Abdul Latif Jameel Poverty Action Lab (J-PAL) is a global research center working to reduce poverty by ensuring that policy is informed by scientific evidence. J-PAL works with the New York City Department of Youth and Community Development, which runs the country's largest summer youth employment program, to evaluate the impact of recommendation letters on participants’ educational and employment outcomes after the program. C4C is building a system that simplifies the creation, dissemination and completion of surveys that will be used to create unique letters of recommendation for each youth. Each youth will be sent their unique letter(s) of recommendation, which we hope will improve their educational and employment opportunities.`,
+    appDesc: 'Letter of Recommendation System',
+    path: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/JPAL_logo.svg',
+    abbr: 'J-PAL',
+    learnMore: 'https://www.povertyactionlab.org/',
+  },
 ];
