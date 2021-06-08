@@ -1,19 +1,10 @@
+import { Box, Button, Container, Grid, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import Alert from '@material-ui/lab/Alert';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { makeStyles } from '@material-ui/core/styles';
-import {
-  Container,
-  Button,
-  Grid,
-  Typography,
-  Box,
-  Link,
-} from '@material-ui/core';
-import Alert from '@material-ui/lab/Alert';
-import { ReactComponent as SVG } from './events.svg';
-import { Link as RouterLink } from 'react-router-dom';
-
 import Hero from '../../components/Hero';
+import { ReactComponent as SVG } from './events.svg';
 
 const useStyles = makeStyles({
   button: {
@@ -46,7 +37,7 @@ const Events: React.FC = () => {
       </Helmet>
       <Alert severity="warning">
         <Typography variant="body1">
-          There are currently no events planned for Spring 2021.
+          There are currently no events planned for Fall 2021.
         </Typography>
       </Alert>
       <Hero
@@ -62,19 +53,7 @@ const Events: React.FC = () => {
             <Typography variant="body1">
               Code4Community sponsors weekly events for all our club members. We
               hold general club events, company visits, panels/discussions, and
-              a special series of web development workshops called the{' '}
-              <Link component={RouterLink} to="/jumpstart">
-                Jumpstart
-              </Link>{' '}
-              program. Stay tuned for more events by checking our official event
-              schedule and joining our{' '}
-              <Link
-                href="https://c4cneu.us4.list-manage.com/subscribe?u=4b534cd2e8fe8be8150d03977&id=b1915b8b8b"
-                target="_blank"
-              >
-                mailing list
-              </Link>
-              .
+              web development workshops.
             </Typography>
           </Box>
         </Grid>
