@@ -9,7 +9,6 @@ import ApplyProjectManager from './pages/apply/project-manager/ApplyProjectManag
 import ApplyProductDesigner from './pages/apply/product-designer/ApplyProductDesigner';
 import ApplyBrandDesigner from './pages/apply/brand-designer/ApplyBrandDesigner';
 import Projects from './pages/projects/Projects';
-import Jumpstart from './pages/jumpstart/Jumpstart';
 import Events from './pages/events/Events';
 import People from './pages/people/People';
 import FAQ from './pages/faq/FAQ';
@@ -54,7 +53,6 @@ const App: React.FC = () => {
               component={ApplyBrandDesigner}
             />
             <Route path="/projects" exact component={Projects} />
-            <Route path="/jumpstart" exact component={Jumpstart} />
             <Route path="/events" exact component={Events} />
             <Route path="/people" exact component={People} />
             <Route path="/faq" exact component={FAQ} />

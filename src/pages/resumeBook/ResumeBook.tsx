@@ -16,7 +16,7 @@ const developerResumeBookURL =
 const designerResumeBookURL =
   'https://c4cneu-public.s3.us-east-2.amazonaws.com/Designer+Resume+Book.pdf';
 
-const Jumpstart: React.FC = () => {
+const ResumeBook: React.FC = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -26,10 +26,10 @@ const Jumpstart: React.FC = () => {
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>Jumpstart</title>
+        <title>Resume Book</title>
         <meta
           name="description"
-          content="Code4Community's Jumpstart is a brand new full-stack development program for first time developers."
+          content="The public resume book for C4C members."
         />
       </Helmet>
       <Hero
@@ -72,4 +72,4 @@ const Jumpstart: React.FC = () => {
   );
 };
 
-export default Jumpstart;
+export default ResumeBook;

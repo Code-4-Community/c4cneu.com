@@ -56,10 +56,6 @@ const Footer: React.FC = () => {
                 Events
               </Link>
               {' | '}
-              <Link to="/jumpstart" className={classes.footerLink}>
-                Jumpstart
-              </Link>
-              {' | '}
               <Link to="/people" className={classes.footerLink}>
                 People
               </Link>
