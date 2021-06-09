@@ -93,7 +93,7 @@ const ApplyDeveloper: React.FC = () => {
                 maintaining software products for our partner organizations.
                 Developers work in Agile collaborative teams and are exposed to
                 every aspect of the product development cycle. Developers can
-                expect to spend roughly 5-10 hours a week working on tickets
+                expect to spend roughly 5 hours a week working on tickets
                 with their team, with work ranging from Java API development to
                 React UI development and cloud deployment.
               </Typography>
