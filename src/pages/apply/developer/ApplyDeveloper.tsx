@@ -130,6 +130,12 @@ const ApplyDeveloper: React.FC = () => {
                 decide to move forward with your candidacy after the
                 interview... then you're in! Congrats!
               </Typography>
+              <Typography variant="body1" gutterBottom className={classes.text}>
+                <i>
+                  Due to limitations imposed by Khoury college, we can only
+                  accept applications from undergraduate students.
+                </i>
+              </Typography>
             </Box>
           </Fade>
           <Fade>
