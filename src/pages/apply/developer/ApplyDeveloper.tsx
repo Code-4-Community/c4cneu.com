@@ -1,62 +1,62 @@
-import { Box, Container, Grid, Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import React from "react";
-import { Helmet } from "react-helmet";
+import { Box, Container, Grid, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 // @ts-ignore
-import Fade from "react-reveal/Fade";
-import Hero from "../../../components/Hero";
-import { TextQuoteBlock } from "../../../components/TextQuoteBlock";
-import CTA from "../CTA";
-import { ReactComponent as SVG } from "./developer.svg";
+import Fade from 'react-reveal/Fade';
+import Hero from '../../../components/Hero';
+import { TextQuoteBlock } from '../../../components/TextQuoteBlock';
+import CTA from '../CTA';
+import { ReactComponent as SVG } from './developer.svg';
 
 const useStyles = makeStyles({
   image: {
-    width: "100%",
+    width: '100%',
     borderRadius: 10,
-    margin: "auto",
+    margin: 'auto',
   },
   list: {
     marginTop: 0,
-    "& > li": {
-      marginBottom: "0.25em",
+    '& > li': {
+      marginBottom: '0.25em',
     },
   },
   stepper: {
-    paddingTop: "2.5em",
-    paddingRight: "0",
-    maxWidth: "16em",
+    paddingTop: '2.5em',
+    paddingRight: '0',
+    maxWidth: '16em',
   },
   application: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-end",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
   },
   text: {
     //fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
   },
   picture: {
-    borderRadius: "10em",
-    maxWidth: "10em",
+    borderRadius: '10em',
+    maxWidth: '10em',
   },
   pictureWrapper: {
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    marginBottom: "1em",
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    marginBottom: '1em',
   },
   blockQuote: {
-    borderLeft: "4px solid gray",
-    paddingLeft: "0.5em",
-    marginBottom: "1em",
+    borderLeft: '4px solid gray',
+    paddingLeft: '0.5em',
+    marginBottom: '1em',
   },
   leftQuote: {
-    position: "relative",
-    fontSize: "8em",
+    position: 'relative',
+    fontSize: '8em',
   },
   applyButton: {
-    textTransform: "none",
+    textTransform: 'none',
     fontWeight: 500,
-    maxWidth: "16em",
+    maxWidth: '16em',
   },
 });
 
@@ -124,11 +124,17 @@ const ApplyDeveloper: React.FC = () => {
                 <b>
                   We do not believe technical interviews or take home challenges
                   belong in our application process.
-                </b>{" "}
+                </b>{' '}
                 If your initial application interests us, we will invite you to
                 a 30 minute conversation with 1-2 of our developers. If we
                 decide to move forward with your candidacy after the
                 interview... then you're in! Congrats!
+              </Typography>
+              <Typography variant="body1" gutterBottom className={classes.text}>
+                <i>
+                  Due to limitations imposed by Khoury college, we can only
+                  accept applications from undergraduate students.
+                </i>
               </Typography>
             </Box>
           </Fade>
