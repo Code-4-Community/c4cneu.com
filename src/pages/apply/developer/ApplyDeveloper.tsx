@@ -100,7 +100,7 @@ const ApplyDeveloper: React.FC = () => {
               <Typography variant="body1" gutterBottom className={classes.text}>
                 As a member of our product teams, you will be working closely
                 with other developers under the guidance of a tech lead and
-                project manager. You'll actively participate in team meetings,
+                project manager. You will actively participate in team meetings,
                 meet our partners, and constantly learn new technologies.
               </Typography>
             </Box>
@@ -144,13 +144,10 @@ const ApplyDeveloper: React.FC = () => {
                     engineer
                   </li>
                   <li>Passionate about helping the Boston community</li>
+                  <li>A strong communicator who facilitates collaboration</li>
                   <li>
-                    A strong communicator who facilitates collaboration amongst
-                    the product team
-                  </li>
-                  <li>
-                    Interested in being a part of the entire product life cycle:
-                    software inception to completion
+                    Interested in being a part of the entire product life cycle
+                    from software inception to completion
                   </li>
                   <li>
                     Dedicated to the C4C mission and has excellent follow
