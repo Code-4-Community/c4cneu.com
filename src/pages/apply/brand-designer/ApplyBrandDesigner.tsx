@@ -143,16 +143,6 @@ const ApplyBrandDesigner: React.FC = () => {
               </Typography>
             </Box>
           </Fade>
-          <Fade>
-            <Box mb={5}>
-              <Typography variant="body1" gutterBottom className={classes.text}>
-                <i>
-                  All product teams will be working and meeting remotely. <br />
-                  See our FAQ for more details.
-                </i>
-              </Typography>
-            </Box>
-          </Fade>
         </Grid>
 
         <Grid item sm={5} className={classes.application}>
