@@ -1,62 +1,62 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { makeStyles } from '@material-ui/core/styles';
-import { Container, Box, Typography, Grid } from '@material-ui/core';
-import Hero from '../../../components/Hero';
-import { ReactComponent as SVG } from './developer.svg';
-import { TextQuoteBlock } from '../../../components/TextQuoteBlock';
-import CTA from '../CTA';
+import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import React from "react";
+import { Helmet } from "react-helmet";
 // @ts-ignore
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
+import Hero from "../../../components/Hero";
+import { TextQuoteBlock } from "../../../components/TextQuoteBlock";
+import CTA from "../CTA";
+import { ReactComponent as SVG } from "./developer.svg";
 
 const useStyles = makeStyles({
   image: {
-    width: '100%',
+    width: "100%",
     borderRadius: 10,
-    margin: 'auto',
+    margin: "auto",
   },
   list: {
     marginTop: 0,
-    '& > li': {
-      marginBottom: '0.25em',
+    "& > li": {
+      marginBottom: "0.25em",
     },
   },
   stepper: {
-    paddingTop: '2.5em',
-    paddingRight: '0',
-    maxWidth: '16em',
+    paddingTop: "2.5em",
+    paddingRight: "0",
+    maxWidth: "16em",
   },
   application: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-end',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-end",
   },
   text: {
     //fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
   },
   picture: {
-    borderRadius: '10em',
-    maxWidth: '10em',
+    borderRadius: "10em",
+    maxWidth: "10em",
   },
   pictureWrapper: {
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    marginBottom: '1em',
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "1em",
   },
   blockQuote: {
-    borderLeft: '4px solid gray',
-    paddingLeft: '0.5em',
-    marginBottom: '1em',
+    borderLeft: "4px solid gray",
+    paddingLeft: "0.5em",
+    marginBottom: "1em",
   },
   leftQuote: {
-    position: 'relative',
-    fontSize: '8em',
+    position: "relative",
+    fontSize: "8em",
   },
   applyButton: {
-    textTransform: 'none',
+    textTransform: "none",
     fontWeight: 500,
-    maxWidth: '16em',
+    maxWidth: "16em",
   },
 });
 
@@ -93,9 +93,15 @@ const ApplyDeveloper: React.FC = () => {
                 maintaining software products for our partner organizations.
                 Developers work in Agile collaborative teams and are exposed to
                 every aspect of the product development cycle. Developers can
-                expect to spend roughly 5 hours a week working on tickets
-                with their team, with work ranging from Java API development to
-                React UI development and cloud deployment.
+                expect to spend roughly 5 hours a week working on tickets with
+                their team, with work ranging from Java API development to React
+                UI development and cloud deployment.
+              </Typography>
+              <Typography variant="body1" gutterBottom className={classes.text}>
+                As a member of our product teams, you will be working closely
+                with other developers under the guidance of a tech lead and
+                project manager. You will actively participate in team meetings,
+                meet our partners, and constantly learn new technologies.
               </Typography>
             </Box>
           </Fade>
@@ -109,11 +115,20 @@ const ApplyDeveloper: React.FC = () => {
                 to learn. Although exposure to software development practices
                 through co-ops, internships, or personal projects is a big plus,
                 we ultimately highly value your passion to improve as a software
-                developer. We don't believe coding challenges belong in our
-                interview process, and we never factor school year into our
-                decisions. The ideal candidate is passionate about developing,
+                developer. The ideal candidate is passionate about developing,
                 and learns from their team while empowering the developers
-                around them.
+                around them. Experience with our tech stack is appreciated, but
+                not required.
+              </Typography>
+              <Typography variant="body1" gutterBottom className={classes.text}>
+                <b>
+                  We do not believe technical interviews or take home challenges
+                  belong in our application process.
+                </b>{" "}
+                If your initial application interests us, we will invite you to
+                a 30 minute conversation with 1-2 of our developers. If we
+                decide to move forward with your candidacy after the
+                interview... then you're in! Congrats!
               </Typography>
             </Box>
           </Fade>
@@ -129,13 +144,10 @@ const ApplyDeveloper: React.FC = () => {
                     engineer
                   </li>
                   <li>Passionate about helping the Boston community</li>
+                  <li>A strong communicator who facilitates collaboration</li>
                   <li>
-                    A strong communicator who facilitates collaboration amongst
-                    the product team
-                  </li>
-                  <li>
-                    Interested in being a part of the entire product life cycle:
-                    software inception to completion
+                    Interested in being a part of the entire product life cycle
+                    from software inception to completion
                   </li>
                   <li>
                     Dedicated to the C4C mission and has excellent follow
@@ -145,21 +157,11 @@ const ApplyDeveloper: React.FC = () => {
               </Typography>
             </Box>
           </Fade>
-          <Fade>
-            <Box mb={5}>
-              <Typography variant="body1" gutterBottom className={classes.text}>
-                <i>
-                  All product teams will be working and meeting remotely. <br />
-                  See our FAQ for more details.
-                </i>
-              </Typography>
-            </Box>
-          </Fade>
         </Grid>
 
         <Grid item sm={5} className={classes.application}>
           <Fade>
-            <CTA onClick="https://forms.gle/n2b1Dkn1qMduR5qh7" />
+            <CTA onClick="https://forms.gle/m5HeiFoAkwDtb5qR9" />
           </Fade>
         </Grid>
 
