@@ -313,9 +313,9 @@ const Home: React.FC = () => {
         </Fade>
         <Fade>
           <TextQuoteBlock
-            quote="I’ve learned to build, lead, and collaborate with teams of developers and designers, all of which has prepared me very much for working in the industry. To be able to learn so much, and see the impact we have for on our partner organizations, makes me very grateful to be a part of this organization."
+            quote="I’ve learned to build, lead, and collaborate with teams of developers and designers, all of which has prepared me very much for working in the industry. To be able to learn so much, and see the impact we have on our partner organizations, makes me very grateful to be a part of this organization."
             name="Jack Blanc"
-            title="Director of Engineering"
+            title="Former Director of Engineering"
           />
         </Fade>
 
@@ -323,7 +323,7 @@ const Home: React.FC = () => {
           <TextQuoteBlock
             quote="C4C is a club of passionate students that empower each other while building products that make a difference in our community. Members at any stage in their academic journey have opportunities to grow and learn within a community of students committed to empowering themselves and the people around them."
             name="Liam Moynihan"
-            title="President of Code4Community"
+            title="Former President of Code4Community"
           />
         </Fade>
       </Grid>
