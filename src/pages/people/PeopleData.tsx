@@ -133,4 +133,11 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/vrushalitarte/',
     email: 'tarte.v@northeastern.edu'
   },
+  {
+    name: 'Jennifer Adisoetjahya',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/jennifer_adisoutjahya.png',
+    linkedin: 'https://www.linkedin.com/in/jennifer-adisoetjahya/',
+    email: 'adisoetjahya.j@northeastern.edu'
+  },
 ];
