@@ -63,7 +63,7 @@ export const people: Person[] = [
   {
     name: 'Connor Ellrodt',
     position: 'Treasurer',
-    image: '',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/connor_ellrodt.jpg',
     linkedin: 'https://www.linkedin.com/in/connor-ellrodt-008a75151/',
     email: 'ellrodt.c@northeastern.edu'
   },
