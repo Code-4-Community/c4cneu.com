@@ -113,11 +113,11 @@ export const people: Person[] = [
   },
   {
     name: 'Jack Blanc',
-    position: 'Outside Advisor, Technoking',
+    position: 'Advisor',
     image:
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Jack-B.jpg',
     linkedin: 'https://www.linkedin.com/in/blancjack/',
-    email: 'blanc.ja@northeastern.edu',
+    email: 'jackblanc@hey.com',
   },
   {
     name: 'Vedant Rautela',
