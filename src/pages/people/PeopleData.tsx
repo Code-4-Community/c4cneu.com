@@ -128,6 +128,13 @@ export const people: Person[] = [
     email: 'jackblanc@hey.com',
   },
   {
+    name: 'Conner Nilsen',
+    position: 'Jumpstart Lead & Advisor',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/conner_nilsen.jpeg',
+    linkedin: 'https://www.linkedin.com/in/connernilsen/',
+    email: 'connernilsen@gmail.com'
+  },
+  {
     name: 'Vedant Rautela',
     position: 'Developer',
     image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/vedant_rautela.jpg',
