@@ -62,7 +62,7 @@ export const people: Person[] = [
   },
   {
     name: 'Sadaf Khansalar',
-    position: 'Administrative Director',
+    position: 'Director of PR & Communications',
     image:
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Sadaf-K.jpg',
     linkedin: 'https://www.linkedin.com/in/sadafkhansalar/',
