@@ -53,6 +53,14 @@ export const people: Person[] = [
     email: 'yeomans.a@northeastern.edu',
   },
   {
+    name: 'Cassandra Moe',
+    position: 'Director of Branding',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/cassandra_moe.jpg',
+    linkedin: 'https://www.linkedin.com/in/cassandra-moe1/',
+    email: 'moe.c@northeastern.edu',
+  },
+  {
     name: 'Sadaf Khansalar',
     position: 'Administrative Director',
     image:
