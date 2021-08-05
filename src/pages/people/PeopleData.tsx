@@ -148,4 +148,11 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/jennifer-adisoetjahya/',
     email: 'adisoetjahya.j@northeastern.edu'
   },
+  {
+    name: 'Derek Leung',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/derek_leung.png',
+    linkedin: 'https://www.linkedin.com/in/derekleung27/',
+    email: 'dleung2140@gmail.com'
+  },
 ];
