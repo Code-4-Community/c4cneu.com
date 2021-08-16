@@ -162,4 +162,11 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/derekleung27/',
     email: 'dleung2140@gmail.com'
   },
+  {
+    name: 'Daniel Jung',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/daniel_jung.jpg',
+    linkedin: 'https://www.linkedin.com/in/djung335/',
+    email: 'jung.d@northeastern.edu'
+  }
 ];
