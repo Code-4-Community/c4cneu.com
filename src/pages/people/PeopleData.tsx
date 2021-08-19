@@ -120,6 +120,13 @@ export const people: Person[] = [
     email: 'thakkar.v@northeastern.edu'
   },
   {
+    name: 'Will Thomas',
+    position: 'Technical Lead',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/will_thomas.png',
+    linkedin: 'https://www.linkedin.com/in/thomasmwilliam/',
+    email: 'thomas.w@northeastern.edu'
+  },
+  {
     name: 'Jack Blanc',
     position: 'Advisor',
     image:
