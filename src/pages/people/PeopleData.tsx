@@ -10,9 +10,10 @@ export const people: Person[] = [
   {
     name: 'Floris Dobber',
     position: 'President',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/floris_dobber.jpeg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/floris_dobber.jpeg',
     linkedin: 'https://www.linkedin.com/in/floris-dobber/',
-    email: 'dobber.f@northeastern.edu'
+    email: 'dobber.f@northeastern.edu',
   },
   {
     name: 'Ryan Jung',
@@ -25,16 +26,18 @@ export const people: Person[] = [
   {
     name: 'Chloe Gold',
     position: 'Director of Product',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/chloe_gold.jpeg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/chloe_gold.jpeg',
     linkedin: 'https://www.linkedin.com/in/chloe-gold/',
-    email: 'gold.c@northeastern.edu'
+    email: 'gold.c@northeastern.edu',
   },
   {
     name: 'David Freedman',
     position: 'Director of Design',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/david_freedman.JPG',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/david_freedman.JPG',
     linkedin: 'https://www.linkedin.com/in/david-freedman-821543169/',
-    email: 'freedman.d@northeastern.edu'
+    email: 'freedman.d@northeastern.edu',
   },
   {
     name: 'Abby Emison',
@@ -71,9 +74,10 @@ export const people: Person[] = [
   {
     name: 'Connor Ellrodt',
     position: 'Treasurer',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/connor_ellrodt.jpg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/connor_ellrodt.jpg',
     linkedin: 'https://www.linkedin.com/in/connor-ellrodt-008a75151/',
-    email: 'ellrodt.c@northeastern.edu'
+    email: 'ellrodt.c@northeastern.edu',
   },
   {
     name: 'Jack Tonina',
@@ -94,30 +98,34 @@ export const people: Person[] = [
   {
     name: 'Sanjana Mishra',
     position: 'Project Manager',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/sanjana_mishra.jpeg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/sanjana_mishra.jpeg',
     linkedin: 'https://www.linkedin.com/in/sanjana-mishra/',
-    email: 'mishra.sa@northeastern.edu'
+    email: 'mishra.sa@northeastern.edu',
   },
   {
     name: 'Olivia Blier',
     position: 'Technical Lead',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/olivia_blier.jpeg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/olivia_blier.jpeg',
     linkedin: 'https://www.linkedin.com/in/olivia-blier-5031aa19b/',
-    email: 'blier.o@northeastern.edu'
+    email: 'blier.o@northeastern.edu',
   },
   {
     name: 'Somya Prabhakar',
     position: 'Project Manager',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/somya_prabhakar.jpg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/somya_prabhakar.jpg',
     linkedin: 'https://www.linkedin.com/in/somya-p/',
-    email: 'prabhakar.so@northeastern.edu'
+    email: 'prabhakar.so@northeastern.edu',
   },
   {
     name: 'Varun Thakkar',
     position: 'Technical Lead',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/varun_thakkar.jpg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/varun_thakkar.jpg',
     linkedin: 'https://www.linkedin.com/in/varun-m-thakkar/',
-    email: 'thakkar.v@northeastern.edu'
+    email: 'thakkar.v@northeastern.edu',
   },
   {
     name: 'Will Thomas',
@@ -137,36 +145,41 @@ export const people: Person[] = [
   {
     name: 'Conner Nilsen',
     position: 'Jumpstart Lead & Advisor',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/conner_nilsen.jpeg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/conner_nilsen.jpeg',
     linkedin: 'https://www.linkedin.com/in/connernilsen/',
-    email: 'connernilsen@gmail.com'
+    email: 'connernilsen@gmail.com',
   },
   {
     name: 'Vedant Rautela',
     position: 'Developer',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/vedant_rautela.jpg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/vedant_rautela.jpg',
     linkedin: 'https://www.linkedin.com/in/vedantrautela/',
-    email: 'rautela.v@northeastern.edu'
+    email: 'rautela.v@northeastern.edu',
   },
   {
     name: 'Vrushali Tarte',
     position: 'Developer',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/vrushali_tarte.jpeg',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/vrushali_tarte.jpeg',
     linkedin: 'https://www.linkedin.com/in/vrushalitarte/',
-    email: 'tarte.v@northeastern.edu'
+    email: 'tarte.v@northeastern.edu',
   },
   {
     name: 'Jennifer Adisoetjahya',
     position: 'Developer',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/jennifer_adisoutjahya.png',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/jennifer_adisoutjahya.png',
     linkedin: 'https://www.linkedin.com/in/jennifer-adisoetjahya/',
-    email: 'adisoetjahya.j@northeastern.edu'
+    email: 'adisoetjahya.j@northeastern.edu',
   },
   {
     name: 'Derek Leung',
     position: 'Developer',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/derek_leung.png',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/derek_leung.png',
     linkedin: 'https://www.linkedin.com/in/derekleung27/',
-    email: 'dleung2140@gmail.com'
+    email: 'dleung2140@gmail.com',
   },
 ];

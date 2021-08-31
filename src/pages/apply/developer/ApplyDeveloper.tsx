@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { Alert } from '@material-ui/lab';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 // @ts-ignore
@@ -74,7 +75,10 @@ const ApplyDeveloper: React.FC = () => {
           content="Apply to be a Software Developer at Code4Community."
         />
       </Helmet>
-
+      <Alert severity="info">
+        We are no longer accepting applications for the Fall semester, but feel
+        free to apply to join us next Spring!
+      </Alert>
       <Hero
         title="Software Developer"
         subtitle="Develop long-term solutions. Write code to make an impact. "
@@ -167,7 +171,7 @@ const ApplyDeveloper: React.FC = () => {
 
         <Grid item sm={5} className={classes.application}>
           <Fade>
-            <CTA onClick="https://forms.gle/m5HeiFoAkwDtb5qR9" />
+            <CTA onClick="https://forms.gle/p2sSAzT7vDfq39Nj7" />
           </Fade>
         </Grid>
 
