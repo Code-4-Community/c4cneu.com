@@ -9,6 +9,7 @@ import Hero from '../../../components/Hero';
 import { TextQuoteBlock } from '../../../components/TextQuoteBlock';
 import CTA from '../CTA';
 import { ReactComponent as SVG } from './developer.svg';
+import Alert from '@material-ui/lab/Alert';
 
 const useStyles = makeStyles({
   image: {
@@ -75,10 +76,10 @@ const ApplyDeveloper: React.FC = () => {
           content="Apply to be a Software Developer at Code4Community."
         />
       </Helmet>
-      {/* <Alert severity="info">
-        We are no longer accepting applications for the Fall semester, but feel
-        free to apply to join us next Spring!
-      </Alert> */}
+      <Alert severity="info">
+        We are no longer accepting applications for the Spring semester, but feel
+        free to apply to join us next Fall!
+      </Alert>
       <Hero
         title="Software Developer"
         subtitle="Develop long-term solutions. Write code to make an impact. "
@@ -168,12 +169,12 @@ const ApplyDeveloper: React.FC = () => {
             </Box>
           </Fade>
         </Grid>
-
-        <Grid item sm={5} className={classes.application}>
-          <Fade>
+        {/*
+            <Grid item sm={5} className={classes.application}>
+            <Fade>
             <CTA onClick="https://forms.gle/p2sSAzT7vDfq39Nj7" />
-          </Fade>
-        </Grid>
+            </Fae>
+            </Grid> */}
 
         <Fade>
           <TextQuoteBlock
