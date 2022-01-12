@@ -57,4 +57,12 @@ export const projects: Project[] = [
     abbr: 'J-PAL',
     learnMore: 'https://www.povertyactionlab.org/',
   },
+  {
+    title: 'LBFE',
+    paragraph: '',
+    appDesc: 'Virtual Senior Center',
+    path: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LBFE_logo.png',
+    abbr: 'LBFE',
+    learnMore: 'https://lbfeboston.org/',
+  },
 ];
