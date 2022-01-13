@@ -284,6 +284,18 @@ const Home: React.FC = () => {
                 />
               </a>
             </Grid>
+            <Grid item>
+              <a
+                href="https://lbfeboston.org/"
+                className={classes.partnerLogoGrid}
+              >
+                <LazyLoadImage
+                  src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LBFE_logo.png"
+                  alt="Little Brothers - Friends of the Elderly"
+                  className={classes.partnerLogos}
+                />
+              </a>
+            </Grid>
           </Grid>
         </div>
       </Fade>
