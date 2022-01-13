@@ -59,7 +59,7 @@ export const projects: Project[] = [
   },
   {
     title: 'LBFE',
-    paragraph: '',
+    paragraph: 'Little Brothers-Friends of the Elderly is a national network of non-profit volunteer-based organizations committed to relieving isolation and loneliness among the elderly. C4C is building a public website for LBFE to assist with their community building and outreach efforts.',
     appDesc: 'Virtual Senior Center',
     path: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/LBFE_logo.png',
     abbr: 'LBFE',
