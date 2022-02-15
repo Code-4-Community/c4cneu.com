@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       transform: 'scale(1.15)',
     },
-    borderRadius: 12,
+    borderRadius: 0,
     backgroundColor: 'white',
   },
 
@@ -99,14 +99,14 @@ const Member: React.FC<MemberProps> = ({
           <a href={linkedin} rel="noopener noreferrer" target="_blank">
             <img
               className={classes.icon}
-              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/icons/linkedin_icon.svg"
+              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/linkedin_logo.svg"
               alt="Linkedin"
             />
           </a>
           <a href={'mailto:' + email} rel="noopener noreferrer" target="_blank">
             <img
               className={classes.icon}
-              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/icons/mail_icon.svg"
+              src="https://c4cneu-public.s3.us-east-2.amazonaws.com/Site/email.svg"
               alt="Email"
             />
           </a>
