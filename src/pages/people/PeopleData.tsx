@@ -10,7 +10,6 @@ export const people: Person[] = [
   {
     name: 'Floris Dobber',
     position: 'Co-President, Director of Operations',
-  
     image:
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/floris_dobber.jpeg',
     linkedin: 'https://www.linkedin.com/in/floris-dobber/',
@@ -44,15 +43,15 @@ export const people: Person[] = [
     name: 'Khushboo Shah',
     position: 'Director of Recruitment',
     image:
-      '',
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/khushboo_shah.jpg',
     linkedin: 'https://www.linkedin.com/in/khushboo-shah-746893205/',
-    email: '',
+    email: 'khushboo3289@gmail.com',
   },
   {
     name: 'Vivian Chen',
     position: 'Director of Marketing',
     image:
-      '',
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/Vivian_Chen+-+Vivian+Chen.jpg',
     linkedin: 'https://www.linkedin.com/in/vivianchen1029/',
     email: 'chen.viv@northeastern.edu',
   },
@@ -76,7 +75,7 @@ export const people: Person[] = [
     name: 'Juan Tavera',
     position: 'Project Manager',
     image:
-      '',
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/juan_tavera.jfif',
     linkedin: 'https://www.linkedin.com/in/juan-tavera-017904148/',
     email: 'tavera.j@northeastern.edu',
   },
@@ -84,7 +83,7 @@ export const people: Person[] = [
     name: 'Max Sebso',
     position: 'Technical Lead',
     image:
-      '',
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/max_sebso.jfif',
     linkedin: 'https://www.linkedin.com/in/maxsebso/',
     email: 'sebso.m@northeastern.edu',
   },
@@ -123,14 +122,16 @@ export const people: Person[] = [
   {
     name: 'Crystal Zhang',
     position: 'Project Manager',
-    image: '',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/crystal_zhang.jfif',
     linkedin: 'https://www.linkedin.com/in/cryystalzhang/',
-    email: '',
+    email: 'czhang5182@gmail.com',
   },
   {
     name: 'Sofie Duntugan',
     position: 'Technical Lead',
-    image: '',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/sofie_duntugan.jfif',
     linkedin: 'https://www.linkedin.com/in/sofie-duntugan/',
     email: 'duntugan.s@northeastern.edu',
   },
@@ -141,6 +142,14 @@ export const people: Person[] = [
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/cassandra_moe.jpg',
     linkedin: 'https://www.linkedin.com/in/cassandra-moe1/',
     email: 'moe.c@northeastern.edu',
+  },
+  {
+    name: 'Isabelle Lefebvre',
+    position: 'Designer',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/Isabelle_Lefebvre+-+Isabelle+Lefebvre.jpg',
+    linkedin: 'https://www.linkedin.com/in/isabelle-lefebvre-92982922a',
+    email: 'lefebvre.is@northeastern.edu',
   },
   {
     name: 'Conner Nilsen',
@@ -185,64 +194,65 @@ export const people: Person[] = [
   {
     name: 'Daniel Jung',
     position: 'Developer',
-    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/daniel_jung.jpg',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/daniel_jung.jpg',
     linkedin: 'https://www.linkedin.com/in/djung335/',
     email: 'jung.d@northeastern.edu'
   },
   {
     name: 'Jyaleen Wu',
     position: 'Developer',
-    image: '',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/jyaleen_wu+-+Jyaleen+Wu.jpg',
     linkedin: 'https://www.linkedin.com/in/jyaleen-wu/',
     email: 'wu.jy@northeastern.edu',
   },
   {
-    name: 'Isabelle Lefebvre',
-    position: 'Designer',
-    image: '',
-    linkedin: 'linkedin.com/in/isabelle-lefebvre-92982922a',
-    email: 'lefebvre.is@northeastern.edu',
-  },
-  {
     name: 'Luca Sharbani',
     position: 'Developer',
-    image: '',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/generateSelf+-+Lucas+Sharbani.png',
     linkedin: 'https://www.linkedin.com/in/luca-sharbani/',
     email: 'sharbani.l@northeastern.edu',
   },
   {
     name: 'Jessica Su',
     position: 'Developer',
-    image: '',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/Jess+-+Jessica+Su.JPG',
     linkedin: 'https://www.linkedin.com/in/jesssu/',
     email: 'jessica.su0807@gmail.com',
   },
   {
     name: 'Jamie Lin',
     position: 'Developer',
-    image: '',
-    linkedin: 'www.linkedin.com/in/jamie-m-lin',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/hbp+jamie4+-+Jamie+Lin.JPG',
+    linkedin: 'https://www.linkedin.com/in/jamie-m-lin',
     email: 'Lin.jam@northeastern.edu ',
   },
   {
     name: 'Joseph Hirsch',
     position: 'Developer',
-    image: '',
-    linkedin: 'www.linkedin.com/in/joseph-q-hirsch',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/joseph_hirsch+-+Joseph+Hirsch.png',
+    linkedin: 'https://www.linkedin.com/in/joseph-q-hirsch',
     email: 'hirsch.jos@northeastern.edu',
   },
   {
     name: 'Sumana Sithalam',
     position: 'Developer',
-    image: '',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/sumana_sithalam+-+Sumana+S.jpg',
     linkedin: 'https://www.linkedin.com/in/sumanasithalam/',
     email: 'sithalam.s@northeastern.edu',
   },
   {
     name: 'Michelle Velyunksiy',
     position: 'Developer',
-    image: '',
-    linkedin: 'www.linkedin.com/in/michelle-velyunskiy-2a028522b',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/michelle_velyunskiy+-+Michelle+Velyunskiy.jpg',
+    linkedin: 'https://www.linkedin.com/in/michelle-velyunskiy-2a028522b',
     email: 'velyunskiy.m@northeastern.edu',
   }
 ];
