@@ -125,7 +125,7 @@ export const people: Person[] = [
     image: 
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/crystal_zhang.jfif',
     linkedin: 'https://www.linkedin.com/in/cryystalzhang/',
-    email: 'czhang5182@gmail.com',
+    email: 'zhang.cr@northeastern.edu',
   },
   {
     name: 'Sofie Duntugan',
@@ -254,5 +254,29 @@ export const people: Person[] = [
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/michelle_velyunskiy+-+Michelle+Velyunskiy.jpg',
     linkedin: 'https://www.linkedin.com/in/michelle-velyunskiy-2a028522b',
     email: 'velyunskiy.m@northeastern.edu',
-  }
+  },
+  {
+    name: 'Julia Finocchiaro',
+    position: 'Developer',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/julia_finocchiaro.jpeg',
+    linkedin: 'https://www.linkedin.com/in/julia-finocchiaro',
+    email: 'finocchiaro.j@northeastern.edu',
+  },
+  {
+    name: 'Atulya Miglani',
+    position: 'Developer',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/Atulya+Miglani.jpg',
+    linkedin: 'https://www.linkedin.com/in/atulyamiglani',
+    email: 'miglani.a@northeastern.edu',
+  },
+  {
+    name: 'Ashna Srivastava',
+    position: 'Developer',
+    image: 
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/Ashna+Srivastava.jpg',
+    linkedin: 'https://www.linkedin.com/in/srivastava-as/',
+    email: 'srivastava.as@northeastern.edu',
+  },
 ];
