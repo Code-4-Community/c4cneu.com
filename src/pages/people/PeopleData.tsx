@@ -67,8 +67,8 @@ export const people: Person[] = [
     name: 'Emi Suyama',
     position: 'Director of Finance',
     image:
-      '',
-    linkedin: '',
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/Emi+Suyama.jpg',
+    linkedin: 'https://www.linkedin.com/',
     email: 'suyama.e@northeastern.edu',
   },
   {
