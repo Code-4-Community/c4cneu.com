@@ -30,9 +30,10 @@ const useStyles = makeStyles({
 
 interface CTAProps {
   readonly onClick: string;
+  readonly disabled?: boolean;
 }
 
-const CTA: React.FC<CTAProps> = ({ onClick }) => {
+const CTA: React.FC<CTAProps> = ({ onClick, disabled }) => {
   const classes = useStyles();
   return (
     <Grid container justify="center" className={classes.root}>
@@ -60,6 +61,7 @@ const CTA: React.FC<CTAProps> = ({ onClick }) => {
             href={onClick}
             target="_blank"
             className={classes.applyButtonBase}
+            disabled={disabled}
           >
             <Typography variant="body1" className={classes.applyButton}>
               Apply!

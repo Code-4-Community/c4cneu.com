@@ -77,8 +77,7 @@ const ApplyDeveloper: React.FC = () => {
         />
       </Helmet>
       <Alert severity="info">
-        We are no longer accepting applications for the Spring semester, but feel
-        free to apply to join us next Fall!
+        Our applications for the Fall will open on July 15th 🎉
       </Alert>
       <Hero
         title="Software Developer"
@@ -107,6 +106,10 @@ const ApplyDeveloper: React.FC = () => {
                 with other developers under the guidance of a tech lead and
                 project manager. You will actively participate in team meetings,
                 meet our partners, and constantly learn new technologies.
+              </Typography>
+              <Typography variant="body1" gutterBottom className={classes.text}>
+                Code4Community is a unique opportunity to deliver real impact through the power of software.
+                In your first few weeks, your code will be running in essential software systems to help children with life threatening illnesses, environmental conservators, educators in the Eastern Carribean, disadvantaged youth, and the elderly.
               </Typography>
             </Box>
           </Fade>
@@ -168,13 +171,33 @@ const ApplyDeveloper: React.FC = () => {
               </Typography>
             </Box>
           </Fade>
+          <Fade>
+            <Box mb={5}>
+              <Typography variant="h5" gutterBottom>
+                Application Timeline
+              </Typography>
+              <Typography variant="body1" className={classes.text}>
+                <ul className={classes.list}>
+                  <li>
+                    July 15th: Applications open
+                  </li>
+                  <li>July 30th: Applications close at midnight</li>
+                  <li>August: Applications are reviewed, candidates may be invited to interview</li>
+                  <li>
+                    September: Respond with decisions
+                  </li>
+                </ul>
+              </Typography>
+            </Box>
+          </Fade>
         </Grid>
-        {/*
-            <Grid item sm={5} className={classes.application}>
-            <Fade>
-            <CTA onClick="https://forms.gle/p2sSAzT7vDfq39Nj7" />
-            </Fae>
-            </Grid> */}
+
+        <Grid item sm={5} className={classes.application}>
+          <Fade>
+            {/* Just in case someone is curious enough to inspect the HTML/Github, let them apply early 🤷 */}
+            <CTA disabled={true} onClick="https://forms.gle/et8YsM1LVHNMdvsj8" />
+          </Fade>
+        </Grid>
 
         <Fade>
           <TextQuoteBlock
@@ -185,7 +208,7 @@ const ApplyDeveloper: React.FC = () => {
           <TextQuoteBlock
             quote="Code4Community gives you an unrivaled opportunity to learn software development while making a positive impact on the world. Too often at this school software is simply 'academic' or 'just business'. Unlike any other organization at Northeastern, Code4Community makes coding feel truly creative and compassionate."
             name="Ryan Jung"
-            title="Lead Software Developer"
+            title="Software Developer"
           />
           <TextQuoteBlock
             quote="C4C gave me a glimpse of how software development really works in industry. I am grateful for the mentorship I’ve received, and I feel well-prepared for my next co-op. Also, it feels good seeing your code directly benefit the community."
