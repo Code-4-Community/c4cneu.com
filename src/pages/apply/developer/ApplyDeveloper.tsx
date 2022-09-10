@@ -76,9 +76,6 @@ const ApplyDeveloper: React.FC = () => {
           content="Apply to be a Software Developer at Code4Community."
         />
       </Helmet>
-      <Alert severity="info">
-        Our applications for the Fall will open on July 15th 🎉
-      </Alert>
       <Hero
         title="Software Developer"
         subtitle="Develop long-term solutions. Write code to make an impact. "
@@ -171,30 +168,31 @@ const ApplyDeveloper: React.FC = () => {
               </Typography>
             </Box>
           </Fade>
-          <Fade>
-            <Box mb={5}>
+          {/* Ignore until next application season
+              <Fade>
+              <Box mb={5}>
               <Typography variant="h5" gutterBottom>
-                Application Timeline
+              Application Timeline
               </Typography>
               <Typography variant="body1" className={classes.text}>
-                <ul className={classes.list}>
-                  <li>
-                    July 15th: Applications open
-                  </li>
-                  <li>July 30th: Applications close at midnight</li>
-                  <li>August: Applications are reviewed, candidates may be invited to interview</li>
-                  <li>
-                    September: Respond with decisions
-                  </li>
-                </ul>
+              <ul className={classes.list}>
+              <li>
+              July 15th: Applications open
+              </li>
+              <li>July 30th: Applications close at midnight</li>
+              <li>August: Applications are reviewed, candidates may be invited to interview</li>
+              <li>
+              September: Respond with decisions
+              </li>
+              </ul>
               </Typography>
-            </Box>
-          </Fade>
+              </Box>
+              </Fade> */}
         </Grid>
 
         <Grid item sm={5} className={classes.application}>
           <Fade>
-            <CTA disabled={false} onClick="https://forms.gle/et8YsM1LVHNMdvsj8" />
+            <CTA disabled onClick="TBD" />
           </Fade>
         </Grid>
 
