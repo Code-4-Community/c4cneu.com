@@ -4,6 +4,7 @@ import { Container, Box } from '@material-ui/core';
 import ApplyGrid from './ApplyGrid';
 import Hero from '../../components/Hero';
 import { ReactComponent as SVG } from './team.svg';
+import Alert from '@material-ui/lab/Alert';
 
 const Apply: React.FC = () => {
   React.useEffect(() => {
@@ -18,6 +19,10 @@ const Apply: React.FC = () => {
           content="Apply to join Code4Community and help create software for non-profits in Boston."
         />
       </Helmet>
+
+      <Alert severity="info">
+        Our applications are closed. Stay tuned for our next application cycle by joining our mailing list <a href="https://c4cneu.us4.list-manage.com/subscribe?u=4b534cd2e8fe8be8150d03977&id=b1915b8b8b">here</a>.
+      </Alert>
 
       <Hero
         title="Open Positions"
