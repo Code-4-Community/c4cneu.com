@@ -230,4 +230,11 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/richardcao226/',
     email: 'cao.ri@northeastern.edu',
   },
+  {
+    name: 'Lucas Sta Maria',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/Lucas-S.png',
+    linkedin: 'https://www.linkedin.com/in/lucas-sta-maria/',
+    email: 'stamaria.l@northeastern.edu'
+  }
 ];
