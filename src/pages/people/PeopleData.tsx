@@ -236,5 +236,12 @@ export const people: Person[] = [
     image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/Lucas-S.png',
     linkedin: 'https://www.linkedin.com/in/lucas-sta-maria/',
     email: 'stamaria.l@northeastern.edu'
+  },
+  {
+    name: 'Kaylee Wu',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Wu%2C+Kaylee.jpg',
+    linkedin: 'https://www.linkedin.com/in/kaylee-wu-7542a8205/',
+    email: 'wu.kay@northeastern.edu'
   }
 ];
