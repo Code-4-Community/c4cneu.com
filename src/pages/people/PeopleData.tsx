@@ -250,5 +250,12 @@ export const people: Person[] = [
     image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Maya-Z.jpg',
     linkedin: 'https://www.linkedin.com/in/maya-zeldin/',
     email: 'zeldin.m@northeastern.edu'
-  }
+  },
+  {
+    name: 'David Levin',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/David-L.jpg',
+    linkedin: 'https://www.linkedin.com/in/davidlevin55/',
+    email: 'levin.da@northeastern.edu'  
+  },
 ];
