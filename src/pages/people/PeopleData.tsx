@@ -243,5 +243,26 @@ export const people: Person[] = [
     image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Wu%2C+Kaylee.jpg',
     linkedin: 'https://www.linkedin.com/in/kaylee-wu-7542a8205/',
     email: 'wu.kay@northeastern.edu'
-  }
+  },
+  {
+    name: 'Fanny Zheng',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Fanny-Z.JPG',
+    linkedin: 'https://www.linkedin.com/in/zfanny/',
+    email: 'zheng.fan@northeastern.edu'
+  },
+  {
+    name: 'Maya Zeldin',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Maya-Z.jpg',
+    linkedin: 'https://www.linkedin.com/in/maya-zeldin/',
+    email: 'zeldin.m@northeastern.edu'
+  },
+  {
+    name: 'David Levin',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/David-L.jpg',
+    linkedin: 'https://www.linkedin.com/in/davidlevin55/',
+    email: 'levin.da@northeastern.edu'  
+  },
 ];
