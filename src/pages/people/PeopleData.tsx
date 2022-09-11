@@ -265,4 +265,18 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/davidlevin55/',
     email: 'levin.da@northeastern.edu'  
   },
+    {
+    name: 'Belle Lim',
+    position: 'Product Manager',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Belle_Lim.jpg',
+    linkedin: 'https://www.linkedin.com/in/isobelle-lim/',
+    email: 'lim.i@northeastern.edu'
+  },
+  {
+    name: 'Mahek Aggarwal',
+    position: 'Product Manager',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Mahek_Aggarwal.jpg',
+    linkedin: 'https://www.linkedin.com/in/mahekagg/',
+    email: 'aggarwal.ma@northeastern.edu'  
+  },
 ];
