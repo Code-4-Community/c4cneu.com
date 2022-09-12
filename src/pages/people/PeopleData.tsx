@@ -266,6 +266,13 @@ export const people: Person[] = [
     email: 'levin.da@northeastern.edu'  
   },
   {
+    name: 'Surabhi Keesara',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/Surabhi_Keesara.png',
+    linkedin: 'https://www.linkedin.com/in/surabhikeesara',
+    email: 'keesara.s@northeastern.edu'  
+  },
+  {
     name: 'Belle Lim',
     position: 'Product Manager',
     image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Belle_Lim.jpg',
