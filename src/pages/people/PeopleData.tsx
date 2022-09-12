@@ -279,4 +279,11 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/mahekagg/',
     email: 'aggarwal.ma@northeastern.edu'  
   },
+  {
+    name: 'Avery Huang',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Avery_Huang.jpg',
+    linkedin: 'https://www.linkedin.com/in/averyhuang0h/',
+    email: 'huang.av@northeastern.edu'  
+  },
 ];
