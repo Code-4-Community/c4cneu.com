@@ -308,10 +308,17 @@ export const people: Person[] = [
     email: 'huang.av@northeastern.edu'  
   },
   {
+    name:'Ryan Kennedy',
+    position:'Developer', 
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Ryan_K.jpg',
+    linkedin: 'https://www.linkedin.com/in/ryan-k-3b7b3a166/', 
+    email: 'kennedy.rya@northeastern.edu'
+  },
+  {
     name: 'Gigi Ali',
     position: 'Product Designer',
     image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Gigi_Ali_Board.jpg',
     linkedin: 'https://www.linkedin.com/in/jehane-ali',
-    email: 'ali.je@northeastern.edu'  
+    email: 'ali.je@northeastern.edu'
   },
 ];
