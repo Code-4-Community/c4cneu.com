@@ -293,4 +293,11 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/averyhuang0h/',
     email: 'huang.av@northeastern.edu'  
   },
+  {
+    name: 'Gigi Ali',
+    position: 'Product Designer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Gigi_Ali_Board.jpg',
+    linkedin: 'https://www.linkedin.com/in/jehane-ali',
+    email: 'ali.je@northeastern.edu'  
+  },
 ];
