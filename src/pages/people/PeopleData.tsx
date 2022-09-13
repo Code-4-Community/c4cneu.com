@@ -278,7 +278,6 @@ export const people: Person[] = [
     image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Izzy-C.jpg',
     linkedin: 'https://www.linkedin.com/in/isabella-conner/',
     email: 'conner.i@northeastern.edu'
-
   },
   {
     name: 'Belle Lim',
