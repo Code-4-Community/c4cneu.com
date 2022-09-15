@@ -321,4 +321,12 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/jehane-ali',
     email: 'ali.je@northeastern.edu'
   },
+  {
+    name: 'Nate Kirschner',
+    position: 'Developer',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Nate_Kirschner.JPG',
+    linkedin: 'https://www.linkedin.com/in/nathan-kirschner/',
+    email: 'kirschner.n@northeastern.edu',
+  },
 ];
