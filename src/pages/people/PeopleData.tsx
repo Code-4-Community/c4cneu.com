@@ -308,6 +308,13 @@ export const people: Person[] = [
     email: 'huang.av@northeastern.edu'  
   },
   {
+    name: 'Jenny Do',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Jenny+Do+pic+500x500px.png',
+    linkedin: 'https://www.linkedin.com/in/trang-do-461492169/',
+    email: 'do.tran@northeastern.edu',
+  },
+  {
     name:'Ryan Kennedy',
     position:'Developer', 
     image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2020/Ryan_K.jpg',
