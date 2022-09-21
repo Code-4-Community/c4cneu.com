@@ -336,4 +336,11 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/kimharr/',
     email: 'kim.harr@northeastern.edu',
   },
+  {
+    name: 'James Colesanti',
+    position: 'Developer',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/JamesColesantiC4CPicture.jpg',
+    linkedin: 'https://www.linkedin.com/in/james-colesanti-a2b043234/',
+    email: 'colesanti.j@northeastern.edu',
+  },
 ];
