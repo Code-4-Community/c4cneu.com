@@ -350,4 +350,18 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/james-colesanti-a2b043234/',
     email: 'colesanti.j@northeastern.edu',
   },
+    {
+    name: 'Avita Islam',
+    position: 'Consultant',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Avita_Islam.jpg',
+    linkedin: 'https://www.linkedin.com/in/avita-islam',
+    email: 'islam.av@northeastern.edu',
+  },
+  {
+    name: 'Veronica Yang',
+    position: 'Product Manager',
+    image: 'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/Veronica+Yang.jpg',
+    linkedin: 'https://www.linkedin.com/in/veronica-yang',
+    email: 'yang.ver@northeastern.edu',
+  },
 ];
