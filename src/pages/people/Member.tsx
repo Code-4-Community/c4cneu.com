@@ -1,8 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Paper, Grid, Typography } from '@material-ui/core';
-// @ts-ignore
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const useStyles = makeStyles((theme) => ({
   person: {
@@ -71,6 +69,7 @@ interface MemberProps {
   readonly name: string;
   position: string;
   image: string;
+  altImage: string,
   linkedin: string;
   email: string;
 }
@@ -79,6 +78,7 @@ const Member: React.FC<MemberProps> = ({
   name,
   position,
   image,
+  altImage,
   linkedin,
   email,
 }) => {
@@ -86,7 +86,10 @@ const Member: React.FC<MemberProps> = ({
   return (
     <Grid item sm={4} className={classes.gridItem}>
       <Paper className={classes.person} elevation={0}>
-        <LazyLoadImage className={classes.portrait} src={image} alt={name} />
+        <picture>
+          <source className={classes.portrait} srcSet={image} type="image/webp"/>
+          <img className={classes.portrait} src={altImage} alt={name} loading="lazy" />
+        </picture>
         <div className={classes.cardText}>
           <Typography className={classes.name} variant="subtitle2">
             {name}
