@@ -37,6 +37,14 @@ export const people: Person[] = [
     email: 'duntugan.s@northeastern.edu',
   },
   {
+    name: 'Cecilia Chepkoech',
+    position: 'Director of Finance, Technical Consultant',
+    image:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/cecilia_chepkoech.jpg',
+    linkedin: 'https://www.linkedin.com/in/cecilia-chepkoech/',
+    email: 'chepkoech.c@northeastern.edu',
+  },
+  {
     name: 'Isabelle Lefebvre',
     position: 'Director of Design',
     image:
@@ -85,16 +93,6 @@ export const people: Person[] = [
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/hbp+jamie4+-+Jamie+Lin.JPG',
     linkedin: 'https://www.linkedin.com/in/jamie-m-lin',
     email: 'Lin.jam@northeastern.edu ',
-  },
-  {
-    name: 'Ashna Srivastava',
-    position: 'Director of Finance, Developer',
-    image:
-      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/Ashna+Srivastava.webp',
-    altImage:
-      'https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/Ashna+Srivastava.jpg',
-    linkedin: 'https://www.linkedin.com/in/srivastava-as/',
-    email: 'srivastava.as@northeastern.edu',
   },
   {
     name: 'Juan Tavera',
