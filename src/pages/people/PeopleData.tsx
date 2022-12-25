@@ -41,6 +41,8 @@ export const people: Person[] = [
     position: 'Director of Finance, Technical Consultant',
     image:
       'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/cecilia_chepkoech.jpg',
+    altImage:
+      'https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/cecilia_chepkoech.jpg',
     linkedin: 'https://www.linkedin.com/in/cecilia-chepkoech/',
     email: 'chepkoech.c@northeastern.edu',
   },
