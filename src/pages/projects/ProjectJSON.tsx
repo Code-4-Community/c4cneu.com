@@ -59,9 +59,11 @@ export const projects: Project[] = [
   },
   {
     title: 'OustandingLife',
-    paragraph: 'OutstandingLife is a national network of non-profit volunteer-based organizations committed to relieving isolation and loneliness among the elderly. C4C is building a public website for OutstandingLife to assist with their community building and outreach efforts.',
+    paragraph:
+      'OutstandingLife is a national network of non-profit volunteer-based organizations committed to relieving isolation and loneliness among the elderly. C4C is building a public website for OutstandingLife to assist with their community building and outreach efforts.',
     appDesc: 'Virtual Senior Center',
-    path: 'https://www.outstandinglife.org/_next/image?url=%2Flogo-tag.png&w=1080&q=100',
+    path:
+      'https://www.outstandinglife.org/_next/image?url=%2Flogo-tag.png&w=1080&q=100',
     abbr: 'OutstandingLife',
     learnMore: 'https://www.outstandinglife.org/',
   },

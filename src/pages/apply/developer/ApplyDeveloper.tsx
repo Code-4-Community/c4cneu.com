@@ -9,7 +9,6 @@ import Hero from '../../../components/Hero';
 import { TextQuoteBlock } from '../../../components/TextQuoteBlock';
 import CTA from '../CTA';
 import { ReactComponent as SVG } from './developer.svg';
-import Alert from '@material-ui/lab/Alert';
 
 const useStyles = makeStyles({
   image: {
@@ -105,8 +104,12 @@ const ApplyDeveloper: React.FC = () => {
                 meet our partners, and constantly learn new technologies.
               </Typography>
               <Typography variant="body1" gutterBottom className={classes.text}>
-                Code4Community is a unique opportunity to deliver real impact through the power of software.
-                In your first few weeks, your code will be running in essential software systems to help children with life threatening illnesses, environmental conservators, educators in the Eastern Carribean, disadvantaged youth, and the elderly.
+                Code4Community is a unique opportunity to deliver real impact
+                through the power of software. In your first few weeks, your
+                code will be running in essential software systems to help
+                children with life threatening illnesses, environmental
+                conservators, educators in the Eastern Carribean, disadvantaged
+                youth, and the elderly.
               </Typography>
             </Box>
           </Fade>
@@ -192,7 +195,10 @@ const ApplyDeveloper: React.FC = () => {
 
         <Grid item sm={5} className={classes.application}>
           <Fade>
-            <CTA disabled onClick="TBD" />
+            <CTA
+              disabled={false}
+              onClick="https://forms.gle/LHNGNaU91omyChKH7"
+            />
           </Fade>
         </Grid>
 

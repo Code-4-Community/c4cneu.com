@@ -20,9 +20,10 @@ const Apply: React.FC = () => {
         />
       </Helmet>
 
-      <Alert severity="info">
-        Our applications are closed. Stay tuned for our next application cycle by joining our mailing list <a href="https://c4cneu.us4.list-manage.com/subscribe?u=4b534cd2e8fe8be8150d03977&id=b1915b8b8b">here</a>.
-      </Alert>
+      {/*TODO: Uncomment after applications close*/}
+      {/*<Alert severity="info">*/}
+      {/*  Our applications are closed. Stay tuned for our next application cycle by joining our mailing list <a href="https://c4cneu.us4.list-manage.com/subscribe?u=4b534cd2e8fe8be8150d03977&id=b1915b8b8b">here</a>.*/}
+      {/*</Alert>*/}
 
       <Hero
         title="Open Positions"
