@@ -129,10 +129,10 @@ const ApplyDeveloper: React.FC = () => {
                 not required.
               </Typography>
               <Typography variant="body1" gutterBottom className={classes.text}>
-                <b>
-                  We do not believe technical interviews or take home challenges
-                  belong in our application process.
-                </b>{' '}
+                {/*<b>*/}
+                {/*  We do not believe technical interviews or take home challenges*/}
+                {/*  belong in our application process.*/}
+                {/*</b>{' '}*/}
                 If your initial application interests us, we will invite you to
                 a 30 minute conversation with 1-2 of our developers. If we
                 decide to move forward with your candidacy after the
