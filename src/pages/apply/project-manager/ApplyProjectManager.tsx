@@ -148,7 +148,10 @@ const ApplyProjectManager: React.FC = () => {
 
         <Grid item sm={5} className={classes.application}>
           <Fade>
-            <CTA onClick="https://forms.gle/PWFcos73x7Z8Hd6D6" />
+            <CTA
+              disabled={false}
+              onClick="https://forms.gle/7MHkM3iAYAfiHPYD9"
+            />
           </Fade>
         </Grid>
 

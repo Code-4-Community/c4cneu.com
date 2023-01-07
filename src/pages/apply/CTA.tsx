@@ -61,10 +61,10 @@ const CTA: React.FC<CTAProps> = ({ onClick, disabled }) => {
             href={onClick}
             target="_blank"
             className={classes.applyButtonBase}
-            disabled={true || disabled}
+            disabled={disabled}
           >
             <Typography variant="body1" className={classes.applyButton}>
-              Closed {/* Apply! */}
+              Apply Now
             </Typography>
           </Button>
         </Box>
