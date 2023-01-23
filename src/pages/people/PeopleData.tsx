@@ -158,6 +158,16 @@ export const people: Person[] = [
     email: "zhang.cr@northeastern.edu",
   },
   {
+    name: "Jackie Lincroft",
+    position: "Technical Lead",
+    image:
+      "https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/jackie_lincroft.webp",
+    altImage:
+      "https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2022/jackie_lincroft.jpg",
+    linkedin: "https://www.linkedin.com/in/jlincroft/",
+    email: "lincroft.j@northeastern.edu",
+  },
+  {
     name: "Conner Nilsen",
     position: "Jumpstart Lead & Advisor",
     image:
