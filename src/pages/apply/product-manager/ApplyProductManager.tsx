@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Box, Typography, Grid } from '@material-ui/core';
 import Hero from '../../../components/Hero';
-import { ReactComponent as SVG } from './projectmanager.svg';
+import { ReactComponent as SVG } from './productmanager.svg';
 import { TextQuoteBlock } from '../../../components/TextQuoteBlock';
 import CTA from '../CTA';
 // @ts-ignore
@@ -60,7 +60,7 @@ const useStyles = makeStyles({
   },
 });
 
-const ApplyProjectManager: React.FC = () => {
+const ApplyProductManager: React.FC = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -68,15 +68,15 @@ const ApplyProjectManager: React.FC = () => {
   return (
     <Container maxWidth="md">
       <Helmet>
-        <title>Project Manager</title>
+        <title>Product Manager</title>
         <meta
           name="description"
-          content="Apply to be a Project Manager at Code4Community."
+          content="Apply to be a Product Manager at Code4Community."
         />
       </Helmet>
 
       <Hero
-        title="Project Manager"
+        title="Product Manager"
         subtitle="Create impactful software from the ground up. Lead with confidence."
         SvgNode={SVG}
       />
@@ -89,10 +89,10 @@ const ApplyProjectManager: React.FC = () => {
                 What you'll be doing
               </Typography>
               <Typography variant="body1" gutterBottom className={classes.text}>
-                Project Managers at C4C are responsible for scoping out the
+                Product Managers at C4C are responsible for scoping out the
                 features of our projects, prioritizing developer work, and
                 ensuring we're on track to deliver a high quality product at the
-                end of the year. Project Managers lead team and client meetings,
+                end of the year. Product Managers lead team and client meetings,
                 and with the help of our tech leads adjust and optimize the
                 team's focus and process. They are the main drivers of our
                 initial project specification and help turn that specification
@@ -106,7 +106,7 @@ const ApplyProjectManager: React.FC = () => {
                 What we’re looking for
               </Typography>
               <Typography variant="body1" gutterBottom className={classes.text}>
-                A great project manager is someone that is very organized and
+                A great product manager is someone that is very organized and
                 has the foresight to anticipate future challenges. They must be
                 an excellent communicator and have the confidence to lead and
                 manage a team. Experience writing software is a plus, but
@@ -124,6 +124,10 @@ const ApplyProjectManager: React.FC = () => {
               </Typography>
               <Typography variant="body1" className={classes.text}>
                 <ul className={classes.list}>
+                  <li>
+                    Able to understand our partners' needs and conceptualize
+                    solutions
+                  </li>
                   <li>Organized and forward thinking</li>
                   <li>
                     Experienced in working within an Agile development process
@@ -159,17 +163,17 @@ const ApplyProjectManager: React.FC = () => {
           <TextQuoteBlock
             quote="Joining C4C gave me a taste of what a project manager’s role is like in the real world and provided me with a valuable opportunity to hone important cross-functional skills! I’m so proud to be part of a such a supportive and community-oriented organization!"
             name="Sanjana Mishra"
-            title="Project Manager"
+            title="Product Manager"
           />
           <TextQuoteBlock
             quote="Code4Community gave me an amazing leadership opportunity and furthered my professional experience. I feel like I can talk about my impact on the community to peers and even in job interviews. Everyone here is extremely supportive and we're all here to help each other grow."
             name="Chloe Gold"
-            title="Director of Project Management"
+            title="Director of Product Management"
           />
           <TextQuoteBlock
             quote="Working as a product manager for Code4Community has truly been a one of a kind learning experience. leading a team of full time students towards delivering software for a non-profit has been difficult, however thrilling and very rewarding."
             name="Jack Tonina"
-            title="Director of Project Management"
+            title="Director of Product Management"
           />
         </Fade>
       </Grid>
@@ -177,4 +181,4 @@ const ApplyProjectManager: React.FC = () => {
   );
 };
 
-export default ApplyProjectManager;
+export default ApplyProductManager;

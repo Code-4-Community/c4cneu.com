@@ -99,7 +99,7 @@ export const people: Person[] = [
   },
   {
     name: "Juan Tavera",
-    position: "Project Manager",
+    position: "Product Manager",
     image:
       "https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/juan_tavera.webp",
     altImage:
@@ -119,7 +119,7 @@ export const people: Person[] = [
   },
   {
     name: "Sanjana Mishra",
-    position: "Project Manager",
+    position: "Product Manager",
     image:
       "https://c4cneu-public.s3.us-east-2.amazonaws.com/Board/2021/sanjana_mishra.webp",
     altImage:
@@ -149,7 +149,7 @@ export const people: Person[] = [
   },
   {
     name: "Crystal Zhang",
-    position: "Project Manager",
+    position: "Product Manager",
     image:
       "https://c4cneu-public.s3.us-east-2.amazonaws.com/profile-pictures/crystal_zhang.webp",
     altImage:

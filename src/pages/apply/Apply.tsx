@@ -4,7 +4,6 @@ import { Container, Box } from '@material-ui/core';
 import ApplyGrid from './ApplyGrid';
 import Hero from '../../components/Hero';
 import { ReactComponent as SVG } from './team.svg';
-import Alert from '@material-ui/lab/Alert';
 
 const Apply: React.FC = () => {
   React.useEffect(() => {
