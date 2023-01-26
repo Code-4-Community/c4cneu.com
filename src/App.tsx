@@ -8,7 +8,7 @@ import Apply from './pages/apply/Apply';
 import ApplyBrandDesigner from './pages/apply/brand-designer/ApplyBrandDesigner';
 import ApplyDeveloper from './pages/apply/developer/ApplyDeveloper';
 import ApplyProductDesigner from './pages/apply/product-designer/ApplyProductDesigner';
-import ApplyProjectManager from './pages/apply/project-manager/ApplyProjectManager';
+import ApplyProductManager from './pages/apply/product-manager/ApplyProductManager';
 import Events from './pages/events/Events';
 import FAQ from './pages/faq/FAQ';
 import Home from './pages/home/Home';
@@ -36,9 +36,9 @@ const App: React.FC = () => {
             <Route path="/apply" exact component={Apply} />
             <Route path="/apply/developer" exact component={ApplyDeveloper} />
             <Route
-              path="/apply/project-manager"
+              path="/apply/product-manager"
               exact
-              component={ApplyProjectManager}
+              component={ApplyProductManager}
             />
             <Route
               path="/apply/product-designer"

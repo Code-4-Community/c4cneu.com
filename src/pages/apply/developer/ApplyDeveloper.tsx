@@ -100,7 +100,7 @@ const ApplyDeveloper: React.FC = () => {
               <Typography variant="body1" gutterBottom className={classes.text}>
                 As a member of our product teams, you will be working closely
                 with other developers under the guidance of a tech lead and
-                project manager. You will actively participate in team meetings,
+                product manager. You will actively participate in team meetings,
                 meet our partners, and constantly learn new technologies.
               </Typography>
               <Typography variant="body1" gutterBottom className={classes.text}>
